@@ -1,0 +1,32 @@
+- title: Year in Pixels
+  emoji: 🧠
+  url: https://year-in-pixels.glitch.me
+  description: Aplicación para registrar tu estado de ánimo durante el año con una interfaz sencilla y bonita.
+- title: Dog Facts
+  emoji: 🐶
+  url: https://domestika.slack.com/apps/A2NLUK1BL-dog-facts
+  description: Aplicación para Slack que contiene mas de 500 datos curiosos divertidos sobre perros.
+- title: Googleflog
+  emoji: 🤡
+  url: https://kinduff.github.io/googleflog/
+  description: Traductor de español al estúpido idioma ** eEzhTiil0o meETr0ofl0oG *~ xD
+- title: JIRA Opener
+  emoji: 📓
+  url: https://kinduff.github.io/jira-opener
+  description: Herramienta para abrir, parsear y buscar muchos tickets de JIRA a la vez.
+- title: Simple Flowdock Notification Resource
+  emoji: 🔔
+  url: https://github.com/kinduff/simple-flowdock-notification-resource
+  description: Plugin para Concourse CI para recibir notificaciones en Flowdock.
+- title: Spree Reffiliate
+  emoji: 🆙
+  url: https://github.com/kinduff/spree_reffiliate
+  description: Plugin para Spree, un framework de e-commerce para el manejo de afiliados y referidos en una tienda en linea.
+- title: Slack Big Emoji
+  emoji: 🐘
+  url: https://github.com/kinduff/slack-big-emoji
+  description: Herramienta para generar emojis gigantes para Slack.
+- title: Find HTTPS Subdomains
+  emoji: ⚡
+  url: https://subdomain-lookup.glitch.me/
+  description: Herramienta para encontrar subdominios de un dominio.

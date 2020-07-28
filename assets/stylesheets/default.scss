@@ -1,0 +1,42 @@
+---
+---
+
+@import 'base';
+@import 'guest-book';
+
+h2 {
+  font-size: 1.17rem;
+  margin: 2.5rem 0 2.1rem;
+  &::after {
+    height: 10px;
+    top: 6px;
+  }
+}
+ul.logos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    height: 100px;
+    flex: 1 0 80px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    img {
+      max-width: 80px;
+    }
+  }
+}
+.blog-entry {
+  h3 {
+    margin-bottom: 0;
+    + p {
+      margin-bottom: 2rem;
+    }
+  }
+}

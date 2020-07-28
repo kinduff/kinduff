@@ -1,0 +1,16 @@
+<h2>
+  Últimas entradas del blog
+</h2>
+{% for post in site.posts limit:include.limit %}
+  <p>
+    <b
+      ><a
+        href="{{ post.url }}"
+        >↪️ {{ post.title }}</a
+      ></b
+    >: {{ post.description }}
+  </p>
+{% endfor %}
+<p>
+  No te preocupes, hay <a href="/blog/">mas entradas del blog aquí</a>.
+</p>

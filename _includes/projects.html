@@ -1,0 +1,14 @@
+<h2>
+  Proyectos y experimentos
+</h2>
+{% for project in site.data.projects %}
+  <p>
+    <b
+      ><a
+        href="{{ project.url }}"
+        target="blank"
+        >{{ project.emoji }} {{ project.title }}</a
+      ></b
+    >: {{ project.description }}
+  </p>
+{% endfor %}

@@ -1,0 +1,7 @@
+- title: "/kinduff"
+  href: "/"
+  class: "site-title"
+- title: "blog"
+  href: "/blog/"
+- title: "libro de visitas"
+  href: "/guest-book/"

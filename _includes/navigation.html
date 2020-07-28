@@ -1,0 +1,9 @@
+<nav>
+  {% for nav in site.data.nav %}
+    <a
+      href="{{ nav.href }}"
+      class="{{ nav.class }} {% if page.url == nav.href %}active{% endif %}"
+    >{{ nav.title }}</a>
+    {% unless forloop.last %} · {% endunless %}
+  {% endfor %}
+</nav>

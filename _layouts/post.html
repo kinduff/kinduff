@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="wrap">
+      {% include navigation.html %}
+      <h1>
+        {{ page.title }}
+      </h1>
+      <p class="post-metadata">
+        {% include formatted_date.html resource=page %} — {% include reading_time.html resource=content %}
+      </p>
+      {{ content }}
+      <hr />
+      <script src="https://utteranc.es/client.js"
+              repo="kinduff/kinduff"
+              issue-term="title"
+              label="✨💬✨​"
+              theme="github-light"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </div>
+  </body>
+</html>

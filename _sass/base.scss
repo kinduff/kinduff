@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  &:before {
+    box-sizing: inherit;
+  }
+  &:after {
+    box-sizing: inherit;
+  }
+}
+body {
+  font-family: "Cousine", sans-serif;
+  color: #222;
+  line-height: 1.8em;
+  font-size: 16px;
+  margin: 0;
+}
+.wrap {
+  padding: 1rem;
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+  line-height: 1.25;
+  position: relative;
+  &::after {
+    position: absolute;
+    height: 10px;
+    z-index: -1;
+    content: "\00A0";
+    width: 20px;
+    top: 6px;
+    left: -10px;
+    display: block;
+  }
+  a {
+    background-color: transparent;
+  }
+}
+h1::after {
+  background-color: #AFD2E9;
+  height: 18px;
+  top: 12px;
+}
+h2::after {
+  background-color: #C09FE4;
+  height: 12px;
+  top: 8px;
+}
+h3::after {
+  background-color: #F1C40F;
+}
+h4::after {
+  background-color: #D4E6B5;
+  top: 4px;
+}
+mark {
+  background-color: #FBF0CD;
+  &.red {
+    background-color: #fbcdcd;
+  }
+  &.green {
+    background-color: #E0FFC0;
+  }
+}
+a {
+  background-color: #ccfdff;
+  color: #222;
+  text-decoration: underline #95b8b9;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  &.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+  }
+}
+nav {
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin: 0 0 -1rem;
+  padding: 1rem 0 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  a {
+    background-color: transparent;
+    text-decoration: none;
+    &.site-title {
+      color: #b72d2d;
+    }
+    &.active {
+      font-weight: 700;
+    }
+  }
+}
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  height: 0;
+  overflow: visible;
+  margin: 20px 0;
+}
+blockquote {
+  margin: 0;
+  padding: 1rem;
+  border: 1px dotted #333;
+  p {
+    margin: 0;
+  }
+}
+p {
+  > img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    + em {
+      display: block;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+# Config
+permalink: pretty
+highlighter: rouge
+sass:
+  style: compressed
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Collections
+feed_items: 5
+feed_update_period: weekly
+feed_update_frequency: 1
+
+# Collections
+collections:
+  entries:
+    output: false
+    sort_by: date
+  posts:
+    output: true
+
+# SEO
+title: Alejandro AR, Web Developer 👋 kinduff
+tagline: El sitio web de Alejandro AR (kinduff).
+description: El sitio web de Alejandro AR (kinduff), en donde podrás encontrar entradas de blog, proyectos y mas.
+url: https://kinduff.com
+author:
+  twitter: kinduff
+twitter:
+  username: kinduff
+  card: summary
+social:
+  name: Alejandro AR
+  links:
+    - https://twitter.com/kinduff
+    - https://linkedin.com/in/kinduff
+    - https://github.com/kinduff
+    - https://keybase.io/kinduff
+    - https://www.last.fm/user/kinduff
+    - https://trakt.tv/users/kinduff
+    - https://www.goodreads.com/kinduff
+    - https://steamcommunity.com/id/kinduff
+lang: es_ES

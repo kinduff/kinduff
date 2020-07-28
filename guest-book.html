@@ -1,0 +1,45 @@
+---
+layout: default
+title: Libro de visitas
+---
+
+<h1>
+  Libro de visitas
+</h1>
+
+<form
+  key="gb-form"
+  action="/guest-book-thanks/"
+  name="gb"
+  method="post"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="gb" />
+  <input type="hidden" name="bot-field" />
+
+  <p>
+    <label for="name">Tu nombre</label>
+    <input type="text" name="name" id="name"></label>
+  </p>
+
+  <p>
+    <label for="message">Tu mensaje</label>
+    <textarea name="message" id="message"></textarea></label>
+  </p>
+
+  <p>
+    <button type="submit">Enviar</button>
+  </p>
+</form>
+
+<hr />
+{% assign entries = site.entries | reverse %}
+{% for entry in entries %}
+  <p>
+    <b
+      >{{ entry.name }}</b
+    >: {{ entry.content | remove: '<p>' | remove: '</p>' }}
+  </p>
+  <hr />
+{% endfor %}

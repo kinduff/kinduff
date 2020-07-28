@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    {% include meta.html %}
+    <link rel="stylesheet" href="{{ '/assets/stylesheets/default.css' | absolute_url }}">
+  </head>
+  <body>
+    <div class="wrap">
+      {% include navigation.html %}
+      {{ content }}
+    </div>
+  </body>
+</html>

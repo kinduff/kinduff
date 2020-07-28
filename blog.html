@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>
+  Blog
+  <a href="/feed.xml" target="blank" title="RSS feed">
+    <img src="/assets/images/rss.png" />
+  </a>
+</h1>
+
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+    <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+    {% assign date = currentdate %}
+  {% endif %}
+  <div class="blog-entry">
+    <h3>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
+    <p>{{ post.description }}</p>
+  </div>
+{% endfor %}
