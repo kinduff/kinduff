@@ -2,14 +2,16 @@
 ---
 
 @import 'base';
-@import 'guest-book';
+@import 'highlight';
 
-h2 {
-  font-size: 1.17rem;
-  margin: 2.5rem 0 2.1rem;
-  &::after {
-    height: 10px;
-    top: 6px;
+.home {
+  h2 {
+    font-size: 1.17rem;
+    margin: 2.5rem 0 2.1rem;
+    &::after {
+      height: 10px;
+      top: 6px;
+    }
   }
 }
 ul.logos {
@@ -39,4 +41,13 @@ ul.logos {
       margin-bottom: 2rem;
     }
   }
+}
+.post-metadata {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.post-title {
+  margin-bottom: 0;
 }

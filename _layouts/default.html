@@ -7,7 +7,16 @@
   <body>
     <div class="wrap">
       {% include navigation.html %}
+
+      {% if page.is_post %}
+        {% include post_header.html %}
+      {% endif %}
+
       {{ content }}
+
+      {% if page.is_post %}
+        {% include comments.html %}
+      {% endif %}
     </div>
   </body>
 </html>

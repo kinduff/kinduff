@@ -5,18 +5,19 @@ sass:
   style: compressed
 defaults:
   - scope:
-      path: ""
+      path:
     values:
-      layout: "default"
+      layout: default
   - scope:
-      path: ""
-      type: "posts"
+      path:
+      type: posts
     values:
-      layout: "post"
+      is_post: true
 
 # Plugins
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Collections
 feed_items: 5

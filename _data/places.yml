@@ -1,0 +1,12 @@
+- title: "Paris"
+  url: "http://google.fr"
+  location:
+    latitude: 48.8587741
+    longitude: 2.2074741
+    marker_icon: https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png
+
+- title: "Madrid"
+  url: "http://google.es"
+  location:
+    latitude: 40.4378698
+    longitude: -3.8196204
