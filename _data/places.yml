@@ -1,12 +1,424 @@
-- title: "Paris"
-  url: "http://google.fr"
-  location:
-    latitude: 48.8587741
-    longitude: 2.2074741
-    marker_icon: https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png
+- home_marker: &home_marker
+    https://mt.google.com/vt/icon/name=icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1603-house_4x.png&highlight=0F9D58,ff000000&scale=1.0
+- visit_marker: &visit_marker
+    https://mt.google.com/vt/icon/name=icons/onion/SHARED-mymaps-container-bg_4x.png,icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1596-hiking-solo_4x.png&highlight=ff000000,FF5252,ff000000
 
-- title: "Madrid"
-  url: "http://google.es"
+- title: Puerto Vallarta
   location:
-    latitude: 40.4378698
-    longitude: -3.8196204
+    longitude: -105.2253316
+    latitude: 20.653407
+    marker_icon: *visit_marker
+
+- title: Sayulita
+  location:
+    longitude: -105.4408333
+    latitude: 20.8688888
+    marker_icon: *visit_marker
+
+- title: Playa San Pancho, Nayarit.
+  location:
+    longitude: -105.4144007
+    latitude: 20.9044687
+    marker_icon: *visit_marker
+
+- title: Pátzcuaro
+  location:
+    longitude: -101.6091876
+    latitude: 19.5134546
+    marker_icon: *visit_marker
+
+- title: Oaxaca de Juárez
+  location:
+    longitude: -96.7265889
+    latitude: 17.0731842
+    marker_icon: *visit_marker
+
+- title: Cabo San Lucas
+  location:
+    longitude: -109.9167371
+    latitude: 22.8905327
+    marker_icon: *visit_marker
+
+- title: Cancún
+  location:
+    longitude: -86.8515279
+    latitude: 21.161908
+    marker_icon: *visit_marker
+
+- title: Acapulco de Juárez
+  location:
+    longitude: -99.8236533
+    latitude: 16.8531086
+    marker_icon: *visit_marker
+
+- title: Bacalar
+  location:
+    longitude: -88.3923946
+    latitude: 18.6782919
+    marker_icon: *visit_marker
+
+- title: Chiapas
+  location:
+    longitude: -93.1292353
+    latitude: 16.7569318
+    marker_icon: *visit_marker
+
+- title: Mérida
+  location:
+    longitude: -89.5925857
+    latitude: 20.9673702
+    marker_icon: *visit_marker
+
+- title: Tulum
+  location:
+    longitude: -87.4653502
+    latitude: 20.2114185
+    marker_icon: *visit_marker
+
+- title: Quebec
+  location:
+    longitude: -71.2079809
+    latitude: 46.8138783
+    marker_icon: *visit_marker
+
+- title: Montreal
+  location:
+    longitude: -73.567256
+    latitude: 45.5016889
+    marker_icon: *visit_marker
+
+- title: Nueva York
+  location:
+    longitude: -74.0059728
+    latitude: 40.7127753
+    marker_icon: *visit_marker
+
+- title: Granada
+  location:
+    longitude: -3.5985571
+    latitude: 37.1773363
+    marker_icon: *visit_marker
+
+- title: Córdoba
+  location:
+    longitude: -4.7793835
+    latitude: 37.8881751
+    marker_icon: *visit_marker
+
+- title: Sevilla
+  location:
+    longitude: -5.9844589
+    latitude: 37.3890924
+    marker_icon: *visit_marker
+
+- title: Úbeda
+  location:
+    longitude: -3.3712457
+    latitude: 38.0114236
+    marker_icon: *visit_marker
+
+- title: Baeza
+  location:
+    longitude: -3.4676157
+    latitude: 37.9966884
+    marker_icon: *visit_marker
+
+- title: Barcelona
+  location:
+    longitude: 2.1734035
+    latitude: 41.3850639
+    marker_icon: *visit_marker
+
+- title: São Paulo
+  location:
+    longitude: -46.6333094
+    latitude: -23.5505199
+    marker_icon: *visit_marker
+
+- title: Palmas
+  location:
+    longitude: -48.3242858
+    latitude: -10.249091
+    marker_icon: *visit_marker
+
+- title: Brasilia
+  location:
+    longitude: -47.9218204
+    latitude: -15.826691
+    marker_icon: *visit_marker
+
+- title: Itumbiara
+  location:
+    longitude: -49.2162971
+    latitude: -18.409728
+    marker_icon: *visit_marker
+
+- title: Río de Janeiro
+  location:
+    longitude: -43.1728965
+    latitude: -22.9068467
+    marker_icon: *visit_marker
+
+- title: Pirassununga
+  location:
+    longitude: -47.4233503
+    latitude: -21.9936139
+    marker_icon: *visit_marker
+
+- title: Guaecá
+  location:
+    longitude: -45.4526021
+    latitude: -23.824296
+    marker_icon: *visit_marker
+
+- title: Santiago de Querétaro
+  location:
+    longitude: -100.3898881
+    latitude: 20.5887932
+    marker_icon: *visit_marker
+
+- title: Orlando
+  location:
+    longitude: -81.3792365
+    latitude: 28.5383355
+    marker_icon: *visit_marker
+
+- title: París
+  location:
+    longitude: 2.3522219
+    latitude: 48.856614
+    marker_icon: *visit_marker
+
+- title: Versalles
+  location:
+    longitude: 2.130122
+    latitude: 48.801408
+    marker_icon: *visit_marker
+
+- title: Almodóvar del Río
+  location:
+    longitude: -5.014567
+    latitude: 37.8131513
+    marker_icon: *visit_marker
+
+- title: Manzanillo
+  location:
+    longitude: -104.3384616
+    latitude: 19.1138094
+    marker_icon: *visit_marker
+
+- title: Zihuatanejo
+  location:
+    longitude: -101.5516955
+    latitude: 17.6416693
+    marker_icon: *visit_marker
+
+- title: Colonia Apatzingán
+  location:
+    longitude: -102.3288888
+    latitude: 19.0566666
+    marker_icon: *visit_marker
+
+- title: Morelos
+  location:
+    longitude: -99.1013498
+    latitude: 18.6813049
+    marker_icon: *visit_marker
+
+- title: Monterrey
+  location:
+    longitude: -100.3161126
+    latitude: 25.6866142
+    marker_icon: *visit_marker
+
+- title: Veracruz
+  location:
+    longitude: -96.1342241
+    latitude: 19.173773
+    marker_icon: *visit_marker
+
+- title: Zitácuaro
+  location:
+    longitude: -100.3558695
+    latitude: 19.4376056
+    marker_icon: *visit_marker
+
+- title: Valle de Bravo
+  location:
+    longitude: -100.1326725
+    latitude: 19.1950964
+    marker_icon: *visit_marker
+
+- title: Tzintzuntzan
+  location:
+    longitude: -101.57769
+    latitude: 19.6287856
+    marker_icon: *visit_marker
+
+- title: Cuernavaca
+  location:
+    longitude: -99.2215659
+    latitude: 18.9242095
+    marker_icon: *visit_marker
+
+- title: Uruapan
+  location:
+    longitude: -102.0430476
+    latitude: 19.4064492
+    marker_icon: *visit_marker
+
+- title: Lázaro Cárdenas
+  location:
+    longitude: -102.1943485
+    latitude: 17.9567646
+    marker_icon: *visit_marker
+
+- title: El Faro
+  location:
+    longitude: -103.5057968
+    latitude: 18.3523394
+    marker_icon: *visit_marker
+
+- title: Troncones
+  location:
+    longitude: -101.7214254
+    latitude: 17.7801095
+    marker_icon: *visit_marker
+
+- title: León
+  location:
+    longitude: -101.6859605
+    latitude: 21.1250077
+    marker_icon: *visit_marker
+
+- title: Quiroga
+  location:
+    longitude: -101.5232766
+    latitude: 19.6648009
+    marker_icon: *visit_marker
+
+- title: Cuanajo
+  location:
+    longitude: -101.5098789
+    latitude: 19.4848164
+    marker_icon: *visit_marker
+
+- title: Tacambaro
+  location:
+    longitude: -101.457397
+    latitude: 19.225809
+    marker_icon: *visit_marker
+
+- title: Lagunillas
+  location:
+    longitude: -101.4140434
+    latitude: 19.5649037
+    marker_icon: *visit_marker
+
+- title: Zirahuén
+  location:
+    longitude: -101.7310286
+    latitude: 19.4551023
+    marker_icon: *visit_marker
+
+- title: Santa Clara del Cobre
+  location:
+    longitude: -101.6396979
+    latitude: 19.4064279
+    marker_icon: *visit_marker
+
+- title: Los Azufres
+  location:
+    longitude: -100.6572881
+    latitude: 19.781862
+    marker_icon: *visit_marker
+
+- title: Toluca de Lerdo
+  location:
+    longitude: -99.6556653
+    latitude: 19.2826098
+    marker_icon: *visit_marker
+
+- title: Popocatépetl
+  location:
+    longitude: -98.6279013
+    latitude: 19.0224223
+    marker_icon: *visit_marker
+
+- title: Nuevo San Juan Parangaricutiro
+  location:
+    longitude: -102.1312209
+    latitude: 19.4164672
+    marker_icon: *visit_marker
+
+- title: Aguililla
+  location:
+    longitude: -102.7853522
+    latitude: 18.7371188
+    marker_icon: *visit_marker
+
+- title: Chapala
+  location:
+    longitude: -103.1846016
+    latitude: 20.3051576
+    marker_icon: *visit_marker
+
+- title: Madrid
+  location:
+    longitude: -3.7037902
+    latitude: 40.4167754
+    marker_icon: *home_marker
+
+- title: Morelia
+  location:
+    longitude: -101.1949825
+    latitude: 19.7059504
+    marker_icon: *home_marker
+
+- title: Buenos Aires
+  location:
+    longitude: -58.3815591
+    latitude: -34.6036844
+    marker_icon: *home_marker
+
+- title: Ciudad de México
+  location:
+    longitude: -99.133208
+    latitude: 19.4326077
+    marker_icon: *home_marker
+
+- title: Guadalajara
+  location:
+    longitude: -103.3496092
+    latitude: 20.6596988
+    marker_icon: *home_marker
+
+- title: Valencina de la Concepción
+  location:
+    longitude: -6.0771864
+    latitude: 37.4148311
+    marker_icon: *home_marker
+
+- title: Lisboa
+  location:
+    longitude: -9.1393366
+    latitude: 38.7222524
+    marker_icon: *home_marker
+
+- title: Bruselas
+  location:
+    longitude: 4.3517103
+    latitude: 50.8503396
+    marker_icon: *home_marker
+
+- title: Estoril
+  location:
+    longitude: -9.3936558
+    latitude: 38.7133152
+    marker_icon: *home_marker
+
+- title: Cascais
+  location:
+    longitude: -9.4222945
+    latitude: 38.6970565
+    marker_icon: *home_marker
