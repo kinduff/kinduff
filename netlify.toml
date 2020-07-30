@@ -1,0 +1,24 @@
+[build]
+  command = "jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+
+[[redirects]]
+  from = "/jira-opener"
+  to = "https://kinduff.github.io/jira-opener"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/googleflog"
+  to = "https://kinduff.github.io/googleflog"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/dog-api"
+  to = "https://kinduff.github.io/dog-api"
+  status = 301
+  force = false
