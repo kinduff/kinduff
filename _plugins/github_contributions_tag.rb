@@ -12,7 +12,7 @@ class GithubContributionsTag < Liquid::Tag
     encoding = 'charset=utf-8'
     data = CGI::escape(source).gsub('+', '%20')
 
-    "<img src='data:#{content_type};#{encoding},#{data}' class='github-contributions' />"
+    "<img src='data:#{content_type};#{encoding},#{data}' class='github-contributions' alt='#{@user}\'s Github contributions' />"
   end
 end
 
