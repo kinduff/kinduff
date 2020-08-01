@@ -8,3 +8,5 @@ gem 'jekyll'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-maps'
+
+gem 'githubchart'
