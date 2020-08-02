@@ -38,6 +38,9 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
+    jekyll-github-chart (0.1.1)
+      githubchart (~> 3.1.0)
+      jekyll
     jekyll-maps (2.4.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -80,8 +83,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  githubchart
   jekyll
+  jekyll-github-chart
   jekyll-maps
   jekyll-seo-tag
   jekyll-sitemap

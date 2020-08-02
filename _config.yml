@@ -19,6 +19,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-maps
+  - jekyll-github-chart
 
 # Collections
 feed_items: 5
