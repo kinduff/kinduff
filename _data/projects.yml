@@ -1,3 +1,7 @@
+- title: Jekyll Github Chart
+  emoji: 📊
+  url: https://github.com/kinduff/jekyll-github-chart
+  description: Plugin de Jekyll para muestrar el gráfico de contribuciones de un usuario.
 - title: Year in Pixels
   emoji: 🧠
   url: https://year-in-pixels.glitch.me
@@ -8,7 +12,7 @@
   description: Aplicación para Slack que contiene mas de 500 datos curiosos divertidos sobre perros.
 - title: Googleflog
   emoji: 🤡
-  url: https://kinduff.github.io/googleflog/
+  url: https://kinduff.github.io/googleflog
   description: Traductor de español al estúpido idioma ** eEzhTiil0o meETr0ofl0oG *~ xD
 - title: JIRA Opener
   emoji: 📓
