@@ -3,6 +3,13 @@
   <head>
     {% include meta.html %}
     <link rel="stylesheet" href="/assets/stylesheets/default.css">
+    {% for javascript in page.custom-javascript-list %}
+      <script src="{{ javascript }}"></script>
+    {% endfor %}
+
+    {% for stylesheet in page.custom-stylesheet-list %}
+      <link href="{{ stylesheet }}" rel="stylesheet">
+    {% endfor %}
   </head>
   <body>
     <div class="wrap">

@@ -54,3 +54,17 @@ ul.logos {
 .post-title {
   margin-bottom: 0;
 }
+#gallery {
+  text-align: center;
+  a {
+    text-decoration: none;
+    background-color: transparent;
+    img {
+      width: 120px;
+      height: 80px;
+    }
+  }
+}
+.lg-toolbar {
+  background-color: transparent !important;
+}

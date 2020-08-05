@@ -9,3 +9,5 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-maps'
 gem 'jekyll-github-chart'
+
+gem 'mini_magick'
