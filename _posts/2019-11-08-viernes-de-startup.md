@@ -7,7 +7,7 @@ description: >-
 ---
 Hace un par de años que tengo este concepto en la cabeza y he tratado de tenerlo presente a todo momento; lo he llevado a un par de compañías en las que he participado y ha sido bien recibido.
 
-La idea de esta práctica nació cuando desarrollé [Googleflog](https://kinduff.com/blog/2016-08-14-googleflog-the-parody-that-turned-great) en un viernes por la tarde, también un par de años después cuando comencé a desarrollar la idea de [Years in Pixels](https://year-in-pixels.glitch.me/). Y bueno, prácticamente la mayoría de los proyectos [que tengo en stuff](https://kinduff.com/stuff).
+La idea de esta práctica nació cuando desarrollé [Googleflog](/2016/08/14/googleflog-the-parody-that-turned-great) en un viernes por la tarde, también un par de años después cuando comencé a desarrollar la idea de [Years in Pixels](https://year-in-pixels.glitch.me/). Y bueno, prácticamente la mayoría de los proyectos que tengo en [proyectos y experimentos](/proyectos).
 
 La premisa es simple:
 
