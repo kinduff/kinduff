@@ -25,102 +25,102 @@
 
 [[redirects]]
   from = "/blog/2011-11-23-10-secretos-de-css3-que-tal-vez-no-conocias/"
-  to = "/blog/2011/11/23/10-secretos-de-css3-que-tal-vez-no-conocias/"
+  to = "/2011/11/23/10-secretos-de-css3-que-tal-vez-no-conocias/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2012-08-16-que-es-tu-logo-un-h1-o-una-imagen/"
-  to = "/blog/2012/08/16/que-es-tu-logo-un-h1-o-una-imagen/"
+  to = "/2012/08/16/que-es-tu-logo-un-h1-o-una-imagen/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2012-09-20-google-authorship-facebook-opengraph-y-twitter-cards/"
-  to = "/blog/2012/09/20/google-authorship-facebook-opengraph-y-twitter-cards/"
+  to = "/2012/09/20/google-authorship-facebook-opengraph-y-twitter-cards/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2012-11-14-5-tips-para-escribir-css-mantenible/"
-  to = "/blog/2012/11/14/5-tips-para-escribir-css-mantenible/"
+  to = "/2012/11/14/5-tips-para-escribir-css-mantenible/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2013-02-28-jugando-con-el-portapapeles-con-javascript/"
-  to = "/blog/2013/02/28/jugando-con-el-portapapeles-con-javascript/"
+  to = "/2013/02/28/jugando-con-el-portapapeles-con-javascript/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2013-03-25-el-uso-correcto-de-la-etiqueta-h1-y-demas/"
-  to = "/blog/2013/03/25/el-uso-correcto-de-la-etiqueta-h1-y-demas/"
+  to = "/2013/03/25/el-uso-correcto-de-la-etiqueta-h1-y-demas/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2013-04-02-entendiendo-la-transformacion-3d-con-css3/"
-  to = "/blog/2013/04/02/entendiendo-la-transformacion-3d-con-css3/"
+  to = "/2013/04/02/entendiendo-la-transformacion-3d-con-css3/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2015-07-29-six-classic-algorithms-in-ruby/"
-  to = "/blog/2015/07/29/six-classic-algorithms-in-ruby/"
+  to = "/2015/07/29/six-classic-algorithms-in-ruby/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2015-12-14-how-to-merge-git-repositories/"
-  to = "/blog/2015/12/14/how-to-merge-git-repositories/"
+  to = "/2015/12/14/how-to-merge-git-repositories/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2016-04-13-jira-opener-issue-parser/"
-  to = "/blog/2016/04/13/jira-opener-issue-parser/"
+  to = "/2016/04/13/jira-opener-issue-parser/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2016-06-08-hey-git-please-keep-those-folders/"
-  to = "/blog/2016/06/08/hey-git-please-keep-those-folders/"
+  to = "/2016/06/08/hey-git-please-keep-those-folders/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2016-08-14-googleflog-the-parody-that-turned-great/"
-  to = "/blog/2016/08/14/googleflog-the-parody-that-turned-great/"
+  to = "/2016/08/14/googleflog-the-parody-that-turned-great/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2016-09-14-automatic-version-switch-for-nvm/"
-  to = "/blog/2016/09/14/automatic-version-switch-for-nvm/"
+  to = "/2016/09/14/automatic-version-switch-for-nvm/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2019-04-23-el-fizz-buzz-esta-muerto-larga-vida-al-fizz-buzz/"
-  to = "/blog/2019/04/23/el-fizz-buzz-esta-muerto-larga-vida-al-fizz-buzz/"
+  to = "/2019/04/23/el-fizz-buzz-esta-muerto-larga-vida-al-fizz-buzz/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2019-05-23-sirviendo-imagenes-dinamicas-con-nodejs-canvas-aws-lambda-y-netlify-functions/"
-  to = "/blog/2019/05/23/sirviendo-imagenes-dinamicas-con-nodejs-canvas-aws-lambda-y-netlify-functions/"
+  to = "/2019/05/23/sirviendo-imagenes-dinamicas-con-nodejs-canvas-aws-lambda-y-netlify-functions/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2019-11-08-viernes-de-startup/"
-  to = "/blog/2019/11/08/viernes-de-startup/"
+  to = "/2019/11/08/viernes-de-startup/"
   status = 301
   force = false
 
 [[redirects]]
   from = "/blog/2020-03-10-sobre-el-cómo-aprender-algo-nuevo/"
-  to = "/blog/2020/03/10/sobre-el-cómo-aprender-algo-nuevo/"
+  to = "/2020/03/10/sobre-el-cómo-aprender-algo-nuevo/"
   status = 301
   force = false
