@@ -3,6 +3,8 @@
   class: "site-title"
 - title: "blog"
   href: "/blog/"
+- title: "proyectos"
+  href: "/projects/"
 - title: "libro de visitas"
   href: "/guest-book/"
 - title: "galería"

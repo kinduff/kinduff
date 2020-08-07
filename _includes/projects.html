@@ -1,4 +1,4 @@
-{% for project in site.data.projects %}
+{% for project in site.data.projects limit:include.limit %}
   <p>
     <b
       ><a
