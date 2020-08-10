@@ -16,7 +16,7 @@ custom-stylesheet-list:
     {% if image.path contains 'images/gallery/' %}
       <a href="{{ site.baseurl }}{{ image.path }}">
         {% assign thumbnail = image.path | replace: 'gallery', 'gallery_thumbnails' %}
-        <img src="{{ site.baseurl }}{{ thumbnail }}" data-original="{{ image.path }}" alt="gallery image" />
+        <img src="{{ site.baseurl }}{{ thumbnail }}" data-original="{{ image.path }}" alt="gallery image" loading="lazy" width="120" height="80px" />
       </a>
     {% endif %}
   {% endfor %}
