@@ -12,3 +12,4 @@ gem 'jekyll-maps'
 gem 'jekyll-github-chart'
 
 gem 'mini_magick'
+gem 'ox'

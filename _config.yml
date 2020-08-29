@@ -13,6 +13,8 @@ defaults:
       type: posts
     values:
       is_post: true
+exclude:
+  - _data/places.yml
 
 # Plugins
 plugins:
@@ -70,3 +72,12 @@ mini_magick:
     resize: "120x80^"
     gravity: "center"
     extent: "120x80"
+
+# My Places
+my_places:
+  kml_source: https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1egZtRKi0P3BkrLogc2Iaz2pURQfJq1wK
+  marker_icons:
+    - title: "Lugares en donde he vivido"
+      marker_url: "https://mt.google.com/vt/icon/name=icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1603-house_4x.png&highlight=0F9D58,ff000000&scale=1.0"
+    - title: "Lugares que he visitado"
+      marker_url: "https://mt.google.com/vt/icon/name=icons/onion/SHARED-mymaps-container-bg_4x.png,icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1596-hiking-solo_4x.png&highlight=ff000000,FF5252,ff000000"
