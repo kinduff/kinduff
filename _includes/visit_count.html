@@ -1,0 +1,11 @@
+<span id="hitcount"></span>
+
+<script type="text/javascript">
+  var api = "https://count.kinduff.com/"
+  var resource = "{{site.url}}{{page.url}}";
+  fetch(`${api}${resource}`)
+  .then(res => res.json())
+  .then((out) => {
+    document.querySelector("#hitcount").innerHTML = `— ${out["total"]} visitas`;
+  })
+</script>

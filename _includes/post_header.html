@@ -2,5 +2,7 @@
   {{ page.title }}
 </h1>
 <p class="post-metadata">
-  {% include formatted_date.html resource=page %} — {% include reading_time.html resource=content %}
+  {% include formatted_date.html resource=page %}
+  — {% include reading_time.html resource=content %}
+  {% include visit_count.html resource=page %}
 </p>
