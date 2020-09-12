@@ -3,6 +3,8 @@
   <head>
     {% include meta.html %}
     <link rel="stylesheet" href="/assets/stylesheets/default.css">
+
+    <script type="text/javascript" src="/assets/scripts/application.js"></script>
     {% for javascript in page.custom-javascript-list %}
       <script src="{{ javascript }}"></script>
     {% endfor %}
@@ -13,6 +15,10 @@
   </head>
   <body>
     <div class="wrap">
+      <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+        <input type="checkbox" id="checkbox_theme">
+      </label>
+
       {% include navigation.html %}
 
       {% if page.is_post %}
