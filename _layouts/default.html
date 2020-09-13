@@ -3,8 +3,6 @@
   <head>
     {% include meta.html %}
     <link rel="stylesheet" href="/assets/stylesheets/default.css">
-
-    <script type="text/javascript" src="/assets/scripts/application.js"></script>
     {% for javascript in page.custom-javascript-list %}
       <script src="{{ javascript }}"></script>
     {% endfor %}
@@ -16,10 +14,6 @@
   <body>
     <div class="wrap">
       {% include navigation.html %}
-
-      <label id="theme-switch" class="theme-switch" for="scheme">
-        <input type="checkbox" id="scheme"> Modo oscuro
-      </label>
 
       {% if page.is_post %}
         {% include post_header.html %}
