@@ -15,11 +15,11 @@
   </head>
   <body>
     <div class="wrap">
-      <label id="theme-switch" class="theme-switch" for="checkbox_theme">
-        <input type="checkbox" id="checkbox_theme">
-      </label>
-
       {% include navigation.html %}
+
+      <label id="theme-switch" class="theme-switch" for="scheme">
+        <input type="checkbox" id="scheme"> Modo oscuro
+      </label>
 
       {% if page.is_post %}
         {% include post_header.html %}

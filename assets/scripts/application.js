@@ -1,54 +1,62 @@
-document.addEventListener("DOMContentLoaded", function(){
-  const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
-  const utterances = document.querySelector('iframe');
+document.addEventListener("DOMContentLoaded", function(event) {
+  const schemeSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+  const utterancesIframe = document.querySelector('.utterances-frame');
+
+  function updateUtterancesTheme(scheme) {
+    addEventListener('message', function(event) {
+      if (event.origin !== 'https://utteranc.es') return;
+
+      setUtterancesTheme(scheme);
+    })
+
+    setUtterancesTheme(scheme);
+  }
+
+  function setUtterancesTheme(scheme) {
+    if (!utterancesIframe) return;
+
+    utterancesIframe.contentWindow.postMessage(
+      { type: 'set-theme', theme: `github-${scheme}` },
+      'https://utteranc.es'
+    );
+  }
+
+  function setDocumentTheme(scheme) {
+    document.documentElement.setAttribute("data-theme", scheme);
+  }
+
+  function setSchemeSwitchCheckbox(scheme) {
+    schemeSwitch.checked = (scheme === "dark");
+  }
+
+  function saveSchemePreference(scheme) {
+    localStorage.setItem("theme", scheme);
+  }
+
+  function setTheme(scheme) {
+    updateUtterancesTheme(scheme);
+    setDocumentTheme(scheme);
+    setSchemeSwitchCheckbox(scheme);
+    saveSchemePreference(scheme);
+  }
 
   function detectColorScheme() {
-    var theme = "light";
+    let theme = "light";
 
     if (localStorage.getItem("theme")) {
       if (localStorage.getItem("theme") == "dark") {
         theme = "dark";
       }
-    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      theme = "dark";
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        theme = "dark";
     }
 
-    if (theme == "dark") {
-      document.documentElement.setAttribute("data-theme", "dark");
-      toggleSwitch.checked = true;
-      utterances.contentWindow.postMessage(
-        {type: 'set-theme',theme: 'github-dark'},
-        'https://utteranc.es'
-      );
-    } else {
-      utterances.contentWindow.postMessage(
-        {type: 'set-theme',theme: 'github-light'},
-        'https://utteranc.es'
-      );
-    }
+    setTheme(theme)
   }
 
-  function switchTheme(e) {
-    if (e.target.checked) {
-      localStorage.setItem('theme', 'dark');
-      document.documentElement.setAttribute('data-theme', 'dark');
-      toggleSwitch.checked = true;
-      utterances.contentWindow.postMessage(
-        {type: 'set-theme',theme: 'github-dark'},
-        'https://utteranc.es'
-      );
-    } else {
-      localStorage.setItem('theme', 'light');
-      document.documentElement.setAttribute('data-theme', 'light');
-      toggleSwitch.checked = false;
-      utterances.contentWindow.postMessage(
-        {type: 'set-theme',theme: 'github-light'},
-        'https://utteranc.es'
-      );
-    }
-  }
-
-  toggleSwitch.addEventListener('change', switchTheme, false);
+  schemeSwitch.addEventListener('change', function(e) {
+    setTheme(e.target.checked ? 'dark' : 'light')
+  }, false);
 
   detectColorScheme();
 });
