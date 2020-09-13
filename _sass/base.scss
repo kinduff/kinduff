@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import 'variables';
+
 html {
   box-sizing: border-box;
 }
@@ -13,12 +15,14 @@ html {
   }
 }
 body {
+  background-color: var(--bg-color);
   font-family: "Cousine", sans-serif;
-  color: #222;
+  color: var(--font-color);
   line-height: 1.8em;
   font-size: 16px;
   margin: 0;
 }
+
 .wrap {
   padding: 1rem;
   max-width: 100%;
@@ -27,7 +31,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "DM Sans", sans-serif;
-  color: #000;
+  color: var(--font-color);
   line-height: 1.25;
   position: relative;
   &::after {
@@ -45,35 +49,36 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1::after {
-  background-color: #AFD2E9;
+  background-color: var(--blue);
   height: 18px;
   top: 12px;
 }
 h2::after {
-  background-color: #C09FE4;
+  background-color: var(--purple);
   height: 12px;
   top: 8px;
 }
 h3::after {
-  background-color: #F1C40F;
+  background-color: var(--yellow);
 }
 h4::after {
-  background-color: #D4E6B5;
+  background-color: var(--green);
   top: 4px;
 }
 mark {
-  background-color: #FBF0CD;
+  color: var(--font-color);
+  background-color: var(--mark-bg);
   &.red {
-    background-color: #fbcdcd;
+    background-color: var(--red);
   }
   &.green {
-    background-color: #E0FFC0;
+    background-color: var(--green);
   }
 }
 a {
-  background-color: #ccfdff;
-  color: #222;
-  text-decoration: underline #95b8b9;
+  background-color: var(--link-bg);
+  color: var(--font-color);
+  text-decoration: underline var(--link-border);
   cursor: pointer;
 }
 img {
@@ -106,7 +111,7 @@ nav {
     background-color: transparent;
     text-decoration: none;
     &.site-title {
-      color: #b72d2d;
+      color: var(--site-title-color);
     }
     &.active {
       font-weight: 700;
@@ -115,7 +120,7 @@ nav {
 }
 hr {
   border: none;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--gray);
   height: 0;
   overflow: visible;
   margin: 20px 0;
@@ -123,7 +128,7 @@ hr {
 blockquote {
   margin: 0;
   padding: 1rem;
-  border: 1px dotted #333;
+  border: 1px dotted var(--font-color);
   p {
     margin: 0;
   }
@@ -152,9 +157,12 @@ textarea {
   min-height: 100px;
 }
 input[type='text'], textarea {
+  background-color: var(--bg-color);
+  color: var(--font-color);
   font-family: "Cousine", sans-serif;
   line-height: normal;
-  border: 1px solid #cacaca;
+  border: 1px solid var(--gray);
   padding: 10px;
   font-size: 0.9rem;
 }
+
