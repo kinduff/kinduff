@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import 'variables';
-
 html {
   box-sizing: border-box;
 }
@@ -15,14 +13,12 @@ html {
   }
 }
 body {
-  background-color: var(--bg-color);
   font-family: "Cousine", sans-serif;
-  color: var(--font-color);
+  color: #222;
   line-height: 1.8em;
   font-size: 16px;
   margin: 0;
 }
-
 .wrap {
   padding: 1rem;
   max-width: 100%;
@@ -31,7 +27,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "DM Sans", sans-serif;
-  color: var(--font-color);
+  color: #000;
   line-height: 1.25;
   position: relative;
   &::after {
@@ -49,36 +45,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1::after {
-  background-color: var(--blue);
+  background-color: #AFD2E9;
   height: 18px;
   top: 12px;
 }
 h2::after {
-  background-color: var(--purple);
+  background-color: #C09FE4;
   height: 12px;
   top: 8px;
 }
 h3::after {
-  background-color: var(--yellow);
+  background-color: #F1C40F;
 }
 h4::after {
-  background-color: var(--green);
+  background-color: #D4E6B5;
   top: 4px;
 }
 mark {
-  color: var(--font-color);
-  background-color: var(--mark-bg);
+  background-color: #FBF0CD;
   &.red {
-    background-color: var(--red);
+    background-color: #fbcdcd;
   }
   &.green {
-    background-color: var(--green);
+    background-color: #E0FFC0;
   }
 }
 a {
-  background-color: var(--link-bg);
-  color: var(--font-color);
-  text-decoration: underline var(--link-border);
+  background-color: #ccfdff;
+  color: #222;
+  text-decoration: underline #95b8b9;
   cursor: pointer;
 }
 img {
@@ -111,7 +106,7 @@ nav {
     background-color: transparent;
     text-decoration: none;
     &.site-title {
-      color: var(--site-title-color);
+      color: #b72d2d;
     }
     &.active {
       font-weight: 700;
@@ -120,7 +115,7 @@ nav {
 }
 hr {
   border: none;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid #eee;
   height: 0;
   overflow: visible;
   margin: 20px 0;
@@ -128,7 +123,7 @@ hr {
 blockquote {
   margin: 0;
   padding: 1rem;
-  border: 1px dotted var(--font-color);
+  border: 1px dotted #333;
   p {
     margin: 0;
   }
@@ -157,12 +152,9 @@ textarea {
   min-height: 100px;
 }
 input[type='text'], textarea {
-  background-color: var(--bg-color);
-  color: var(--font-color);
   font-family: "Cousine", sans-serif;
   line-height: normal;
-  border: 1px solid var(--gray);
+  border: 1px solid #cacaca;
   padding: 10px;
   font-size: 0.9rem;
 }
-
