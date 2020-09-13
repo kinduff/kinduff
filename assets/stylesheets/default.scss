@@ -21,6 +21,7 @@ ul.logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   li {
     height: 100px;
     flex: 1 0 80px;
@@ -31,6 +32,7 @@ ul.logos {
     margin: 1rem;
     img {
       max-width: 80px;
+      filter: var(--logo-filter);
     }
   }
 }

@@ -12,6 +12,7 @@
   --green: #D4E6B5;
   --red: #fbcdcd;
   --gray: #cacaca;
+  --logo-filter: none;
 }
 
 [data-theme="dark"] {
@@ -28,4 +29,5 @@
   --green: #5a7726;
   --red: #920b0b;
   --gray: #777777;
+  --logo-filter: invert(1);
 }
