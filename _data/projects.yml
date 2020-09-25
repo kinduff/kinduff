@@ -1,3 +1,7 @@
+- title: My Argos Plugins
+  emoji: 📜
+  url: https://github.com/kinduff/argos-plugins
+  description: Colección de bash script para Argos, o indicadores de estado en Gnome Shell.
 - title: Jekyll Github Chart
   emoji: 📊
   url: https://github.com/kinduff/jekyll-github-chart
