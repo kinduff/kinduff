@@ -10,7 +10,7 @@ _Software Engineer at [@dmstk](https://github.com/dmstk)_
 
 **Frameworks**
 
-<img src="https://img.shields.io/badge/rails%20-%23CC0000.svg?&style=flat&logo=ruby-on-rails&logoColor=white"/> <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=flat&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/tailwindcss%20-%2338B2AC.svg?&style=flat&logo=tailwind-css&logoColor=white"/> <img src="https://img.shields.io/badge/SASS%20-hotpink.svg?&style=flat&logo=SASS&logoColor=white"/> <img src="https://img.shields.io/badge/webpack%20-%238DD6F9.svg?&style=flat&logo=webpack&logoColor=black" /> <img src="https://img.shields.io/badge/jekyll-c70000.svg?&style=flat&logo=jekyll&logoColor=FFFFFF" /> <img src="https://img.shields.io/badge/satsby-542c85.svg?&style=flat&logo=gatsby&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/rails%20-%23CC0000.svg?&style=flat&logo=ruby-on-rails&logoColor=white"/> <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=flat&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/tailwindcss%20-%2338B2AC.svg?&style=flat&logo=tailwind-css&logoColor=white"/> <img src="https://img.shields.io/badge/SASS%20-hotpink.svg?&style=flat&logo=SASS&logoColor=white"/> <img src="https://img.shields.io/badge/webpack%20-%238DD6F9.svg?&style=flat&logo=webpack&logoColor=black" /> <img src="https://img.shields.io/badge/jekyll-c70000.svg?&style=flat&logo=jekyll&logoColor=FFFFFF" /> <img src="https://img.shields.io/badge/gatsby-542c85.svg?&style=flat&logo=gatsby&logoColor=FFFFFF" />
 
 **Services**
 
