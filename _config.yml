@@ -22,6 +22,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-maps
   - jekyll-github-chart
+  - jekyll-minifier
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
 
 # Collections
 feed_items: 5
