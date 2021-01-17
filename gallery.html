@@ -1,10 +1,6 @@
 ---
 title: Galería
 layout: default
-custom-javascript-list:
-  - "https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"
-custom-stylesheet-list:
-  - "https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"
 ---
 
 <h1>
@@ -16,14 +12,9 @@ custom-stylesheet-list:
     {% if image.path contains 'images/gallery/' %}
       <a href="{{ site.baseurl }}{{ image.path }}">
         {% assign thumbnail = image.path | replace: 'gallery', 'gallery_thumbnails' %}
-        <img src="{{ site.baseurl }}{{ thumbnail }}" data-original="{{ image.path }}" alt="gallery image" loading="lazy" width="120" height="80" />
+        <img src="{{ site.baseurl }}{{ thumbnail }}" data-original="{{ image.path }}" loading="lazy" width="120" height="80" />
       </a>
     {% endif %}
   {% endfor %}
 </div>
 
-<script type="text/javascript">
-  lightGallery(document.getElementById('gallery'), {
-    download: false
-  });
-</script>
