@@ -166,4 +166,11 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+
+  img.table-image {
+    min-width: 120px;
+    max-width: 120px;
+    margin: 0 auto;
+    display: block;
+  }
 }
