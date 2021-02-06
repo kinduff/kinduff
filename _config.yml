@@ -21,7 +21,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-maps
-  - jekyll-github-chart
   - jekyll-minifier
 
 jekyll-minifier:

@@ -9,7 +9,6 @@ gem 'jekyll'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-maps'
-gem 'jekyll-github-chart'
 gem 'jekyll-minifier'
 
 gem 'mini_magick'
