@@ -158,6 +158,9 @@ input[type='text'], textarea {
   padding: 10px;
   font-size: 0.9rem;
 }
+.table-wrapper {
+  overflow-x: auto;
+}
 table {
   border-collapse: collapse;
   width: 100%;

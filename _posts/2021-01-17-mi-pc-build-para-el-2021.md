@@ -10,6 +10,8 @@ Es 2021 y la PC lo sabe. Para este inicio de año le quise regalar a mi PC un bu
 
 ## Build 2021
 
+<div class="table-wrapper" markdown="block">
+
 **CPU** | AMD Ryzen 5 5600X 3.7 GHz 6-Core Processor | ![CPU](/assets/images/posts/pcbuild/cpu.jpg){: .table-image}
 **CPU Cooler** | Noctua NH-U12A 60.09 CFM CPU Cooler | ![CPU Cooler](/assets/images/posts/pcbuild/cooler.jpg){: .table-image}
 **Motherboard** | Asus TUF GAMING B550-PLUS ATX AM4 Motherboard | ![Motherboard](/assets/images/posts/pcbuild/motherboard.jpg){: .table-image}
@@ -20,9 +22,13 @@ Es 2021 y la PC lo sabe. Para este inicio de año le quise regalar a mi PC un bu
 **Case** | MSI Gungnir 100 ATX Mid Tower Case | ![Case](/assets/images/posts/pcbuild/case.jpg){: .table-image}
 **Power Supply*** | EVGA 650 W 80+ Gold Certified Semi-modular ATX Power Supply | ![Power Supply](/assets/images/posts/pcbuild/ps.jpg){: .table-image}
 
+</div>
+
 _\*Partes del build anterior_
 
 ## Miscelanea
+
+<div class="table-wrapper" markdown="block">
 
 **Display** | (x2) Samsung C24F390 24.0" 1920x1080 60 Hz | ![Display](/assets/images/posts/pcbuild/display.jpg){: .table-image}
 **Keyboard** | Corsair K70 RGB RAPIDFIRE Wired  | ![Keyboard](/assets/images/posts/pcbuild/keyboard.jpg){: .table-image}
@@ -34,6 +40,7 @@ _\*Partes del build anterior_
 **OS** | Manjaro | ![OS](/assets/images/posts/pcbuild/manjaro.jpg){: .table-image}
 **OS** | Windows 10 Pro | ![OS](/assets/images/posts/pcbuild/windows.jpg){: .table-image}
 
+</div>
 
 ## Wishlist
 
@@ -46,7 +53,11 @@ Estaré haciendo un par de upgrades durante el año, pues me gustaría tener:
 
 Mi wishlist queda así, iré actualizando este post con lo nuevo.
 
+<div class="table-wrapper" markdown="block">
+
 **Memory** | (x2) Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-4000 CL18 Memory | ![Memory](/assets/images/posts/pcbuild/wishlist/ram.jpg){: .table-image}
 **Storage** | Samsung 860 Evo 1 TB 2.5" Solid State Drive | ![Storage](/assets/images/posts/pcbuild/wishlist/ssd.jpg){: .table-image}
 **Video Card** | EVGA GeForce RTX 3080 10 GB FTW3 ULTRA GAMING | ![Video Card](/assets/images/posts/pcbuild/wishlist/gc.jpg){: .table-image}
 **Display** | Samsung Odyssey G9 49.0" 5120x1440 240 Hz | ![Display](/assets/images/posts/pcbuild/wishlist/display.jpg){: .table-image}
+
+</div>
