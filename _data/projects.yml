@@ -1,7 +1,7 @@
 - title: CS:GO Exporter
   emoji: 💣
   url: https://github.com/kinduff/csgo_exporter
-  description:  A Prometheus exporter for Counter-Strike: Global Offensive.
+  description: A Prometheus exporter for Counter-Strike: Global Offensive.
 - title: My Argos Plugins
   emoji: 📜
   url: https://github.com/kinduff/argos-plugins
