@@ -6,7 +6,7 @@ _Software Engineer at [@dmstk](https://github.com/dmstk)_
 
 **Languages**
 
-<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?&style=flat&logo=ruby&logoColor=white"/> <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=flat&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=flat&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=flat&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=flat&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/shell_script%20-%23121011.svg?&style=flat&logo=gnu-bash&logoColor=white"/>
+<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?&style=flat&logo=ruby&logoColor=white"/> <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=flat&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=flat&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=flat&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=flat&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/shell_script%20-%23121011.svg?&style=flat&logo=gnu-bash&logoColor=white"/> <img src="https://img.shields.io/badge/go%20-%2300acd7.svg?&style=flat&logo=go&logoColor=white"/>
 
 **Frameworks**
 
