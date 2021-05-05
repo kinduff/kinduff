@@ -11,6 +11,7 @@ module Jekyll
 
     def generate
       kml_source = @config['kml_source']
+      raise kml_source.inspect
       kml_file = URI.open(kml_source).read
       xml = Ox.load(kml_file, mode: :hash)
 
@@ -38,9 +39,9 @@ module Jekyll
   end
 
   Hooks.register :site, :after_init do |site|
-    return unless site.config['my_places']
-
-    Jekyll.logger.info "Generating My Places YAML"
-    MyPlaces.new(site, site.config['my_places']).generate
+    if site.config['my_places']
+      Jekyll.logger.info "Generating My Places YAML"
+      MyPlaces.new(site, site.config['my_places']).generate
+    end
   end
 end
