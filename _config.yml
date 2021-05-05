@@ -20,7 +20,6 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-maps
   - jekyll-minifier
 
 jekyll-minifier:
@@ -62,11 +61,6 @@ social:
     - https://www.goodreads.com/kinduff
     - https://steamcommunity.com/id/kinduff
 lang: es_ES
-
-# Maps
-maps:
-  google:
-    api_key: AIzaSyA58J5uPyI9F6l7XNk9htu7VumXIEq8Gbw
 
 # Image transforms
 mini_magick:
