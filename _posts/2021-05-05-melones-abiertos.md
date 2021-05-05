@@ -12,6 +12,6 @@ Abres un melón, lo preparas y lo terminas, abres otro melón y lo terminas, as�
 
 <mark>Nuestra atención y tiempo tienen un límite</mark>. Muchos melones abiertos resultan en atención repartida y poco tiempo, sin embargo, uno o dos abiertos al mismo tiempo los puedes manejar sin problemas.
 
-Agradezco a Lupi por la introducción a la frase de los melones, que poco a poco se ha vuelto una filosofía en mi trabajo.
-
 ![](/assets/images/posts/melones.jpg)
+
+Agradezco a Lupi por la introducción a la frase de los melones, que poco a poco se ha vuelto una filosofía en mi trabajo.
