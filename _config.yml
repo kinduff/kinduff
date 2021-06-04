@@ -62,15 +62,6 @@ social:
     - https://steamcommunity.com/id/kinduff
 lang: es_ES
 
-# Image transforms
-mini_magick:
-  gallery:
-    source: assets/images/gallery
-    destination: assets/images/gallery_thumbnails
-    resize: "120x80^"
-    gravity: "center"
-    extent: "120x80"
-
 # My Places
 # Google just restricted access to the KML, gonna try to find a new way to generate this map
 # my_places:
