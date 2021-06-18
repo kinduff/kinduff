@@ -24,14 +24,14 @@ ul.logos {
   justify-content: center;
   li {
     height: 100px;
-    flex: 1 0 80px;
+    flex: 1 0 70px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem;
     img {
-      max-width: 80px;
+      max-width: 70px;
     }
   }
 }
@@ -61,7 +61,10 @@ ul.logos {
   background-color: #f7f7f7;
   padding: 0 15px;
 
-  h3 {
+  p.title {
+    box-sizing: border-box;
+    font-size: 1.17em;
+    font-weight: 700;
     text-align: center;
     &:after {
       content: none;
@@ -81,7 +84,7 @@ ul.logos {
   }
 
   .notice {
-    color: gray;
+    color: #333;
     font-size: 0.75rem;
     letter-spacing: -1px;
     a {
