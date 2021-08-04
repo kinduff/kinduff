@@ -1,7 +1,11 @@
+- title: Awesome Made by Mexicans
+  emoji: 🇲🇽
+  url: https://github.com/kinduff/awesome-made-by-mexicans
+  description: A collection of amazing open source projects built by mexican developers
 - title: CS:GO Exporter
   emoji: 💣
   url: https://github.com/kinduff/csgo_exporter
-  description: "A Prometheus exporter for Counter-Strike: Global Offensive."
+  description: A Prometheus exporter for Counter-Strike: Global Offensive.
 - title: My Argos Plugins
   emoji: 📜
   url: https://github.com/kinduff/argos-plugins
