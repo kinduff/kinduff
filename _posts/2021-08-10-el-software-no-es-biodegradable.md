@@ -3,7 +3,7 @@ image: https://dimg.kinduff.com/El software no es biodegradable.jpeg
 title: El software no es biodegradable
 date: 2021-08-10
 description: >-
-  Here is a fun, weird, and curious performance issue I caused, and how I fixed it.
+  ¿Qué hace que el software envejezca? ¿Será que es biodegradable?
 ---
 
 Encontrarse con un repositorio que no ha tenido actividad en los últimos par de años generalmente es un *no go*; se considera como software viejo, no está mantenido y por lo tanto no está activo.
