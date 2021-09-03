@@ -8,11 +8,14 @@ defaults:
       path:
     values:
       layout: default
+      image: /assets/images/avatar.jpg
   - scope:
       path:
       type: posts
     values:
       is_post: true
+      twitter:
+        card: summary_large_image
 exclude:
   - _data/places.yml
 
@@ -48,7 +51,7 @@ author:
   twitter: kinduff
 twitter:
   username: kinduff
-  card: summary_large_image
+  card: summary
 social:
   name: Alejandro AR
   links:

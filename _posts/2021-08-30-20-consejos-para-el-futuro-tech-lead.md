@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/20 consejos para el futuro tech lead.jpeg
 title: 20 consejos para el futuro tech lead
 date: 2021-08-10
 description: >-
