@@ -1,10 +1,21 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-{% seo %}
+{% seo image=false %}
 {% if page.is_post %}
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="{{ page.title | append: '|' | append: page.description | base64_encode | append: '.jpg' | prepend: 'https://dimg2.kinduff.com/' }}" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:width" content="600" />
+
   <meta property="twitter:image" content="{{ page.title | append: '|' | append: page.description | base64_encode | append: '.jpg' | prepend: 'https://dimg2.kinduff.com/' }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+{% else %}
+  <meta property="og:image" content="{{ "/assets/images/avatar.jpg" | absolute_url }}" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:image:width" content="400" />
+
+  <meta property="twitter:image" content="{{ "/assets/images/avatar.jpg" | absolute_url }}" />
+  <meta name="twitter:card" content="summary" />
 {% endif %}
 <link rel="stylesheet" href="/assets/stylesheets/default.css">
 <link href="/feed.xml" type="application/rss+xml" rel="alternate" />
