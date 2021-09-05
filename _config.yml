@@ -13,8 +13,6 @@ defaults:
       type: posts
     values:
       is_post: true
-      twitter:
-        card: summary_large_image
 
 # Plugins
 plugins:
