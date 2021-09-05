@@ -8,7 +8,6 @@ defaults:
       path:
     values:
       layout: default
-      image: /assets/images/avatar.jpg
   - scope:
       path:
       type: posts
@@ -16,8 +15,6 @@ defaults:
       is_post: true
       twitter:
         card: summary_large_image
-exclude:
-  - _data/places.yml
 
 # Plugins
 plugins:
@@ -64,13 +61,3 @@ social:
     - https://www.goodreads.com/kinduff
     - https://steamcommunity.com/id/kinduff
 lang: es_ES
-
-# My Places
-# Google just restricted access to the KML, gonna try to find a new way to generate this map
-# my_places:
-#   kml_source: https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1egZtRKi0P3BkrLogc2Iaz2pURQfJq1wK
-#   marker_icons:
-#     - title: "Lugares en donde he vivido"
-#       marker_url: "https://mt.google.com/vt/icon/name=icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1603-house_4x.png&highlight=0F9D58,ff000000&scale=1.0"
-#     - title: "Lugares que he visitado"
-#       marker_url: "https://mt.google.com/vt/icon/name=icons/onion/SHARED-mymaps-container-bg_4x.png,icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1596-hiking-solo_4x.png&highlight=ff000000,FF5252,ff000000"
