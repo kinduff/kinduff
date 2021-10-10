@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Jugando con el portapapeles con javascript.jpeg
 title: Jugando con el portapapeles con javascript
 date: 2013-02-28
 description: Es posible realizar modificaciones al portapapeles del usuario cuando ejecuta la función de copiar algún texto. Te explico cómo se hace.

@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Melones abiertos.jpeg
 title: Melones abiertos
 date: 2021-05-05
 description: >-

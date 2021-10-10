@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Hey git, please .keep those folders.jpeg
 title: Hey git, please .keep those folders
 date: 2016-06-08
 description: How to commit "empty" folders to a git repository.

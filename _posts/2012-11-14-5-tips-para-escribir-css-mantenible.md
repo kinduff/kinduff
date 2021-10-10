@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/5 tips para escribir CSS mantenible.jpeg
 title: 5 tips para escribir CSS mantenible
 date: 2012-09-20
 description: No te pongas el pie tu solo y escribe CSS que puedas mantener en un futuro; consta en organización y disciplina para lograr escribir arte en CSS

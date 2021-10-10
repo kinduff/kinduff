@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/How to merge git repositories.jpeg
 title: How to merge git repositories
 date: 2015-12-14
 description: Process on how to merge two different git repositories, either just a folder from B to A or the complete repository B into A.

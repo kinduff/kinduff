@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Entendiendo la transformación 3D con CSS3.jpeg
 title: Entendiendo la transformación 3D con CSS3
 date: 2013-04-02
 description: ¿Te gustaría aprender transformaciones 3D en CSS3? Entonces tendrás que aprender lo básico. En este ejercicio vamos a hacer un cubo animado en 3D.

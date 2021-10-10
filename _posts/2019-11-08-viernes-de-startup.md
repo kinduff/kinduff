@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Viernes de Startup.jpeg
 title: Viernes de Startup
 date: 2019-11-08
 description: >-

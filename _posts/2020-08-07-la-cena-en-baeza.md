@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/La cena en Baeza.jpeg
 title: La cena en Baeza
 date: 2020-08-07
 description: Una breve historia de una cena que tuvimos mi esposa y yo en Baeza, España.

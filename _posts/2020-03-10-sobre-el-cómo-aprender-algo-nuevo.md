@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Sobre el cómo aprender algo nuevo.jpeg
 title: Sobre el cómo aprender algo nuevo
 date: 2020-03-10
 description: >-

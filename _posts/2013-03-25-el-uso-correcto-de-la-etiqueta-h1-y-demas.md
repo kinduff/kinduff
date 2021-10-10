@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/El uso correcto de la etiqueta h1 y demás.jpeg
 title: El uso correcto de la etiqueta h1 y demás
 date: 2013-03-25
 description: Es práctica común ver que algunos sitios utilizan la etiqueta en nombre de la empresa, asociación, etc. Pero, ¿por qué están haciendo esto? Porque estamos siendo maleducados con los motores de búsqueda.

@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Six classic algorithms in Ruby.jpeg
 title: Six classic algorithms in Ruby
 date: 2015-07-29
 description: This is a list of six algorithms written in Ruby. I did this as an exercise a long time ago when I was learning the language.

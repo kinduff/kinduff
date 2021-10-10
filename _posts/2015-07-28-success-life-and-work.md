@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Success, Life, and Work.jpeg
 title: Success, Life & Work
 date: 2015-07-28
 description: >-

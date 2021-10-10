@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Automatic version switch for NVM.jpeg
 title: Automatic version switch for NVM
 date: 2016-09-14
 description: Switching NVM version automatically whenever you go into a project folder.

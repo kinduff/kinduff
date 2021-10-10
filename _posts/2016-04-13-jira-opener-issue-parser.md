@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/JIRA Opener, issue parser.jpeg
 title: JIRA Opener, issue parser
 date: 2016-04-13
 description: Web tool that helps you out to parse and open bulk issues from JIRA.

@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/La masa de la pizza.jpeg
 title: La masa de la pizza
 date: 2020-10-03
 description: >-

@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Benchmark de template engines en Ruby on Rails.jpeg
 title: Benchmark de template engines en Ruby on Rails
 date: 2020-10-20
 description: >-

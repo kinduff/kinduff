@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Mi PC build para el 2021.jpeg
 title: Mi PC build para el 2021
 date: 2021-01-17
 description: >-

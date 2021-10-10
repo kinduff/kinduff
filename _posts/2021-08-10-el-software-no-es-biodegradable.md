@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/El software no es biodegradable.jpeg
 title: El software no es biodegradable
 date: 2021-08-10
 description: >-

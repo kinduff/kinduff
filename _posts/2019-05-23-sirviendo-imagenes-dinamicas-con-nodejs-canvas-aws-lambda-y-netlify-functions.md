@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Crear imágenes dinámicas con Javascript, Lambda y Netlify.jpeg
 title: Crear imágenes dinámicas con Javascript, Lambda y Netlify
 date: 2019-05-23
 description: Creando y sirviendo imágenes dinámicas en una función de AWS Lambda a través de Netlify.

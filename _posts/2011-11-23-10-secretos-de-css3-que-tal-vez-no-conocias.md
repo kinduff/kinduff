@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/10 secretos de CSS3 que tal vez no conocias.jpeg
 title: 10 secretos de CSS3 que tal vez no conocias
 date: 2011-11-23
 description: Artículo sobre la platica de Lea Verou sobre 10 secretos acerca de CSS3 que quizás no conozcas

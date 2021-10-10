@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Lo que no sé, lo aprendo; lo que sé, lo comparto.jpeg
 title: Lo que no sé, lo aprendo; lo que sé, lo comparto
 date: 2021-01-05
 description: >-

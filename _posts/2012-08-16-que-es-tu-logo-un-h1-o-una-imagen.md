@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/¿Que es tu logo? ¿Un h1 o una imagen?.jpeg
 title: ¿Que es tu logo? ¿Un h1 o una imagen?
 date: 2012-08-16
 description: Existen varias malas prácticas de las cuales podemos aprender al plantearnos el cómo mostrar un logo en nuestra página web. En este artículo se clarifica la manera correcta de hacerlo.

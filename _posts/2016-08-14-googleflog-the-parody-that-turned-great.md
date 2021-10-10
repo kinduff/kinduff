@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Googleflog, the parody that turned great.jpeg
 title: Googleflog, the parody that turned great
 date: 2016-08-14
 description: The story of a how a product I coded in two hours went viral.

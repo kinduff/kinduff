@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Google Authorship, Facebook OpenGraph y Twitter Cards.jpeg
 title: Google Authorship, Facebook OpenGraph y Twitter Cards
 date: 2012-09-20
 description: Las etiquetas sociales son un elemento importante la promoción correcta en redes sociales y buscadores, esto para posicionar la página web o blog de manera correcta. ¿Cuáles son y cómo se usan estas etiquetas?

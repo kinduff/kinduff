@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/The story of the 20 million queries per hour.jpeg
 title: The story of the 20 million queries per hour
 date: 2021-08-02
 description: >-

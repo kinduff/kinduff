@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/Sobre una web mas abierta.jpeg
 title: Sobre una web mas abierta
 date: 2020-11-13
 description: >-

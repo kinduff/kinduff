@@ -1,5 +1,4 @@
 ---
-image: https://dimg.kinduff.com/El Fizz Buzz está muerto, larga vida al Fizz Buzz.jpeg
 title: El Fizz Buzz está muerto, larga vida al Fizz Buzz
 date: 2019-04-22
 description: Revisitando el ejercicio del Fizz Buzz en tiempos modernos.
