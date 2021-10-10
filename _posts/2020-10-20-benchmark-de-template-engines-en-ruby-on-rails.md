@@ -16,7 +16,7 @@ En este artículo exploro qué template engine tiene mejor performance, incluyen
 
 ## ¿A qué le haremos benchmark?
 
-El setup es una aplicación fresca de Rails utilizando <mark>Ruby 2.7.1p83</mark> con <mark>Rails 6.0.3.4</mark> generada con el siguiente comando:
+El setup es una aplicación fresca de Rails utilizando ==Ruby 2.7.1p83== con ==Rails 6.0.3.4== generada con el siguiente comando:
 
 ```shell
 $ rails new app_name
@@ -125,7 +125,7 @@ _Diagrama de vistas en Rails_
 
 ## ¿Con qué haremos benchmark?
 
-Lo haremos con [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html), o <mark>ab</mark> para los amigos.
+Lo haremos con [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html), o ==ab== para los amigos.
 
 El contexto del benchmark es el siguiente:
 
@@ -144,7 +144,7 @@ $ ab -n 500 -c 1 http://localhost:3000/haml
 $ ab -n 500 -c 1 http://localhost:3000/slim
 ```
 
-Pero ojo, estos benchmark estarán evaluando <mark>el request completo</mark>, no el <mark>rendereado de vistas</mark> que es lo que nos interesa.
+Pero ojo, estos benchmark estarán evaluando ==el request completo==, no el ==rendereado de vistas== que es lo que nos interesa.
 
 Afortunadamente en Rails podemos suscribirnos a eventos a través de `ActiveSupport::Notification` para obtener la duración de cada uno de los parciales y de las vistas. Esto nos ayudará a tener métricas aún mas realistas que las anteriores.
 

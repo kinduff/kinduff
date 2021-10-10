@@ -10,7 +10,7 @@ En México sonará a albur, pero sin duda es una de las frases que mas me está 
 
 Abres un melón, lo preparas y lo terminas, abres otro melón y lo terminas, así sucesivamente. Si tienes muchos melones abiertos, se te secan, no los preparas todos como debe de ser y seguro no los terminas.
 
-<mark>Nuestra atención y tiempo tienen un límite</mark>. Muchos melones abiertos resultan en atención repartida y poco tiempo, sin embargo, uno o dos abiertos al mismo tiempo los puedes manejar sin problemas.
+==Nuestra atención y tiempo tienen un límite==. Muchos melones abiertos resultan en atención repartida y poco tiempo, sin embargo, uno o dos abiertos al mismo tiempo los puedes manejar sin problemas.
 
 ![](/assets/images/posts/melones.jpg)
 
