@@ -75,6 +75,11 @@ a {
   color: #222;
   text-decoration: underline #95b8b9;
   cursor: pointer;
+
+  &.footnote {
+    background-color: #ffb0b0;
+    text-decoration: none;
+  }
 }
 img {
   max-width: 100%;
