@@ -10,7 +10,7 @@ Comencé a programar cuando tenía 12 años y he podido a lo largo del tiempo co
 Estos son 20 consejos que me gustaría haber recibido cuando recién empezaba, espero que le ayuden a alguien más.
 
 ## 1. Busca a un mentor o mentora
-Puede ser alguien de tu trabajo, un amigo o amiga, inclusive alguien que no conozcas. Alguien que esté dispuesto a guiarte y acompañarte. El primero es importante.
+Puede ser alguien de tu trabajo, un amigo o amiga, incluso alguien que no conozcas. Alguien que esté dispuesto a guiarte y acompañarte. El primero es importante.
 
 ## 2. No dejes de aprender lo básico
 Dan muchas ganas de adelantarte, empezar a hacer cosas con tecnologías trendy, pero los básicos son cruciales. Profesionales avanzados siguen consultando los básicos la mayoría del tiempo.

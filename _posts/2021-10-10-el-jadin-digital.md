@@ -9,7 +9,7 @@ Investigando un poco he encontrado que Mark Bernstein fue quien introdujo el con
 
 > Los jardines se encuentran entre las tierras de cultivo y los espacios naturales silvestres. **El jardín es un terreno cultivado que deleita los sentidos, diseñado para el placer** en vez de la comodidad
 
-La web de hoy en día y en la mayoría de los sitios que vemos que no son de una organización, producto o empresa, carecen de esta empatía o de este _algo_ que hacía especial la web 1.0 e inclusive la 2.0.
+La web de hoy en día y en la mayoría de los sitios que vemos que no son de una organización, producto o empresa, carecen de esta empatía o de este _algo_ que hacía especial la web 1.0 e incluso la 2.0.
 
 Encontramos sitios estructurados de la misma manera, con una presentación, un estilo bastante similar y un blog o diario en donde se comparte conocimiento. No tengo queja alguna sobre esto, pues me encanta compartir conocimiento, y lo [glorifico y agradezco](https://kinduff.com/2021/01/05/lo-que-no-se-lo-aprendo-lo-que-se-lo-comparto/) cuando lo hacen los demás.
 

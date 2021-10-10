@@ -12,7 +12,7 @@ Dado que el proceso de selección para posiciones de programación era relativam
 
 Lo primero que identifiqué fue que el tipo de prueba no era para nada atractiva. Las pruebas de programación pueden ser tan aburridas, que al final del día, también son un reflejo de la cultura que tiene la empresa. Si una prueba es tediosa, no requiere creatividad y tiene una dificultad sospechosa, la motivación e interés del candidato quedarán por los suelos.
 
-También hablemos del tiempo; a menos de que un candidato esté en búsqueda activa, es decir, que pueda invertir mucho tiempo en todos los procesos de diferentes empresas a las que se está postulando, le será difícil encontrar 5 horas (libres) entre semana e inclusive fines de semana.
+También hablemos del tiempo; a menos de que un candidato esté en búsqueda activa, es decir, que pueda invertir mucho tiempo en todos los procesos de diferentes empresas a las que se está postulando, le será difícil encontrar 5 horas (libres) entre semana e incluso fines de semana.
 
 Con esta información comencé a diseñar un proceso de selección para candidatos de programación. Este consta de 3 filtros que aseguran que podamos conocer y evaluar al candidato de manera óptima, pero manteniendo un equilibrio con el tiempo que se invierte. El nuevo proceso tiene una duración total de 2 horas: 15 minutos para una prueba de filtrado rápido, 1 hora para la prueba de programación especializada y 45 minutos de entrevistas.
 
