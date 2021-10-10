@@ -56,43 +56,6 @@ ul.logos {
   margin-bottom: 0;
 }
 
-.newsletter {
-  border: 1px solid #cacaca;
-  background-color: #f7f7f7;
-  padding: 0 15px;
-
-  p.title {
-    box-sizing: border-box;
-    font-size: 1.17em;
-    font-weight: 700;
-    text-align: center;
-    &:after {
-      content: none;
-    }
-  }
-
-  input[type="submit"] {
-    float: right;
-    color: #fff;
-    background-color: #cd2a46;
-    border-color: transparent;
-  }
-
-  .input {
-    overflow: hidden;
-    padding-right: 0.5em;
-  }
-
-  .notice {
-    color: #333;
-    font-size: 0.75rem;
-    letter-spacing: -1px;
-    a {
-      background-color: transparent;
-    }
-  }
-}
-
 .footer {
   text-align: center;
   font-family: "DM Sans", sans-serif;
