@@ -25,8 +25,6 @@ Since the feature is touching prices, I had to invalidate a good amount of cache
 
 The next day we finally had some good data. We jumped into a call and visited Datadog again, and we saw that the feature I implemented was doing 20 million SELECTs per hour in average.
 
-![Welcome to the fuckin' show](/assets/images/posts/wttfs.gif)
-
 ![Datadog showing off its graphing capabilities](/assets/images/posts/graph1.png)
 
 ```sql
@@ -46,8 +44,6 @@ I didn't noticed that we actually call price 4 or 5 times each time we print a p
 ## First try?
 
 The solution was pretty simple, and I'm sure you're thinking about it: use a cache to save the results from that query. Memcached is faster than SQL for this kind of caches, and we can relieve the database from this load easily. We already do that for Prices.
-
-![4givemepadre, I have sinned](/assets/images/posts/praying.gif)
 
 I went ahead and implemented the cache, it looked something like this:
 
@@ -70,8 +66,6 @@ After the deploy, we kept an eye on the metrics. And we waited. We waited a litt
 The decrease you see after the deploy is just traffic (Latin America going to sleep), the cache changed nothing. I debugged more: maybe I missed a call? It couldn't be since this method is called in every implementation by a top level method. Is the cache being written slower than expected? Could be.
 
 So I wrote a script to generated 18 million cache keys. I ran the script, took around 30 minutes to complete and nothing again. We were doing the same amount of calls.
-
-![Michael Cera defeated](/assets/images/posts/dead.gif)
 
 I kept communication with Infrastructure and even though it wasn't solved, we were okay until next day.
 
@@ -112,8 +106,6 @@ end
 ```
 
 Oh no. It doesn't save `nil` values. And since we don't have a record in the database, the method will always run the query because the cache has nothing.
-
-![Alison Brie being surprised](/assets/images/posts/what.gif)
 
 ## The solution
 
@@ -160,8 +152,6 @@ end
 I deployed this to production and the magic happened.
 
 ![Datadog demonstrating how to graph to zero](/assets/images/posts/graph3.png)
-
-![The Office is awesome](/assets/images/posts/partying.gif)
 
 
 ## What I learned
