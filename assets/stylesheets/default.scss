@@ -23,16 +23,12 @@ ul.logos {
   flex-wrap: wrap;
   justify-content: center;
   li {
-    height: 100px;
-    flex: 1 0 70px;
+    flex: 1 0 auto;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    img {
-      max-width: 70px;
-    }
   }
 }
 

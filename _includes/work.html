@@ -16,7 +16,13 @@
   {% for image in site.static_files %}
     {% if image.path contains 'images/logos' %}
       <li>
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name | remove: image.extname }}" loading="lazy" width="70px" />
+        <img
+          src="{{ site.baseurl }}{{ image.path }}"
+          alt="{{ image.name | remove: image.extname }}"
+          width="{{ image | image_size: 'w' | times: 0.7 }}"
+          height="{{ image | image_size: 'h' | times: 0.7 }}"
+          loading="lazy"
+        />
       </li>
     {% endif %}
   {% endfor %}
