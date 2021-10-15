@@ -1,7 +1,26 @@
 @charset "utf-8";
 
+:root {
+  --site-title-color: #B72D2D;
+  --font-color: #222222;
+  --bg-color: #FFFFFF;
+  --header-color: #000;
+  --header-h1-bg-color: #AFD2E9;
+  --header-h2-bg-color: #C09FE4;
+  --header-h3-bg-color: #F1C40F;
+  --header-h4-bg-color: #D4E6B5;
+  --mark-bg-color: #FBF0CD;
+  --link-footnote-bg-color: #FFB0B0;
+  --link-color: var(--font-color);
+  --link-bg-color: #CCFDFF;
+  --link-underline-color: #95B8B9;
+  --gray-color: #DDDDDD;
+}
+
 html {
   box-sizing: border-box;
+  color: var(--font-color);
+  background-color: var(--bg-color);
 }
 * {
   box-sizing: inherit;
@@ -14,7 +33,8 @@ html {
 }
 body {
   font-family: "Cousine", sans-serif;
-  color: #222;
+  color: var(--font-color);
+  background-color: var(--bg-color);
   line-height: 1.8em;
   font-size: 16px;
   margin: 0;
@@ -27,7 +47,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "DM Sans", sans-serif;
-  color: #000;
+  color: var(--header-color);
   line-height: 1.25;
   position: relative;
   &::after {
@@ -45,24 +65,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1::after {
-  background-color: #AFD2E9;
+  background-color: var(--header-h1-bg-color);
   height: 18px;
   top: 12px;
 }
 h2::after {
-  background-color: #C09FE4;
+  background-color: var(--header-h2-bg-color);
   height: 12px;
   top: 8px;
 }
 h3::after {
-  background-color: #F1C40F;
+  background-color: var(--header-h3-bg-color);
 }
 h4::after {
-  background-color: #D4E6B5;
+  background-color: var(--header-h4-bg-color);
   top: 4px;
 }
 mark {
-  background-color: #FBF0CD;
+  background-color: var(--mark-bg-color);
   &.red {
     background-color: #fbcdcd;
   }
@@ -71,13 +91,13 @@ mark {
   }
 }
 a {
-  background-color: #ccfdff;
-  color: #222;
-  text-decoration: underline #95b8b9;
+  background-color: var(--link-bg-color);
+  color: var(--link-color);
+  text-decoration: underline var(--link-underline-color);
   cursor: pointer;
 
   &.footnote {
-    background-color: #ffb0b0;
+    background-color: var(--link-footnote-bg-color);
     text-decoration: none;
   }
 }
@@ -111,7 +131,7 @@ nav {
     background-color: transparent;
     text-decoration: none;
     &.site-title {
-      color: #b72d2d;
+      color: var(--site-title-color);
     }
     &.active {
       font-weight: 700;
@@ -120,7 +140,7 @@ nav {
 }
 hr {
   border: none;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--gray-color);
   height: 0;
   overflow: visible;
   margin: 20px 0;
@@ -128,7 +148,7 @@ hr {
 blockquote {
   margin: 0;
   padding: 1rem;
-  border: 1px dotted #333;
+  border: 1px dotted var(--font-color);
   p {
     margin: 0;
   }
@@ -159,7 +179,7 @@ textarea {
 input, textarea {
   font-family: "Cousine", sans-serif;
   line-height: normal;
-  border: 1px solid #cacaca;
+  border: 1px solid var(--gray-color);
   padding: 10px;
   font-size: 0.9rem;
 }
@@ -171,7 +191,7 @@ table {
   width: 100%;
 }
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--gray-color);
   text-align: left;
   padding: 8px;
 
