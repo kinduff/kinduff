@@ -9,7 +9,9 @@ gem 'jekyll', '~> 4.2.1'
 gem 'jekyll-seo-tag', github: 'kinduff/jekyll-seo-tag', branch: 'feat/image_option'
 gem 'jekyll-sitemap', '~> 1.4.0'
 gem 'jekyll-minifier', '~> 0.1.10'
+gem 'jekyll-environment-variables', '~> 1.0.1'
 
 gem 'mini_magick', '~> 4.11.0'
 gem 'ox', '~> 2.14.5'
 gem 'fastimage', '~> 2.2.5'
+

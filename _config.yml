@@ -19,6 +19,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-minifier
+  - jekyll-environment-variables
 
 jekyll-minifier:
   uglifier_args:

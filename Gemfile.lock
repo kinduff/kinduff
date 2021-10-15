@@ -41,6 +41,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-environment-variables (1.0.1)
+      jekyll (>= 3.0, < 5.x)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -90,6 +92,7 @@ PLATFORMS
 DEPENDENCIES
   fastimage (~> 2.2.5)
   jekyll (~> 4.2.1)
+  jekyll-environment-variables (~> 1.0.1)
   jekyll-minifier (~> 0.1.10)
   jekyll-seo-tag!
   jekyll-sitemap (~> 1.4.0)
