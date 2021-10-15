@@ -8,23 +8,18 @@ title: Libro de visitas
 </h1>
 
 <form
-  action="/guest-book-thanks/"
-  name="gb"
-  method="post"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
+  action="{{ site.env.GUEST_BOOK_FORM_URL }}"
+  name="guest-book"
+  method="POST"
 >
-  <input type="hidden" name="form-name" value="gb" />
-  <input type="hidden" name="bot-field" />
-
   <p>
     <label for="name">Tu nombre</label>
     <input type="text" name="name" id="name"></label>
   </p>
 
   <p>
-    <label for="message">Tu mensaje</label>
-    <textarea name="message" id="message"></textarea></label>
+    <label for="body">Tu mensaje</label>
+    <textarea name="body" id="body"></textarea></label>
   </p>
 
   <p>
