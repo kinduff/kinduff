@@ -33,15 +33,16 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--header-color);
   line-height: 1.25;
   position: relative;
+  z-index: 1;
   &::after {
     position: absolute;
     height: 10px;
-    z-index: -1;
     content: "\00A0";
     width: 20px;
     top: 6px;
     left: -10px;
     display: block;
+    z-index: -1;
   }
   a {
     background-color: transparent;
