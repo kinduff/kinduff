@@ -1,6 +1,7 @@
-{% assign months = "enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre" | split: "|" %}
 {% assign m = include.resource.date | date: "%-m" | minus: 1 %}
 {% assign day = include.resource.date | date: "%d" %}
-{% assign month = months[m] %}
+{% assign month = site.data.spanish.months.long[m] %}
 {% assign year = include.resource.date | date: "%Y" %}
-{{ day }} de {{ month }} del {{ year }}
+<time datetime="{{ include.resource.date | date_to_xmlschema }}">
+  {{ day }} de {{ month }} del {{ year }}
+</time>
