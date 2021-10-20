@@ -1,6 +1,7 @@
 ---
 ---
 
+@import 'variables';
 @import 'base';
 @import 'highlight';
 
@@ -33,13 +34,25 @@ ul.logos {
 }
 
 .blog-entry {
-  h3 {
+  p {
     margin-bottom: 0;
-    + p {
-      margin-bottom: 2rem;
+    display: flex;
+    @media (max-width: 480px){
+      flex-direction: column;
+    }
+
+    small {
+      color: var(--dark-gray-color);
+      padding-right: 10px;
+    }
+    a {
+      background-color: transparent;
+      font-weight: bold;
+      flex: 1;
     }
   }
 }
+
 
 .post-metadata {
   font-family: "DM Sans", sans-serif;

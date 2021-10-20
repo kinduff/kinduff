@@ -6,7 +6,7 @@ title: Blog
 <h1>
   Blog
   <a href="/feed.xml" target="blank" title="RSS feed">
-    <img src="/assets/images/rss.png" />
+    <img src="/assets/images/rss.png" class="RSS logo" />
   </a>
 </h1>
 
@@ -17,9 +17,15 @@ title: Blog
     {% assign date = currentdate %}
   {% endif %}
   <div class="blog-entry">
-    <h3>
+    <p>
+      {% assign m_i = post.date | date: "%-m" | minus: 1 %}
+      {% assign month = site.data.spanish.months[m_i] %}
+      <small>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%d" }} {{ month }}
+        </time>
+      </small>
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </h3>
-    <p>{{ post.description }}</p>
+    </p>
   </div>
 {% endfor %}
