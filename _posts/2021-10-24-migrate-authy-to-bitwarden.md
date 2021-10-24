@@ -1,8 +1,8 @@
 ---
-title: Simple health-check for Ruby on Rails
+title: Migrate Authy to Bitwarden
 date: 2021-10-24
 description: >-
-  Simple Rack middleware for healh-checks
+  Script to export Authy 2FA codes and import them to Bitwarden
 ---
 
 I recently switched to Bitwarden for 2FA authentication and wanted to move some of my codes to Bitwarden.
