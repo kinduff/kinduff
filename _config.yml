@@ -60,3 +60,8 @@ social:
     - https://www.goodreads.com/kinduff
     - https://steamcommunity.com/id/kinduff
 lang: es_ES
+
+jekyll_last_fm:
+  user:
+  api_key:
+  limit:

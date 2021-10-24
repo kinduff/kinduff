@@ -1,0 +1,18 @@
+<table>
+  {% for track in site.data.last_fm %}
+    <tr>
+      <td>
+        <img src="{{ track.image }}" width="34" height="34" style="max-width: none;" />
+      </td>
+      <td>
+        {{ track.artist }}
+      </td>
+      <td>
+        {{ track.album }}
+      </td>
+      <td>
+        {{ track.title }}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
