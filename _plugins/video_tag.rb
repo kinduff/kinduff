@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Title: Simple Video tag for Jekyll
 # Author: Brandon Mathis http://brandonmathis.com
 # Description: Easily output MPEG4 HTML5 video with a flash backup.
@@ -14,7 +16,6 @@
 #
 
 module Jekyll
-
   class VideoTag < Liquid::Tag
     @video = nil
     @poster = ''
@@ -22,8 +23,8 @@ module Jekyll
     @width = ''
 
     def initialize(tag_name, markup, tokens)
-      @videos = markup.scan(/((https?:\/\/|\/)\S+\.(webm|ogv|mp4)\S*)/i).map(&:first).compact
-      @poster = markup.scan(/((https?:\/\/|\/)\S+\.(png|gif|jpe?g)\S*)/i).map(&:first).compact.first
+      @videos = markup.scan(%r{((https?://|/)\S+\.(webm|ogv|mp4)\S*)}i).map(&:first).compact
+      @poster = markup.scan(%r{((https?://|/)\S+\.(png|gif|jpe?g)\S*)}i).map(&:first).compact.first
       @sizes  = markup.scan(/\s(\d\S+)/i).map(&:first).compact
       super
     end
@@ -35,14 +36,15 @@ module Jekyll
         '.ogv' => "type='video/ogg; codecs=theora, vorbis'",
         '.webm' => "type='video/webm; codecs=vp8, vorbis'"
       }
-      if @videos.size > 0
-        video =  "<video #{sizes} preload='metadata' controls #{poster}>"
+      if @videos.size.positive?
+        video = ["<video #{sizes} preload='metadata' controls #{poster}>"]
         @videos.each do |v|
           video << "<source src='#{v}' #{types[File.extname(v)]}>"
         end
-        video += "</video>"
+        video << '</video>'
+        video.join("\n")
       else
-        "Error processing input, expected syntax: {% video url/to/video [url/to/video] [url/to/video] [width height] [url/to/poster] %}"
+        'Error processing input, expected syntax: {% video url/to/video [url/to/video] [url/to/video] [width height] [url/to/poster] %}'
       end
     end
 

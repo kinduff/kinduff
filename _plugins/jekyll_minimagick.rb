@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mini_magick'
 
 module Jekyll
@@ -39,7 +41,8 @@ module Jekyll
       def write(dest)
         dest_path = destination(dest)
 
-        return false if File.exist? dest_path and !modified?
+        return false if File.exist?(dest_path) && !modified?
+
         self.class.mtimes[path] = mtime
 
         FileUtils.mkdir_p(File.dirname(dest_path))
@@ -64,11 +67,12 @@ module Jekyll
       def generate(site)
         return unless site.config['mini_magick']
 
-        site.config['mini_magick'].each_pair do |name, preset|
+        site.config['mini_magick'].each_pair do |_name, preset|
           Dir.chdir preset['source'] do
-           Dir.glob(File.join("**", "*.{png,jpg,jpeg,gif}")) do |source|
-              site.static_files << GeneratedImageFile.new(site, site.source, preset['destination'], source, preset.clone)
-             end
+            Dir.glob(File.join('**', '*.{png,jpg,jpeg,gif}')) do |source|
+              site.static_files << GeneratedImageFile.new(site, site.source, preset['destination'], source,
+                                                          preset.clone)
+            end
           end
         end
       end

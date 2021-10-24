@@ -95,15 +95,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastimage (~> 2.2)
-  jekyll (~> 4.2)
-  jekyll-environment-variables (~> 1.0)
-  jekyll-minifier (~> 0.1)
+  fastimage (~> 2.2.5)
+  jekyll (~> 4.2.1)
+  jekyll-environment-variables (~> 1.0.1)
+  jekyll-minifier (~> 0.1.10)
   jekyll-seo-tag!
-  jekyll-sitemap (~> 1.4)
-  mini_magick (~> 4.11)
-  nokogiri (~> 1.12)
-  ox (~> 2.14)
+  jekyll-sitemap (~> 1.4.0)
+  mini_magick (~> 4.11.0)
+  nokogiri (~> 1.12.5)
+  ox (~> 2.14.5)
 
 RUBY VERSION
    ruby 2.7.1p83

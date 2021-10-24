@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'fastimage'
 
 # source https://stackoverflow.com/a/64452457/992000
@@ -9,7 +11,7 @@ module ImageSizeFilter
     return size[1] if dimension == 'h'
     return size unless dimension
 
-    raise 'Invalid image size dimension requested: ' + dimension
+    raise "Invalid image size dimension requested: #{dimension}"
   end
 end
 
