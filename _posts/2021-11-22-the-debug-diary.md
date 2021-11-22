@@ -26,16 +26,16 @@ For example, this is an extract of my latest Debug Diary:
 
 ---
 
-### Debug Diary: Performance issue with sign up
+### Debug Diary: Performance issue with sign-up
 
-##### 17:32
+#### 17:32
 Starting a debugging session to find out the issue with the sign-up during a load test.
 
 I'm using the `load_test.jmx` JMeter file provided by the Infrastructure team to debug locally. Had to modify local variables to point to my local environment.
 
 I started using 6 threads for Puma, but the concurrency mixed some results. I'm using 1 thread only.
 
-##### 17:35
+#### 17:35
 I'm able to reproduce. During the test execution I'm able to see a pause in the logs here:
 
 ```
@@ -54,7 +54,7 @@ I added some debug information to confirm a theory. I confirm my theory, the fol
 @user.validate
 ```
 
-##### 17:45
+#### 17:45
 Removing the following validations to start:
 
 ```ruby
