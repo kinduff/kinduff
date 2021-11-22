@@ -38,12 +38,11 @@ collections:
     output: true
 
 # SEO
-title: Alejandro AR, Web Developer 👋 kinduff
+title: Alejandro AR (kinduff)
 tagline: El sitio web de Alejandro AR (kinduff).
-description: El sitio web de Alejandro AR (kinduff), en donde podrás encontrar entradas de blog, proyectos y mas.
+description: Sitio web de Alejandro AR (kinduff); blog, proyectos, tecnología.
 url: https://kinduff.com
-author:
-  twitter: kinduff
+author: Alejandro AR (kinduff)
 twitter:
   username: kinduff
   card: summary
