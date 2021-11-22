@@ -2,7 +2,7 @@
 title: The Debug Diary
 date: 2021-11-22
 description: >-
-  During a debug session I wrote a Debug Diary. What is that? How is it useful?
+  During a debug session I wrote a Debug Diary. What is that and how is it useful.
 ---
 
 I recently had to debug a performance issue for my current employer. I was motivated to do it since I had little time to code during that particular week and wanted to feel the rush again.
