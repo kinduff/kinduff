@@ -5,6 +5,8 @@ require 'uri'
 
 module ExternalLinks
   def self.process(resource)
+    return if resource.data["layout"].nil?
+
     site_hostname = URI(resource.site.config['url']).host
     link_selector = 'body a'
 
