@@ -25,7 +25,7 @@ jekyll-minifier:
     harmony: true
 
 # Collections
-feed_items: 5
+feed_items: 100
 feed_update_period: weekly
 feed_update_frequency: 1
 
