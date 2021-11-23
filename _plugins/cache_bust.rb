@@ -21,7 +21,7 @@ module Jekyll
 
       def directory_files_content
         target_path = File.join(directory, '**', '*')
-        Dir[target_path].map{|f| File.read(f) unless File.directory?(f) }.join
+        Dir[target_path].map { |f| File.read(f) unless File.directory?(f) }.join
       end
 
       def file_content
@@ -29,10 +29,10 @@ module Jekyll
       end
 
       def file_contents
-        is_directory? ? file_content : directory_files_content
+        directory? ? file_content : directory_files_content
       end
 
-      def is_directory?
+      def directory?
         directory.nil?
       end
     end

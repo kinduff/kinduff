@@ -17,11 +17,6 @@
 
 module Jekyll
   class VideoTag < Liquid::Tag
-    @video = nil
-    @poster = ''
-    @height = ''
-    @width = ''
-
     def initialize(tag_name, markup, tokens)
       @videos = markup.scan(%r{((https?://|/)\S+\.(webm|ogv|mp4)\S*)}i).map(&:first).compact
       @poster = markup.scan(%r{((https?://|/)\S+\.(png|gif|jpe?g)\S*)}i).map(&:first).compact.first
@@ -29,8 +24,7 @@ module Jekyll
       super
     end
 
-    def render(context)
-      output = super
+    def render(_context)
       types = {
         '.mp4' => "type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"'",
         '.ogv' => "type='video/ogg; codecs=theora, vorbis'",

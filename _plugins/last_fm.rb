@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LastFm < Jekyll::Generator
   safe true
 
@@ -11,7 +13,7 @@ class LastFm < Jekyll::Generator
     return unless user && api_key
 
     last_fm_url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=#{user}&api_key=#{api_key}&limit=#{limit}&format=json"
-    last_fm_json = JSON.parse(URI.open(last_fm_url).read)
+    last_fm_json = JSON.parse(URI.parse(last_fm_url).open.read)
 
     return unless last_fm_json['recenttracks']['track']
 

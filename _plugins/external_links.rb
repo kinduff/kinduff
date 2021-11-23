@@ -5,18 +5,18 @@ require 'uri'
 
 module ExternalLinks
   def self.process(resource)
-    return if resource.data["layout"].nil?
+    return if resource.data['layout'].nil?
 
     site_hostname = URI(resource.site.config['url']).host
     link_selector = 'body a'
 
-    unless resource.respond_to?(:asset_file?) && resource.asset_file?
-      resource.output = process_content(
-        site_hostname,
-        resource.output,
-        link_selector
-      )
-    end
+    return if resource.respond_to?(:asset_file?) && resource.asset_file?
+
+    resource.output = process_content(
+      site_hostname,
+      resource.output,
+      link_selector
+    )
   end
 
   def self.process_content(site_hostname, content, link_selector)

@@ -14,6 +14,7 @@ module Jekyll
       #
       # Returns <GeneratedImageFile>
       def initialize(site, base, dir, name, preset)
+        super
         @site = site
         @base = base
         @dir  = dir
