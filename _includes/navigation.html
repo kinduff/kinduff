@@ -1,9 +1,20 @@
-<nav>
-  {% for nav in site.data.nav %}
+<header>
+  <div class="nav-bar">
     <a
-      href="{{ nav.href }}"
-      class="{{ nav.class }} {% if page.url == nav.href %}active{% endif %}"
-    >{{ nav.title }}</a>
-    {% unless forloop.last %} · {% endunless %}
-  {% endfor %}
-</nav>
+      href="/"
+      class="site-title"
+    >
+      ~/kinduff
+    </a>
+    <label class="nav-icon" for="nav-btn"></label>
+  </div>
+  <input class="nav-btn" type="checkbox" id="nav-btn" />
+  <nav>
+    {% for nav in site.data.nav %}
+      <a
+        href="{{ nav.href }}"
+        class="nav-link {% if page.url == nav.href %}active{% endif %}"
+      >{{ nav.title }}</a>
+    {% endfor %}
+  </nav>
+</header>
