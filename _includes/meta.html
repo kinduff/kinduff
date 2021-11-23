@@ -17,7 +17,7 @@
   <meta property="twitter:image" content="{{ "/assets/images/avatar.jpg" | absolute_url }}" />
   <meta name="twitter:card" content="summary" />
 {% endif %}
-<link rel="stylesheet" href="/assets/stylesheets/default.css">
+<link rel="stylesheet" href="{{ '/assets/stylesheets/default.css' | bust_css_cache }}">
 <link href="/feed.xml" type="application/rss+xml" rel="alternate" />
 <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
