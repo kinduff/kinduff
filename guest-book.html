@@ -35,5 +35,5 @@ title: Libro de visitas
       >{{ entry.name }}</b
     >: {{ entry.content | remove: '<p>' | remove: '</p>' }}
   </p>
-  <hr />
+  {% unless forloop.last %}<hr />{% endunless %}
 {% endfor %}

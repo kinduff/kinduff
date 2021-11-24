@@ -6,37 +6,3 @@ title: Contacto
   Contacto
 </h1>
 {% include contact.html %}
-
-<p>
-  O bien, puedes utilizar el siguiente formulario de contacto. Tus datos no serán publicados.
-</p>
-
-<form
-  action="/contact-thanks/"
-  name="contact"
-  method="post"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
->
-  <input type="hidden" name="form-name" value="contact" />
-  <input type="hidden" name="bot-field" />
-
-  <p>
-    <label for="name">Nombre</label>
-    <input type="text" name="name" id="name"></label>
-  </p>
-
-  <p>
-    <label for="email">Correo</label>
-    <input type="text" name="email" id="email"></label>
-  </p>
-
-  <p>
-    <label for="message">Mensaje</label>
-    <textarea name="message" id="message"></textarea></label>
-  </p>
-
-  <p>
-    <button type="submit">Enviar</button>
-  </p>
-</form>
