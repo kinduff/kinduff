@@ -25,7 +25,11 @@ title: Blog
           {{ post.date | date: "%d" }} {{ month }}
         </time>
       </small>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {% if post.external %}
+        <a href="{{ post.external_url }}">{{ post.title }}</a>
+      {% else %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
     </p>
   </div>
 {% endfor %}
