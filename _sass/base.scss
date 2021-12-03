@@ -149,6 +149,7 @@ header {
     text-decoration: none;
     &.site-title {
       color: var(--site-title-color);
+      font-weight: 700;
     }
     &.active {
       font-weight: 700;
