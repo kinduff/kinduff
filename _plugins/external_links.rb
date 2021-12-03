@@ -27,6 +27,7 @@ module ExternalLinks
 
       a.set_attribute('rel', 'external')
       a.set_attribute('target', '_blank')
+      a.content = "#{a.content} ⧉"
     end
     content.to_s
   end
