@@ -19,7 +19,7 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     execjs (2.8.1)
-    fastimage (2.2.6)
+    fastimage (2.2.5)
     ffi (1.15.4)
     forwardable-extended (2.6.0)
     htmlcompressor (0.4.0)
@@ -81,7 +81,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (3.27.0)
+    rouge (3.26.1)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -90,25 +90,23 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastimage (~> 2.2)
-  jekyll (~> 4.2)
-  jekyll-environment-variables (~> 1.0)
-  jekyll-minifier (~> 0.1)
+  fastimage (~> 2.2.5)
+  jekyll (~> 4.2.1)
+  jekyll-environment-variables (~> 1.0.1)
+  jekyll-minifier (~> 0.1.10)
   jekyll-seo-tag!
-  jekyll-sitemap (~> 1.4)
-  mini_magick (~> 4.11)
-  nokogiri (~> 1.12)
-  ox (~> 2.14)
-  webrick (~> 1.7)
+  jekyll-sitemap (~> 1.4.0)
+  mini_magick (~> 4.11.0)
+  nokogiri (~> 1.12.5)
+  ox (~> 2.14.5)
 
 RUBY VERSION
-   ruby 3.0.2p107
+   ruby 2.7.1p83
 
 BUNDLED WITH
-   2.2.22
+   2.1.4
