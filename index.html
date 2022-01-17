@@ -3,35 +3,27 @@ title: Casa
 layout: default
 ---
 <div class="home">
+
   <h1>Hola, soy Alejandro 👋</h1>
 
-  {% include about.html %}
+  <p>
+    Este es mi ricón en la triple doble u. Me gusta escribir sobre diferentes temas, muchos relacionados a la tecnología.
+    También publico aquí algunos de los proyectos que tengo. Si te gusta, deja un mensaje en el libro de visitas.
+  </p>
 
   <h2>
     Últimas entradas del blog
   </h2>
+
   {% include recent_posts.html limit=5 %}
 
   <h2>
     Proyectos y experimentos
   </h2>
+
   {% include projects.html limit=5 %}
+
   <p>
     Puedes ver el resto de <a href="/projects/">proyectos aquí</a>.
   </p>
-
-  <h2>
-    Trabajo
-  </h2>
-  {% include work.html %}
-
-  <h2>
-    Lugares en donde he dejado huella
-  </h2>
-  {% include map.html %}
-
-  <h2>
-    Contacto
-  </h2>
-  {% include contact.html %}
 </div>
