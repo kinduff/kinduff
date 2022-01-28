@@ -131,7 +131,7 @@
       `);
 
     const api = "https://count.kinduff.com/"
-    const resource = "{{site.url}}{{page.url}}";
+    const resource = "{{site.url}}{{page.url | remove: '/social'}}";
     fetch(`${api}${resource}`)
       .then(res => res.json())
       .then((out) => {
