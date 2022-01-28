@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=DM+Sans:wght@700&display=swap');
+
+    :root {
+      --bg-color-1: #d0e6f4;
+      --bg-color-2: #d6c5e8;
+      --bg-color-3: #f2e098;
+      --bg-color-4: #d4e6b5;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cousine', monospace;
+      font-size: 18px;
+      color: #0e0e0b;
+    }
+
+    .wrapper {
+      width: 100%;
+      aspect-ratio: 40 / 21;
+      background-color: #f4ecdf;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top,
+    .bottom {
+      flex-shrink: 0;
+    }
+
+    .main {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .main>div {
+      width: 80%;
+    }
+
+    .site-title {
+      color: #b72d2d;
+      font-size: 2vw;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    h1 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 6.5vw;
+      line-height: 1.15;
+      display: inline;
+    }
+
+    .description {
+      margin-top: 25px;
+      font-size: 2vw;
+      font-weight: 400;
+    }
+
+    .data {
+      font-size: 1.8vw;
+      font-weight: 400;
+    }
+
+    .data i {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top">
+      <p class="site-title">
+        ~/kinduff.com
+      </p>
+    </div>
+
+    <div class="main">
+      <div>
+        <h1>
+          {{ page.title }}
+        </h1>
+        <p class="description">
+          {{ page.description }}
+        </p>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <p class="data">
+        {% assign words = page.content | number_of_words %}
+        <i class="lni lni-book"></i> {{ words }}
+        <i class="lni lni-timer"></i> {{ words | divided_by:180 }} min
+        <i class="lni lni-eye"></i> <span id="hitcount"></span>
+      </p>
+    </div>
+  </div>
+  <script>
+    const num = Math.floor(Math.random() * 4) + 1;
+    const element = document.querySelector('h1');
+    element.style.setProperty("box-shadow", `
+        inset 0 -10px 0 #f4ecdf,
+        inset 0 -30px 0 var(--bg-color-${num})
+      `);
+
+    const api = "https://count.kinduff.com/"
+    const resource = "{{site.url}}{{page.url}}";
+    fetch(`${api}${resource}`)
+      .then(res => res.json())
+      .then((out) => {
+        document.querySelector("#hitcount").innerHTML = out["total"];
+      })
+  </script>
+</body>
+
+</html>
