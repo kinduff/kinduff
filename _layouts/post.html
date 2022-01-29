@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  {% include post_header.html %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% include comments.html %}
+
+  <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
+</article>
