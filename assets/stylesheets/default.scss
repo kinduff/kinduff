@@ -16,6 +16,17 @@
   }
 }
 
+.avatar {
+  float: left;
+  margin-right: 20px;
+  img {
+    width: 150px;
+  }
+  @media (max-width: 480px){
+    float: none;
+  }
+}
+
 ul.logos {
   list-style: none;
   padding: 0;

@@ -2,14 +2,28 @@
 title: Casa
 layout: default
 ---
-<div class="home">
+<div class="home h-card">
 
-  <h1>Hola, soy Alejandro 👋</h1>
+  <h1 id="hello">Hola 👋</h1>
+
+  <div class="avatar">
+    <img src="/assets/images/avatar.jpg" alt="Una representación de Alejandro dibujada por una IA" class="u-photo u-logo">
+  </div>
 
   <p>
-    Este es mi ricón en la triple doble u. Me gusta escribir sobre diferentes temas, muchos relacionados a la tecnología.
-    También publico aquí algunos de los proyectos que tengo. Si te gusta, deja un mensaje en el libro de visitas.
+    Soy <a href="https://kinduff.com/about" class="p-name u-url p-given-name">Alejandro</a> (también <mark class="p-nickname">kinduff</mark>).
   </p>
+
+  <p>
+    Esta es mi casa en la triple doble u. Esta casa está viva, por lo que podrás encontrar contenido siempre que visites.
+  </p>
+
+  <p>
+    Te recomiendo agregarla a tus favoritos, darte una vuelta al <a href="/blog">blog</a> y a mis <a href="/projects">proyectos</a>.
+    También te puedes suscribir vía <a href="/feed.xml">RSS</a>.
+  </p>
+
+  <div style="clear: both;"></div>
 
   <h2>
     Últimas entradas del blog
@@ -27,3 +41,5 @@ layout: default
     Puedes ver el resto de <a href="/projects/">proyectos aquí</a>.
   </p>
 </div>
+
+{% include hello.html %}

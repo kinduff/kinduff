@@ -10,9 +10,21 @@ title: Blog
   </a>
 </h1>
 
+<p>
+  Me gusta escribir sobre diferentes temas, muchos relacionados a la tecnología.
+  Unos están relacionados a lenguajes de programación, un poco a filosofía y
+  también a la vida cotidiana.
+</p>
+
+<p>
+  La mayoría de las entradas están en este blog, pero si están marcadas con el símbolo
+  <code class="language-plaintext highlighter-rouge">⧉</code> significa que son enlaces
+  externos a sitios en donde solía escribir.
+</p>
+
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
-    {% if currentdate != date %}
+  {% if currentdate != date %}
     <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
     {% assign date = currentdate %}
   {% endif %}
