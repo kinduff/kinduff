@@ -1,7 +1,11 @@
 {%- if page.author -%}
   — {% for author in page.author %}
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- if forloop.last == false %}, {% endif -%}
+      <span class="p-author h-card" itemprop="name">
+        <a href="https://kinduff.com" class="u-url u-name no-s">{{ author }}</a>
+        <img src="/assets/images/avatar.jpg" alt="Una representación de Alejandro dibujada por una IA" class="u-photo" hidden>
+      </span>
+    </span>
+    {%- if forloop.last == false %}, {% endif -%}
   {% endfor %}
 {%- endif -%}

@@ -107,6 +107,10 @@ a {
     background-color: var(--link-footnote-bg-color);
     text-decoration: none;
   }
+  &.no-s {
+    background-color: transparent;
+    text-decoration: none;
+  }
 }
 img {
   max-width: 100%;
