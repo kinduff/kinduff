@@ -19,12 +19,7 @@ defaults:
 # Plugins
 plugins:
   - jekyll-seo-tag
-  - jekyll-minifier
   - jekyll-environment-variables
-
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
 
 # Collections
 feed_items: 10

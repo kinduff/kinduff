@@ -7,7 +7,6 @@ ruby '2.7.1'
 
 gem 'jekyll', '~> 4.2.1'
 gem 'jekyll-environment-variables', '~> 1.0.1'
-gem 'jekyll-minifier', '~> 0.1.10'
 gem 'jekyll-seo-tag', github: 'kinduff/jekyll-seo-tag', branch: 'feat/image_option'
 gem 'jekyll-sitemap', '~> 1.4.0'
 
