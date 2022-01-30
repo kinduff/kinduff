@@ -43,6 +43,7 @@ collections:
 title: Alejandro AR (kinduff)
 tagline: El sitio web de Alejandro AR (kinduff).
 description: Sitio web de Alejandro AR (kinduff); blog, proyectos, tecnología.
+base_url: https://kinduff.com
 url: https://kinduff.com
 author: Alejandro AR (kinduff)
 twitter:

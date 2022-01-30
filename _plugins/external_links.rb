@@ -7,7 +7,7 @@ module ExternalLinks
   def self.process(resource)
     return if resource.data['layout'].nil?
 
-    site_hostname = URI(resource.site.config['url']).host
+    site_hostname = URI(resource.site.config['base_url']).host
     link_selector = 'body a'
 
     return if resource.respond_to?(:asset_file?) && resource.asset_file?
@@ -23,7 +23,7 @@ module ExternalLinks
     content = Nokogiri::HTML(content)
     content.css(link_selector).each do |a|
       next unless a.get_attribute('href') =~ /\Ahttp/i
-      next if a.get_attribute('href') =~ %r{\Ahttp(s)?://#{site_hostname}/}i
+      next if a.get_attribute('href') =~ %r{\Ahttp(s)?://#{site_hostname}}i
 
       a.set_attribute('rel', 'external')
       a.set_attribute('target', '_blank')
