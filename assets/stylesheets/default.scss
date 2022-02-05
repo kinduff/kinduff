@@ -9,6 +9,7 @@
   h2 {
     font-size: 1.17rem;
     margin: 2.5rem 0 2.1rem;
+
     &::after {
       height: 10px;
       top: 6px;
@@ -19,10 +20,12 @@
 .avatar {
   float: left;
   margin-right: 20px;
+
   img {
     width: 150px;
   }
-  @media (max-width: 480px){
+
+  @media (max-width: 480px) {
     float: none;
   }
 }
@@ -34,6 +37,7 @@ ul.logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   li {
     flex: 1 0 auto;
     flex-direction: column;
@@ -48,7 +52,8 @@ ul.logos {
   p {
     margin-bottom: 0;
     display: flex;
-    @media (max-width: 480px){
+
+    @media (max-width: 480px) {
       flex-direction: column;
     }
 
@@ -56,6 +61,7 @@ ul.logos {
       color: var(--dark-gray-color);
       padding-right: 10px;
     }
+
     a {
       background-color: transparent;
       font-weight: bold;
@@ -63,7 +69,6 @@ ul.logos {
     }
   }
 }
-
 
 .post-metadata {
   font-family: "DM Sans", sans-serif;
@@ -82,6 +87,80 @@ ul.logos {
   font-weight: 400;
   font-size: 0.9rem;
   color: #5c5c5c;
+}
+
+.wm-avatar-grid{
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  li {
+    flex: 0 0 50px;
+  }
+}
+
+.wm-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.wm-avatar {
+  background-image: url('../images/default_avatar.png');
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: block;
+
+  img {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+  }
+}
+
+.wm-content-grid {
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-bottom: 1px solid var(--gray-color);
+    padding: 20px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .wm-content-wrap {
+      flex-grow: 1;
+      flex-basis: 0;
+      min-width: 0;
+    }
+
+    .wm-author {
+      margin-top: 0;
+    }
+
+    .wm-published_at {
+      background-color: transparent;
+    }
+
+    .wm-content {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .utterances {

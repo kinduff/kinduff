@@ -5,15 +5,19 @@ html {
   color: var(--font-color);
   background-color: var(--bg-color);
 }
+
 * {
   box-sizing: inherit;
+
   &:before {
     box-sizing: inherit;
   }
+
   &:after {
     box-sizing: inherit;
   }
 }
+
 body {
   font-family: "Cousine", sans-serif;
   color: var(--font-color);
@@ -22,18 +26,26 @@ body {
   font-size: 16px;
   margin: 0;
 }
+
 .wrap {
   padding: 1rem;
   max-width: 100%;
   width: 800px;
   margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "DM Sans", sans-serif;
   color: var(--header-color);
   line-height: 1.25;
   position: relative;
   z-index: 1;
+
   &::after {
     position: absolute;
     height: 10px;
@@ -44,10 +56,12 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     z-index: -1;
   }
+
   a {
     background-color: transparent;
   }
 }
+
 h1 {
   font-size: 2em;
 }
@@ -71,33 +85,41 @@ h5 {
 h6 {
   font-size: 0.67em;
 }
+
 h1::after {
   background-color: var(--header-h1-bg-color);
   height: 18px;
   top: 12px;
 }
+
 h2::after {
   background-color: var(--header-h2-bg-color);
   height: 12px;
   top: 8px;
 }
+
 h3::after {
   background-color: var(--header-h3-bg-color);
 }
+
 h4::after {
   background-color: var(--header-h4-bg-color);
   top: 4px;
 }
+
 mark {
   background-color: var(--mark-bg-color);
+
   &.red {
     background-color: #fbcdcd;
   }
+
   &.green {
     background-color: #E0FFC0;
   }
 }
-a {
+
+a{
   background-color: var(--link-bg-color);
   color: var(--link-color);
   text-decoration: underline var(--link-underline-color);
@@ -107,13 +129,16 @@ a {
     background-color: var(--link-footnote-bg-color);
     text-decoration: none;
   }
+
   &.no-s {
     background-color: transparent;
     text-decoration: none;
   }
 }
+
 img {
   max-width: 100%;
+
   &.emoji {
     height: 1em;
     width: 1em;
@@ -121,11 +146,13 @@ img {
     vertical-align: -0.1em;
   }
 }
+
 video {
   max-width: 100%;
   margin: 0 auto;
   display: block;
 }
+
 header {
   font-size: 1rem;
   margin: 0 0 -1rem;
@@ -153,18 +180,23 @@ header {
       align-items: center;
       justify-content: space-between;
     }
+
     &-btn {
       display: none;
-      &:checked ~ nav {
+
+      &:checked~nav {
         max-height: 100%;
       }
     }
+
     &-icon {
       cursor: pointer;
       font-size: 1.2rem;
+
       &:after {
         content: "🍔";
       }
+
       @media (min-width: 38em) {
         display: none;
       }
@@ -174,13 +206,16 @@ header {
   a {
     background-color: transparent;
     text-decoration: none;
+
     &.site-title {
       color: var(--site-title-color);
       font-weight: 700;
     }
+
     &.active {
       font-weight: 700;
     }
+
     &.nav-link {
       display: block;
       text-align: right;
@@ -196,6 +231,7 @@ header {
         &:after {
           content: ' ·';
         }
+
         &:last-child::after {
           content: '';
         }
@@ -203,6 +239,7 @@ header {
     }
   }
 }
+
 hr {
   border: none;
   border-top: 1px solid var(--gray-color);
@@ -210,52 +247,66 @@ hr {
   overflow: visible;
   margin: 20px 0;
 }
+
 blockquote {
   margin: 0;
   padding: 1rem;
   border: 1px dotted var(--font-color);
+
   p {
     margin: 0;
   }
 }
+
 p {
-  > img {
+  >img {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    + em {
+
+    +em {
       display: block;
       text-align: center;
       font-size: 0.9rem;
     }
   }
 }
+
 label {
   display: block;
 }
-input[type='text'], input[type='email'] {
+
+input[type='text'],
+input[type='email'] {
   width: 100%;
 }
+
 textarea {
   width: 100%;
   resize: vertical;
   min-height: 100px;
 }
-input, textarea {
+
+input,
+textarea {
   font-family: "Cousine", sans-serif;
   line-height: normal;
   border: 1px solid var(--gray-color);
   padding: 10px;
   font-size: 0.9rem;
 }
+
 .table-wrapper {
   overflow-x: auto;
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
 }
-td, th {
+
+td,
+th {
   border: 1px solid var(--gray-color);
   text-align: left;
   padding: 8px;

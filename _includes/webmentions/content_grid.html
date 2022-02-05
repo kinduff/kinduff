@@ -1,0 +1,29 @@
+{% if include.webmentions.size > 0 %}
+  <hr />
+  <p class="wm-title">{{ include.title }}</p>
+  <ul class="wm-content-grid">
+    {% for webmention in include.webmentions %}
+      <li>
+        {% include webmentions/avatar.html author=webmention.author %}
+        {% if webmention.content.size > 0 %}
+          <div class="wm-content-wrap">
+            <div>
+              <a href="{{ webmention.author.url }}" target="blank" style="background-color: {{ webmention.author.url | hash_color }};">
+                {{ webmention.author.name }}
+              </a>
+              @
+              <small>
+                <a href="{{ webmention.source_url }}" class="wm-published_at">
+                  {{ webmention.published_at | date_to_long_string }}
+                </a>
+              </small>
+            </div>
+            <p class="wm-content">
+              {{ webmention.content | clean_urls | truncate: 240, " ", "..." | strip | newline_to_br }}
+            </p>
+          </div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

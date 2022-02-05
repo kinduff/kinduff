@@ -28,7 +28,7 @@ title: Libro de visitas
 </form>
 
 <hr />
-{% assign entries = site.entries | reverse %}
+{% assign entries = site.guestbook_entries | reverse %}
 {% for entry in entries %}
   <p>
     <b

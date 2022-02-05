@@ -9,7 +9,8 @@ layout: default
     {{ content }}
   </div>
 
-  {% include comments.html %}
+  {% include webmentions.html %}
 
   <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
 </article>
+

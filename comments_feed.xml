@@ -1,0 +1,25 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title | xml_escape }}</title>
+  <id>{{ site.url }}</id>
+  <link href="{{ site.url }}/{{ page.path }}" rel="self" />
+  <link href="{{ site.url }}" />
+  <author>
+    <name>{{ site.author | xml_escape }}</name>
+  </author>
+  <rights>© 2008-2022 Alejandro AR (kinduff.com)</rights>
+  <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
+  <updated>{% for comment in site.comment limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</updated>
+  {% for comment in site.comments %}
+    <entry>
+      <id>{{ site.url }}{{ comment.url }}</id>
+      <title type="html">{{ comment.title | xml_escape }}</title>
+      <link href="{{ site.url }}{{ comment.url }}" />
+      <updated>{{ comment.published_at | date_to_xmlschema }}</updated>
+      <content type="html"><![CDATA[{{ comment.content }}]]></content>
+    </entry>
+  {% endfor %}
+</feed>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0;url={{ page.source_url }}">
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+    <article class="h-entry">
+      <span class="p-uid">{{ page.uid }}</span>
+
+      <time class="dt-published" datetime="{{ page.published }}">{{ page.published }}</time>
+
+      <span class="p-author h-card">
+        <data class="p-uid" value="{{ page.author.uid }}"></data>
+        <a class="p-name u-url skip-external" href="{{ page.author.url }}">{{ page.author.name }}</a>
+        <span class="p-nickname">{{ page.author.name }}</span>
+        {% if page.author.avatar.size > 0 %}
+          <img class="u-photo" src="{{ page.author.avatar }}" alt="" />
+        {% endif %}
+      </span>
+
+      <a class="u-url skip-external" href="{{ page.source_url }}">
+        {{ page.source_url }}
+      </a>
+      <div class="e-content p-name">
+        {{ page.content }}
+      </div>
+
+      <a class="u-in-reply-to skip-external" href="{{ page.target_url }}"></a>
+      <a class="u-in-reply-to skip-external" href="{{ page.source_url }}"></a>
+    </article>
+  </body>
+</html>

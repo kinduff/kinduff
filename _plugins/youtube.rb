@@ -2,7 +2,7 @@
 
 module Jekyll
   class YouTube < Liquid::Tag
-    def initialize(tagName, markup, tokens)
+    def initialize(tag_name, markup, tokens)
       super
       @id = markup.strip
     end
@@ -13,4 +13,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('youtube', Jekyll::YouTube)
+Liquid::Template.register_tag("youtube", Jekyll::YouTube)

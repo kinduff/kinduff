@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'mini_magick'
+require "mini_magick"
 
 module Jekyll
   module JekyllMinimagick
@@ -19,8 +19,8 @@ module Jekyll
         @base = base
         @dir  = dir
         @name = name
-        @dst_dir = preset.delete('destination')
-        @src_dir = preset.delete('source')
+        @dst_dir = preset.delete("destination")
+        @src_dir = preset.delete("source")
         @commands = preset
         @relative_path = File.join(*[@dir, @name].compact)
         @extname = File.extname(@name)
@@ -66,13 +66,14 @@ module Jekyll
       # in the site config.  Add a GeneratedImageFile to the static_files stack
       # for later processing.
       def generate(site)
-        return unless site.config['mini_magick']
+        return unless site.config["mini_magick"]
 
-        site.config['mini_magick'].each_pair do |_name, preset|
-          Dir.chdir preset['source'] do
-            Dir.glob(File.join('**', '*.{png,jpg,jpeg,gif}')) do |source|
-              site.static_files << GeneratedImageFile.new(site, site.source, preset['destination'], source,
-                                                          preset.clone)
+        site.config["mini_magick"].each_pair do |_name, preset|
+          Dir.chdir preset["source"] do
+            Dir.glob(File.join("**", "*.{png,jpg,jpeg,gif}")) do |source|
+              site.static_files << GeneratedImageFile.new(
+                site, site.source, preset["destination"], source, preset.clone
+              )
             end
           end
         end
