@@ -8,8 +8,8 @@ author:
   url: https://twitter.com/Osuka42
 source_url: https://twitter.com/kinduff/status/1312357283838427136#favorited-by-27925106
 property: like-of
-published:
-published_at:
+published: 
+published_at: 
 received_at: '2022-01-28T23:57:09Z'
 ---
 

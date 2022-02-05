@@ -8,8 +8,8 @@ author:
   url: https://twitter.com/javifloat
 source_url: https://twitter.com/kinduff/status/1447243329343721472#favorited-by-195625914
 property: like-of
-published:
-published_at:
+published: 
+published_at: 
 received_at: '2022-01-28T23:55:34Z'
 ---
 

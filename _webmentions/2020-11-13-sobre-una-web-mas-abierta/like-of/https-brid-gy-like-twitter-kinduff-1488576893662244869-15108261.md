@@ -8,8 +8,8 @@ author:
   url: https://twitter.com/embalder
 source_url: https://twitter.com/kinduff/status/1488576893662244869#favorited-by-15108261
 property: like-of
-published:
-published_at:
+published: 
+published_at: 
 received_at: '2022-02-01T19:31:10Z'
 ---
 

@@ -8,8 +8,8 @@ author:
   url: https://twitter.com/Rastamandita
 source_url: https://twitter.com/kinduff/status/1346556301879496706#favorited-by-43829855
 property: like-of
-published:
-published_at:
+published: 
+published_at: 
 received_at: '2022-01-28T23:54:02Z'
 ---
 

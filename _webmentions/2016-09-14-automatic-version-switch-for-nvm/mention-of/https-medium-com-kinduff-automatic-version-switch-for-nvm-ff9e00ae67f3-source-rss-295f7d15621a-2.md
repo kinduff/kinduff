@@ -8,8 +8,8 @@ author:
   url: ''
 source_url: https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3?source=rss-295f7d15621a------2
 property: mention-of
-published:
-published_at:
+published: 
+published_at: 
 received_at: '2022-01-28T23:49:35Z'
 ---
 

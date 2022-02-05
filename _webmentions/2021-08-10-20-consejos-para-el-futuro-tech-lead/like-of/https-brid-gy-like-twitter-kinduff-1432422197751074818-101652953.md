@@ -8,8 +8,8 @@ author:
   url: https://twitter.com/VzqzAc
 source_url: https://twitter.com/kinduff/status/1432422197751074818#favorited-by-101652953
 property: like-of
-published:
-published_at:
+published: 
+published_at: 
 received_at: '2022-01-28T23:55:24Z'
 ---
 
