@@ -1,5 +1,7 @@
-{% if include.author.photo.size > 0 %}
-  <a href="{{ include.author.url }}" title="{{ include.author.name }}" class="wm-avatar">
+<a href="{{ include.author.url }}" title="{{ include.author.name }}" class="wm-avatar">
+  {% if include.author.photo.size > 0 %}
     <img src="{{ include.author.photo }}" width="50" height="50" loading="lazy" />
-  </a>
-{% endif %}
+    {% else %}
+    <img src="/assets/images/default_avatar.png" width="50" height="50" loading="lazy" />
+  {% endif %}
+</a>
