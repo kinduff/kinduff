@@ -1,6 +1,6 @@
 {% if include.webmentions.size > 0 %}
   <hr />
-  <p class="wm-title">{{ include.title }}</p>
+  <p class="wm-title">{{ include.title }} ({{ include.webmentions.size }})</p>
   <ul class="wm-content-grid">
     {% for webmention in include.webmentions %}
       <li>

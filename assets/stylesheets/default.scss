@@ -102,10 +102,14 @@ ul.logos {
   }
 }
 
-.wm-title {
+.wm-main-title, .wm-title {
   font-family: "DM Sans", sans-serif;
   font-size: 1.1em;
   font-weight: bold;
+}
+
+.wm-main-title {
+  font-size: 1.2em;
 }
 
 .wm-avatar {
