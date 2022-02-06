@@ -20,6 +20,10 @@ defaults:
       type: comments
     values:
       layout: comments
+exclude:
+  - README.md
+  - LICENSE
+  - Dockerfile
 
 # Plugins
 plugins:
@@ -42,7 +46,6 @@ collections:
     output: true
   comments:
     output: true
-
 
 # SEO
 title: Alejandro AR (kinduff)
