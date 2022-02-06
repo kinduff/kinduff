@@ -1,6 +1,6 @@
 ---
 title: Thank you, Valve
-date: 2022-06-02
+date: 2022-02-06
 description: >-
   For all the effort to make Linux a platform to game on.
 ---
