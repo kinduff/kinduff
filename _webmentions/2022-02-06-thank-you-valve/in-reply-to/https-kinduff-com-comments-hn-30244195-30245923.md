@@ -1,0 +1,19 @@
+---
+source: https://kinduff.com/comments/hn-30244195/30245923
+target: /2022/02/06/thank-you-valve/
+author:
+  type: card
+  name: lnxg33k1
+  photo: ""
+  url: https://news.ycombinator.com/user?id=lnxg33k1
+source_url: https://news.ycombinator.com/item?id=30245923
+property: in-reply-to
+published: 2022-02-07T16:15:22+01:00
+published_at: 2022-02-07T16:15:22+01:00
+received_at: 2022-02-07T16:27:11Z
+---
+
+I think it’s more like of a intelligence thing,
+a lot of software houses in gaming have been working very hard to give windows a competitive advantage in terms of gaming experience
+in exchange for what? they’ve been enriching microsoft and proudly so
+thankfully someone understood that there is a system you can use for free to build cool stuff on top, that doesn’t try to lock you in, doesn’t exploit dominant positions to push other software on you, and doesn’t come with a 5 kilometres long terms of services, I really am unable to understand why people just keep liking being microsoft’s guinea pigs
