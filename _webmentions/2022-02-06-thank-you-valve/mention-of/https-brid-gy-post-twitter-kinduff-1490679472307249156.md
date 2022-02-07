@@ -13,10 +13,4 @@ published_at: 2022-02-07T13:30:56+00:00
 received_at: 2022-02-07T15:14:02Z
 ---
 
-#Valve Just Made It Easier to Use Other #Linux #Distros on #Steam #Deck 
-
-Source
-openforeveryone.net/articles/valve…
-
-Relevant
-kinduff.com/2022/02/06/tha…
+#Valve Just Made It Easier to Use Other #Linux #Distros on #Steam #Deck
