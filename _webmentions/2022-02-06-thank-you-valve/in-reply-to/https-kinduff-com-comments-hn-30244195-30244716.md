@@ -1,0 +1,18 @@
+---
+source: https://kinduff.com/comments/hn-30244195/30244716
+target: /2022/02/06/thank-you-valve/
+author:
+  type: card
+  name: JamesMcMinn
+  photo: ""
+  url: https://news.ycombinator.com/user?id=JamesMcMinn
+source_url: https://news.ycombinator.com/item?id=30244716
+property: in-reply-to
+published: 2022-02-07T14:45:11+01:00
+published_at: 2022-02-07T14:45:11+01:00
+received_at: 2022-02-07T16:27:01Z
+---
+
+I am very excited by the Steam Deck and have paid for my place in the queue (hopefully some time this year). I am a long time desktop Linux user, however I also game and have either had to dual boot, or more recently, game inside a Windows VM because of DRM and unsupported games.
+The biggest issue I can can see with the Steam Deck, or more specifically, Linux on the Steam Deck, is Microsoft’s Game Pass. It simply will not work on Linux, and at the moment, I spend more time playing game via Game Pass than I do via Steam. Microsoft have a very clear direction with their recent purchases of publishers and studios, and I worry that the lack of any sort of Game Pass support (without installing Windows) will hamper the Steam Deck.
+Of course, Valve are probably hoping that the Steam Deck will discourage Game Pass subscriptions since it eats into their market, but as long as Microsoft are also willing to sell games on Steam, I think having both options is the healthiest for PC gaming overall.
