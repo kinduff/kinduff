@@ -1,6 +1,7 @@
 {% assign webmentions = site.webmentions | where: 'target', page.url %}
 {% if site.webmentions.size > 0 %}
   {% assign likes = webmentions | where: 'property', 'like-of' %}
+  {% assign bookmarks = webmentions | where: 'property', 'bookmark-of' %}
   {% assign reposts = webmentions | where: 'property', 'repost-of' %}
   {% assign replies_to = webmentions | where: 'property', 'in-reply-to' %}
   {% assign mentions = webmentions | where: 'property', 'mention-of' | sort: 'published_at' %}
@@ -8,6 +9,7 @@
   <div class="webmentions">
     <p class="wm-main-title">Webmentions ({{ webmentions.size }})</p>
     {% include webmentions/avatar_grid.html title="♥ likes" webmentions=likes %}
+    {% include webmentions/avatar_grid.html title="🕮 bookmarks" webmentions=bookmarks %}
     {% include webmentions/avatar_grid.html title="↯ reposts" webmentions=reposts %}
     {% include webmentions/content_grid.html title="↳ respuestas" webmentions=replies_to %}
     {% include webmentions/content_grid.html title="✎ menciones" webmentions=mentions %}
