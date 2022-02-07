@@ -7,6 +7,8 @@ require "cgi"
 
 module Jekyll
   class WebmentionsHackernewsGenerator < Generator
+    include Liquid::StandardFilters
+
     safe true
 
     BASE_FOLDER = "_comments"
@@ -16,6 +18,7 @@ module Jekyll
       post_ids = [
         29_306_410,
         29_801_240,
+        30_244_195,
       ]
 
       post_ids.each do |post_id|
