@@ -29,6 +29,7 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-environment-variables
+  - jekyll_miscellaneous
 
 # Collections
 feed_items: 10
