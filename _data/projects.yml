@@ -1,7 +1,11 @@
+- title: Jekyll Miscellaneous
+  emoji: 🔖
+  url: https://github.com/kinduff/jekyll_miscellaneous
+  description: A collection of opinionated plugins for Jekyll.
 - title: Awesome Made by Mexicans
   emoji: 🇲🇽
   url: https://github.com/kinduff/awesome-made-by-mexicans
-  description: A collection of amazing open source projects built by mexican developers
+  description: A collection of amazing open source projects built by mexican developers.
 - title: CS:GO Exporter
   emoji: 💣
   url: https://github.com/kinduff/csgo_exporter
@@ -25,7 +29,7 @@
 - title: Googleflog
   emoji: 🤡
   url: https://kinduff.github.io/googleflog
-  description: Traductor de español al estúpido idioma ** eEzhTiil0o meETr0ofl0oG *~ xD
+  description: Traductor de español al estúpido idioma ** eEzhTiil0o meETr0ofl0oG *~ xD.
 - title: JIRA Opener
   emoji: 📓
   url: https://kinduff.github.io/jira-opener
