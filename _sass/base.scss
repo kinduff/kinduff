@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   color: var(--font-color);
   background-color: var(--bg-color);
-  height: 100%;
+  min-height: 100%;
 }
 
 * {
@@ -26,7 +26,7 @@ body {
   line-height: 1.8em;
   font-size: 16px;
   margin: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 .wrap {
