@@ -1,6 +1,7 @@
 ---
 title: Code without commit
 date: 2022-02-14
+syndication: true
 description: >-
   Can't say how many projects I've started that I haven't finished.
 ---
