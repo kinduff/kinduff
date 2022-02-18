@@ -1,0 +1,32 @@
+---
+layout: default
+title: TV
+---
+
+<h1>
+  TV
+  <a href="/tv_feed.xml" target="blank" title="RSS feed">
+    {% include rss_icon.html %}
+  </a>
+</h1>
+
+<p>
+  Cada que encuentro un video que me gusta, lo guardo en una
+  lista especial y lo comparto aquí. Espero que estos videos
+  te gusten tanto como a mi.
+</p>
+
+<div class="video-list">
+  {% assign videos = site.videos | reverse %}
+  {% for video in videos %}
+    <div class="video-entry">
+      <p>
+        <a href="{{ video.url }}">
+          <img src="{{ video.thumbnail }}" alt="{{ video.title }}" />
+          <h3>{{ video.title }}</h3>
+          <p>{{ video.author }}</p>
+        </a>
+      </p>
+    </div>
+  {% endfor %}
+</div>

@@ -15,6 +15,7 @@ gem "httparty", "~> 0.20.0"
 gem "mini_magick", "~> 4.11.0"
 gem "ox", "~> 2.14.5"
 gem "jekyll_miscellaneous", "~> 1.1.0"
+gem "airrecord", "~> 1.0"
 
 gem "rubocop", "~> 1.18"
 gem "rubocop-performance", "~> 1.13"

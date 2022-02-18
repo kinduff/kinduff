@@ -71,6 +71,46 @@ ul.logos {
   }
 }
 
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  margin: 0 -5px;
+
+  .video-entry {
+    flex: 0 0 calc(100% - 10px);
+    margin: 15px 5px;
+
+    @media (min-width: 38em) {
+      flex: 0 0 calc(33% - 10px);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0;
+      text-align: center;
+      &::after {
+        content: none;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+}
+
 .post-metadata {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;

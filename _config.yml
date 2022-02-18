@@ -20,6 +20,11 @@ defaults:
       type: comments
     values:
       layout: comments
+  - scope:
+      path:
+      type: videos
+    values:
+      layout: video
 exclude:
   - README.md
   - LICENSE
@@ -47,6 +52,9 @@ collections:
     output: true
   comments:
     output: true
+  videos:
+    output: true
+    sort_by: date
 
 # SEO
 title: Alejandro AR (kinduff)
