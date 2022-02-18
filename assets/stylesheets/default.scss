@@ -78,18 +78,24 @@ ul.logos {
   margin: 0 -5px;
 
   .video-entry {
-    flex: 0 0 calc(100% - 10px);
-    margin: 15px 5px;
+    border: 1px solid var(--gray-color);
+    flex: 0 0 calc(100% - 20px);
+    margin: 10px 10px;
 
     @media (min-width: 38em) {
-      flex: 0 0 calc(33% - 10px);
+      flex: 0 0 calc(33% - 20px);
     }
 
     img {
       width: 100%;
+      vertical-align: top;
     }
 
     a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
       text-decoration: none;
     }
 
@@ -98,12 +104,15 @@ ul.logos {
       font-size: 1rem;
       margin: 0;
       text-align: center;
+      padding: 10px 5px 0;
+
       &::after {
         content: none;
       }
     }
 
     p {
+      padding: 10px 5px;
       margin: 0;
       font-size: 0.8rem;
       text-align: center;

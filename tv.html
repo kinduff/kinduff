@@ -20,13 +20,11 @@ title: TV
   {% assign videos = site.videos | reverse %}
   {% for video in videos %}
     <div class="video-entry">
-      <p>
-        <a href="{{ video.url }}">
-          <img src="{{ video.thumbnail }}" alt="{{ video.title }}" />
-          <h3>{{ video.title }}</h3>
-          <p>{{ video.author }}</p>
-        </a>
-      </p>
+      <a href="{{ video.url }}">
+        <img src="{{ video.thumbnail }}" alt="{{ video.title }}" />
+        <h3>{{ video.title }}</h3>
+        <p>{{ video.author }}</p>
+      </a>
     </div>
   {% endfor %}
 </div>

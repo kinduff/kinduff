@@ -4,7 +4,7 @@ Airrecord.api_key = ENV['AIRTABLE_API_KEY']
 
 class Saved < Airrecord::Table
   self.base_key = ENV['AIRTABLE_BASE_KEY']
-  self.table_name = ENV['AIRTABLE_TABLE_NAME']
+  self.table_name = 'YouTube Saved'
 end
 
 module Jekyll
@@ -22,8 +22,8 @@ module Jekyll
         puts video_file.to_s
 
         data = {
-          'title' => video["Title"],
-          'author' => video["Owner"],
+          'title' => video["Title"].strip,
+          'author' => video["Owner"].strip,
           'thumbnail' => "https://i.ytimg.com/vi/#{video["ID"]}/mqdefault.jpg",
           'date' => DateTime.parse(video["Created"]).strftime('%Y-%m-%d %H:%M:%S %z'),
         }
