@@ -1,7 +1,8 @@
 ---
 title: Finding X | A Mathematical Short Film
 author: Tibees
-thumbnail: https://i.ytimg.com/vi/MGp77CmhhLw/mqdefault.jpg
+thumbnail: "/assets/images/videos/yt_MGp77CmhhLw.jpg"
+og_image: "/assets/images/videos/yt_MGp77CmhhLw.jpg"
 date: '2022-01-25 02:30:05 +0000'
 ---
 
