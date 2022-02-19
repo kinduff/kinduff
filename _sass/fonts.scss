@@ -6,6 +6,7 @@
   src: local(''),
        url('/assets/fonts/cousine-v22-latin-regular.woff2') format('woff2'),
        url('/assets/fonts/cousine-v22-latin-regular.woff') format('woff');
+  font-display: swap;
 }
 
 /* cousine-700 - latin */
@@ -16,6 +17,7 @@
   src: local(''),
        url('/assets/fonts/cousine-v22-latin-700.woff2') format('woff2'),
        url('/assets/fonts/cousine-v22-latin-700.woff') format('woff');
+  font-display: swap;
 }
 
 /* dm-sans-regular - latin */
@@ -26,6 +28,7 @@
   src: local(''),
        url('/assets/fonts/dm-sans-v10-latin-regular.woff2') format('woff2'),
        url('/assets/fonts/dm-sans-v10-latin-regular.woff') format('woff');
+  font-display: swap;
 }
 
 /* dm-sans-700 - latin */
@@ -36,4 +39,5 @@
   src: local(''),
        url('/assets/fonts/dm-sans-v10-latin-700.woff2') format('woff2'),
        url('/assets/fonts/dm-sans-v10-latin-700.woff') format('woff');
+  font-display: swap;
 }
