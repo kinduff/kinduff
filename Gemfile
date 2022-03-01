@@ -9,6 +9,8 @@ gem "jekyll", "~> 4.2.1"
 gem "jekyll-environment-variables", "~> 1.0.1"
 gem "jekyll-seo-tag", :github => "kinduff/jekyll-seo-tag", :branch => "feat/image_option"
 gem "jekyll-sitemap", "~> 1.4.0"
+gem "jekyll_version_plugin", "~> 2.0"
+gem "jekyll-last-modified-at", "~> 1.3"
 
 gem "fastimage", "~> 2.2.5"
 gem "httparty", "~> 0.20.0"

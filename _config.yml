@@ -35,6 +35,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-environment-variables
   - jekyll_miscellaneous
+  - jekyll_version_plugin
+  - jekyll-last-modified-at
 
 # Collections
 feed_items: 10
