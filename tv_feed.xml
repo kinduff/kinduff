@@ -12,8 +12,9 @@ layout: null
   </author>
   <rights>© 2008-2022 Alejandro AR (kinduff.com)</rights>
   <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
-  <updated>{% for video in site.videos limit:1 %}{{ video.date | date_to_xmlschema }}{% endfor %}</updated>
-  {% for video in site.videos limit:site.feed_items %}
+  {% assign videos = site.videos | reverse %}
+  <updated>{% for video in videos limit:1 %}{{ video.date | date_to_xmlschema }}{% endfor %}</updated>
+  {% for video in videos limit:site.feed_items %}
     <entry>
       <id>{{ site.url }}{{ video.url }}</id>
       <title type="html">{{ video.title | xml_escape }}</title>
