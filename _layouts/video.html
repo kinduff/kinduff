@@ -8,4 +8,8 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {% include webmentions.html %}
+
+  <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
 </article>
