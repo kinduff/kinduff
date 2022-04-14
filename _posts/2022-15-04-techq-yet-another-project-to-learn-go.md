@@ -2,7 +2,7 @@
 title: TechQ, yet another project to learn Go
 date: 2022-04-15
 description: >-
-  New peers bring the missing objectivity that makes a team grow.
+  I built a small application called TechQ to learn a couple of things about Go
 ---
 
 I've been coding for more than 10 years, and I've used a variety of languages, but when it comes to fill my pockets I code in Ruby.
