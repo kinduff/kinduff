@@ -1,6 +1,6 @@
 ---
 title: TechQ, yet another project to learn Go
-date: 2022-04-15
+date: 2022-04-14
 description: >-
   I built a small application called TechQ to learn a couple of things about Go
 ---
