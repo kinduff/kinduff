@@ -122,6 +122,8 @@
         <i class="lni lni-book"></i> {{ words }}
         <i class="lni lni-timer"></i> {{ words | divided_by:180 }} min
         <i class="lni lni-eye"></i> <span id="hitcount"></span>
+        {% assign webmentions = site.webmentions | where: 'target', page.url %}
+        <i class="lni lni-comments"></i> {{ webmentions.size }}
       </p>
     </div>
   </div>
