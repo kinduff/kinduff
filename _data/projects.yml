@@ -1,3 +1,7 @@
+- title: TechQ
+  emoji: 🔀
+  url: https://techq.kinduff.com
+  description: Small application to get a random technical question for interviews.
 - title: Jekyll Miscellaneous
   emoji: 🔖
   url: https://github.com/kinduff/jekyll_miscellaneous
