@@ -122,7 +122,8 @@
         <i class="lni lni-book"></i> {{ words }}
         <i class="lni lni-timer"></i> {{ words | divided_by:180 }} min
         <i class="lni lni-eye"></i> <span id="hitcount"></span>
-        {% assign webmentions = site.webmentions | where: 'target', page.url %}
+        {% assign resource = site.url | append: page.url | remove: '/social' %}
+        {% assign webmentions = site.webmentions | where: 'target', resource %}
         <i class="lni lni-comments"></i> {{ webmentions.size }}
       </p>
     </div>
@@ -136,7 +137,7 @@
       `);
 
     const api = "https://count.kinduff.com/"
-    const resource = "{{site.url}}{{page.url | remove: '/social'}}";
+    const resource = "{{ resource }}";
     fetch(`${api}${resource}`)
       .then(res => res.json())
       .then((out) => {
