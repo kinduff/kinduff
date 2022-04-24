@@ -1,5 +1,28 @@
+<hr />
+<p>Have you written a response to this? Let me know the URL:</p>
+<form action="https://webmention.io/kinduff/webmention" method="post">
+  <input type="hidden" name="target" value="{{ page.url | absolute_url }}">
+  <input type="url" name="source">
+  <input type="submit" value="Send Webmention">
+</form>
+<p>
+  You can also respond
+  <a href="https://twitter.com/intent/tweet?text={{ page.url | absolute_url }}">
+    <img src="https://abs.twimg.com/favicons/favicon.ico" alt="Twitter" height="16" width="16">
+    with a tweet</a>,
+  or comment using
+  <a href="#" onclick="document.getElementById('comment').submit();">
+    <img src="https://commentpara.de/favicon.ico" alt="Comment Parade" height="16" width="16">
+    commentpara.de</a>.
+</p>
+<form action="https://quill.p3k.io/" target="_blank" style="display: inline;" id="comment">
+  <input type="hidden" name="dontask" value="1" />
+  <input type="hidden" name="me" value="https://commentpara.de/" />
+  <input type="hidden" name="reply" value="{{ page.url | absolute_url }}" />
+</form>
+
 {% assign webmentions = site.webmentions | where: 'target', page.url %}
-{% if site.webmentions.size > 0 %}
+{% if webmentions.size > 0 %}
   {% assign likes = webmentions | where: 'property', 'like-of' %}
   {% assign bookmarks = webmentions | where: 'property', 'bookmark-of' %}
   {% assign reposts = webmentions | where: 'property', 'repost-of' %}
