@@ -46,6 +46,27 @@ layout: default
   <p>
     Puedes ver el resto de <a href="/projects/">proyectos aquí</a>.
   </p>
+
+  <h2>
+    Últimas entradas en TV
+  </h2>
+
+  <div class="video-list">
+    {% assign videos = site.videos | reverse %}
+    {% for video in videos limit: 3 %}
+      <div class="video-entry">
+        <a href="{{ video.url }}">
+          <img src="{{ video.thumbnail }}" alt="{{ video.title }}" loading="lazy" />
+          <h3>{{ video.title }}</h3>
+          <p>{{ video.author }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <p>
+    Puedes ver el resto de <a href="/tv/">videos aquí</a>.
+  </p>
 </div>
 
 {% include hello.html %}
