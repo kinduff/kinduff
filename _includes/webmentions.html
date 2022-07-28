@@ -1,4 +1,23 @@
+{% assign webmentions = site.webmentions | where: 'target', page.url %}
+{% if webmentions.size > 0 %}
+  {% assign likes = webmentions | where: 'property', 'like-of' %}
+  {% assign bookmarks = webmentions | where: 'property', 'bookmark-of' %}
+  {% assign reposts = webmentions | where: 'property', 'repost-of' %}
+  {% assign replies_to = webmentions | where: 'property', 'in-reply-to' %}
+  {% assign mentions = webmentions | where: 'property', 'mention-of' | sort: 'published_at' %}
+  <hr />
+  <div class="webmentions">
+    <p class="wm-main-title">Webmentions ({{ webmentions.size }})</p>
+    {% include webmentions/avatar_grid.html title="♥ likes" webmentions=likes %}
+    {% include webmentions/avatar_grid.html title="🕮 bookmarks" webmentions=bookmarks %}
+    {% include webmentions/avatar_grid.html title="↯ reposts" webmentions=reposts %}
+    {% include webmentions/content_grid.html title="↳ respuestas" webmentions=replies_to %}
+    {% include webmentions/content_grid.html title="✎ menciones" webmentions=mentions %}
+  </div>
+{% endif %}
+
 <hr />
+
 <p>Have you written a response to this? Let me know the URL:</p>
 <form action="https://webmention.io/kinduff/webmention" method="post">
   <input type="hidden" name="target" value="{{ page.url | absolute_url }}">
@@ -20,21 +39,3 @@
   <input type="hidden" name="me" value="https://commentpara.de/" />
   <input type="hidden" name="reply" value="{{ page.url | absolute_url }}" />
 </form>
-
-{% assign webmentions = site.webmentions | where: 'target', page.url %}
-{% if webmentions.size > 0 %}
-  {% assign likes = webmentions | where: 'property', 'like-of' %}
-  {% assign bookmarks = webmentions | where: 'property', 'bookmark-of' %}
-  {% assign reposts = webmentions | where: 'property', 'repost-of' %}
-  {% assign replies_to = webmentions | where: 'property', 'in-reply-to' %}
-  {% assign mentions = webmentions | where: 'property', 'mention-of' | sort: 'published_at' %}
-  <hr />
-  <div class="webmentions">
-    <p class="wm-main-title">Webmentions ({{ webmentions.size }})</p>
-    {% include webmentions/avatar_grid.html title="♥ likes" webmentions=likes %}
-    {% include webmentions/avatar_grid.html title="🕮 bookmarks" webmentions=bookmarks %}
-    {% include webmentions/avatar_grid.html title="↯ reposts" webmentions=reposts %}
-    {% include webmentions/content_grid.html title="↳ respuestas" webmentions=replies_to %}
-    {% include webmentions/content_grid.html title="✎ menciones" webmentions=mentions %}
-  </div>
-{% endif %}
