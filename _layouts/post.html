@@ -17,9 +17,4 @@ layout: default
   {% include webmentions.html %}
 
   <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
-
-  {% if page.syndication %}
-    <a href="https://news.indieweb.org/en" class="u-syndication" hidden>Also posted on IndieNews</a>
-  {% endif %}
 </article>
-
