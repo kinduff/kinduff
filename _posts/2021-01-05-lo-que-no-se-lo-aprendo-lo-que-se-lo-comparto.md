@@ -17,7 +17,7 @@ Después encontré otro tutorial, y después otro, y otro. Luego encontraba ==pe
 
 Me sentía inspirado, me gustaba mucho lo que hacían por mi: compartirme su conocimiento de forma "gratuita". Yo no les daba nada a cambio, además de un comentario o kudos. De ahí nació mi intención y gusto por compartir, para regresarle a la comunidad, para ==ayudar a personas que necesitan información==.
 
-Hoy en día encontramos a muchos y muchas creadores de contenido, y **muchas veces damos por hecho que todo lo que hay que enseñar**, ==ya está enseñado==. ¿Pero cuántas veces te ha servidob una página de Stackoverflow o un blog para sacarte de apuros? ==¿Cuántas veces has respondido preguntas en foros públicos o escrito algo para ayudar a los demás?==
+Hoy en día encontramos a muchos y muchas creadores de contenido, y **muchas veces damos por hecho que todo lo que hay que enseñar**, ==ya está enseñado==. ¿Pero cuántas veces te ha servido una página de Stackoverflow o un blog para sacarte de apuros? ¿Cuántas veces has respondido preguntas en foros públicos o escrito algo para ayudar a los demás?
 
 Y es que **a través de enseñar algo**, de compartir conocimiento, ==es donde mas ganamos==; por valor monetario, o por simplemente hacerlo, porque seguro nuestro yo del pasado lo agradecería bastante.
 
