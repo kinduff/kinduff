@@ -8,6 +8,8 @@
   <meta property="og:image:width" content="630" />
   <meta property="twitter:image" content="https://sc.kinduff.com/{{site.url | append: page.url | append: 'social/' | uri_encode }}/" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="{{ page.author.name }}" />
 {% elsif page.og_image.size > 0 %}
   <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
   <meta property="og:image:height" content="{{ page.og_image | image_size: 'w' }}" />

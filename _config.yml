@@ -14,7 +14,9 @@ defaults:
     values:
       is_post: true
       layout: post
-      author: Alejandro AR
+      author:
+        name: Alejandro AR
+        twitter: kinduff
   - scope:
       path:
       type: comments
