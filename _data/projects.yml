@@ -1,3 +1,7 @@
+- title: Firefly III Prometheus Exporter
+  emoji: 🔥🪰
+  url: https://github.com/kinduff/firefly_iii_exporter
+  description: A Prometheus exporter for Firefly III
 - title: TechQ
   emoji: 🔀
   url: https://techq.kinduff.com
