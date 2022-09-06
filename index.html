@@ -7,7 +7,7 @@ layout: default
   <h1 id="hello">Hola 👋</h1>
 
   <div class="avatar">
-    <img src="/assets/images/hotlink-ok/avatar.jpg" alt="Una representación de Alejandro dibujada por una IA" class="u-photo u-logo">
+    <img src="/assets/images/hotlink-ok/avatar.jpg" width="150" height="150" alt="Una representación de Alejandro dibujada por una IA" class="u-photo u-logo">
   </div>
 
   <p>
@@ -56,7 +56,7 @@ layout: default
     {% for video in videos limit: 3 %}
       <div class="video-entry">
         <a href="{{ video.url }}">
-          <img src="{{ video.thumbnail }}" alt="{{ video.title }}" loading="lazy" />
+          <img src="{{ video.thumbnail }}" width="{{ video.thumbnail | image_size: 'w' }}" height="{{ video.thumbnail | image_size: 'h' }}" alt="{{ video.title }}" loading="lazy" />
           <h3>{{ video.title }}</h3>
           <p>{{ video.author }}</p>
         </a>
