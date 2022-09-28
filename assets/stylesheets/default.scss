@@ -63,10 +63,13 @@ ul.logos {
       padding-right: 10px;
     }
 
+    span {
+      flex: 1;
+    }
+
     a {
       background-color: transparent;
       font-weight: bold;
-      flex: 1;
     }
   }
 }
