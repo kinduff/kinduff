@@ -81,7 +81,7 @@ And then it hit us. One of the jobs was calling our exchange rate service. We du
 
 I'm pretty sure you have heard this quote:
 
-> There are only two hard things in Computer Science: cache invalidation and naming things.
+> _"There are only two hard things in Computer Science: cache invalidation and naming things."_
 >
 > -- Phil Karlton
 
