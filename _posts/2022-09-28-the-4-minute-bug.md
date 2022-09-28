@@ -17,29 +17,29 @@ When your platform grows in instance count, you want to be able to handle costs.
 
 Let's assume we have the API integration in place and every time we ask for an exchange rate, we go and fetch the data from the service and use it.
 
-![](/assets/images/posts/4mb6.png)
+![Diagram showing a blocking call between a request, a server, and a API service.](/assets/images/posts/4mb6.png)
 
 This is expensive since we will need to rely on the uptime of the service, the latency of the network response, and the processing of the data.
 
 So instead of asking for the data every time we ask for an exchange rate, we do it asynchronously and save it in memory in a background job.
 
-![](/assets/images/posts/4mb5.png)
+![Diagram showing a server doing an async call to save data from the API in memory, and a request making use of it.](/assets/images/posts/4mb5.png)
 
 When we ask for the exchange rate, we will read from that memory store instead. Let's do this every hour so we can keep the data up to date and on boot, so we don't delay any calls.
 
 Now this works for a while until you start to scale because what happens is that every time a new instance is spawned it will go and fetch the data from the API and save it to memory, and run the background job every hour to keep the data up to date.
 
-![](/assets/images/posts/4mb3.png)
+![Diagram showing how with more instances, the amount of requests to the API service increases with new spawns.](/assets/images/posts/4mb3.png)
 
 You do this for every machine you spawn so you multiply the API calls you do every hour times the number of instances you have.
 
 Now your API bill is skyrocketing or the calls are being blocked because you're not within the tier you're paying, because your business is so successful it needs more and more instances every time.
 
-![](/assets/images/posts/4mb4.png)
+![Diagram showing a server using a cache store to save the API service response, and a request making use of it.](/assets/images/posts/4mb4.png)
 
 So instead of saving it in memory let's use a shared store like Redis, so any instance that is spawned, instead of fetching data on boot and every hour, it consumes data from the store.
 
-![](/assets/images/posts/4mb2.png)
+![Diagram showing a scheduler instance doing an async call to fill out the store, and multiple server instances using the same cache store.](/assets/images/posts/4mb2.png)
 
 In a special instance, let's call it a scheduler, we run the background job only once. So now it doesn't matter how many instances you spawn, your bill or API calls will remain the same.
 
@@ -93,9 +93,11 @@ When digging deeper we noticed that there were some calls made on a helper to ou
 
 Here is what happened: the service was integrated and revisited at two different times, years apart, and the team responsible for the initial integration was not the same that made the revisit, so some context was lost. There were two parts that were colliding: the service itself that was in a cronjob running every hour at minute 4, and the service that wrote a TTL for one hour.
 
-![](/assets/images/posts/4mb1.png)
+![Representation of time and how given the timings of the TTL and the cache regeneration trigger have 4 minutes appart.](/assets/images/posts/4mb1.png)
 
 As we can see in this beautiful drawing, we have a background job that runs every hour at minute 4, and a TTL that is set by the end of the hour. This caused a safeguard to be triggered: it would go and fetch data from a backup and write the data in the cache-store. This happened with each call of the service which is used massively. These fetch and write data calls were happening until the cronjob kicked in, writing the data and resetting the TTL.
+
+**But why it didn't happen every hour after the deployment?** Good question! If you read the debug diary it didn't happen at 13:00 nor at 15:00, and this is because of one of those safeguards we had: every time a deployment happened, the service would go and re-fetch the data, resetting the TTL, avoiding the 4-minute bug.
 
 ## Final words
 
