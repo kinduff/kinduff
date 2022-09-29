@@ -97,7 +97,7 @@ Here is what happened: the service was integrated and revisited at two different
 
 As we can see in this beautiful drawing, we have a background job that runs every hour at minute 4, and a TTL that is set by the end of the hour. This caused a safeguard to be triggered: it would go and fetch data from a backup and write the data in the cache-store. This happened with each call of the service which is used massively. These fetch and write data calls were happening until the cronjob kicked in, writing the data and resetting the TTL.
 
-**But why it didn't happen every hour after the deployment?** Good question! If you read the debug diary it didn't happen at 13:00 nor at 15:00, and this is because of one of those safeguards we had: every time a deployment happened, the service would go and re-fetch the data, resetting the TTL, avoiding the 4-minute bug.
+**But why didn't it happen every hour after the deployment?** Good question! If you read the debug diary it didn't happen at 13:00 nor at 15:00, and this is because of one of those safeguards we had: every time a deployment happened, the service would go and re-fetch the data, resetting the TTL, avoiding the 4-minute bug.
 
 ## Final words
 
