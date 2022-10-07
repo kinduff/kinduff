@@ -62,8 +62,8 @@ collections:
 
 # SEO
 title: Alejandro AR (kinduff)
-tagline: El sitio web de Alejandro AR (kinduff).
-description: Sitio web de Alejandro AR (kinduff); blog, proyectos, tecnología.
+tagline: Alejandro AR (kinduff) website.
+description: Alejandro AR (kinduff) website with blog posts, projects, videos, and more.
 base_url: https://kinduff.com
 url: https://kinduff.com
 author: Alejandro AR (kinduff)
@@ -81,7 +81,7 @@ social:
     - https://trakt.tv/users/kinduff
     - https://www.goodreads.com/kinduff
     - https://steamcommunity.com/id/kinduff
-lang: es_ES
+lang: en_US
 
 jekyll_last_fm:
   user:
