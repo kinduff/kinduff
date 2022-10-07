@@ -1,7 +1,3 @@
-{% assign m = include.resource.date | date: "%-m" | minus: 1 %}
-{% assign day = include.resource.date | date: "%d" %}
-{% assign month = site.data.spanish.months.long[m] %}
-{% assign year = include.resource.date | date: "%Y" %}
 <time class="dt-published" datetime="{{ include.resource.date | date_to_xmlschema }}">
-  {{ day }} de {{ month }} del {{ year }}
+  {{ include.resource.date | date: "%d" | plus:'0' }} {{ include.resource.date | date: "%B %Y" }}
 </time>

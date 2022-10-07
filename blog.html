@@ -11,15 +11,13 @@ title: Blog
 </h1>
 
 <p>
-  Me gusta escribir sobre diferentes temas, muchos relacionados a la tecnología.
-  Unos están relacionados a lenguajes de programación, un poco a filosofía y
-  también a la vida cotidiana.
+  I like to write about different topics, many related to technology.
+  Some are related to programming languages, a bit to philosophy and also to everyday life.
 </p>
 
 <p>
-  La mayoría de las entradas están en este blog, pero si están marcadas con el símbolo
-  <code class="language-plaintext highlighter-rouge">⧉</code> significa que son enlaces
-  externos a sitios en donde solía escribir.
+  Most of the entries are on this blog, but if they are marked with the symbol
+  <code class="language-plaintext highlighter-rouge">⧉</code> it means they are external links to sites where I used to write.
 </p>
 
 {% for post in site.posts %}
@@ -39,7 +37,6 @@ title: Blog
       </small>
       <span>
         {% if post.external %}<a href="{{ post.external_url }}">{{ post.title }}</a>{% else %}<a href="{{ post.url }}">{{ post.title }}</a>{% endif %}{% if post.description %}: {{ post.description }}{% endif %}
-
       </span>
     </p>
   </div>

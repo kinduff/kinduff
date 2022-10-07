@@ -1,2 +1,8 @@
 {% assign words = include.resource | number_of_words %}
-{{ words }} palabras — {{ words | divided_by:180 }} min
+
+{{ words }} words —
+{% if words < 360 %}
+  1 min
+{% else %}
+  {{ words | divided_by:180 }} mins
+{% endif %}
