@@ -1,7 +1,7 @@
 <a href="{{ include.author.url }}" title="{{ include.author.name }}" class="wm-avatar">
   {% if include.author.photo.size > 0 %}
-    <img src="{{ include.author.photo }}" width="50" height="50" loading="lazy" />
+    <img src="{{ include.author.photo }}" width="50" height="50" loading="lazy" alt="{{ include.author.name }}" />
     {% else %}
-    <img src="https://avatars.dicebear.com/api/big-ears-neutral/{{ include.author.name }}.svg" width="50" height="50" loading="lazy" />
+    <img src="https://avatars.dicebear.com/api/big-ears-neutral/{{ include.author.name }}.svg" width="50" height="50" loading="lazy" alt="{{ include.author.name }}" />
   {% endif %}
 </a>
