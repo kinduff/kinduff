@@ -7,7 +7,7 @@
     fetch(`${api}${resource}`)
     .then(res => res.json())
     .then((out) => {
-      document.querySelector("#hitcount").innerHTML = `— ${out["total"]} visitas`;
+      document.querySelector("#hitcount").innerHTML = `— ${out["total"]} views`;
     })
   </script>
 {% endif %}
