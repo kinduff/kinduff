@@ -21,3 +21,9 @@ module Jekyll
     end
   end
 end
+
+class Jekyll::Document
+  def html?
+    false
+  end
+end

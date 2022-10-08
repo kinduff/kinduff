@@ -34,11 +34,12 @@ exclude:
 
 # Plugins
 plugins:
-  - jekyll-seo-tag
-  - jekyll-environment-variables
   - jekyll_miscellaneous
   - jekyll_version_plugin
+  - jekyll-environment-variables
   - jekyll-last-modified-at
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Collections
 feed_items: 10
@@ -59,6 +60,8 @@ collections:
   videos:
     output: true
     sort_by: date
+  social:
+    output: true
 
 # SEO
 title: Alejandro AR (kinduff)
