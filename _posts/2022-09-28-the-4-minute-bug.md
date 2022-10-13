@@ -69,7 +69,7 @@ We knew there was some kind of race condition given the exact time the performan
 
 **At 15:00** nothing happened. We looked at some graphs from our services and everything looked normal, but it didn't feel good. The cache key was not the villain, it was just the obvious change, so it felt like cheating the bug out.
 
-We commented on all our crons and started to execute them one by one manually during this one-hour window. Even though we had little evidence that the bug was still there, we wanted to run and find out what happened before the next hour.
+We commented out all our crons and started to execute them one by one manually during this one-hour window. Even though we had little evidence that the bug was still there, we wanted to run and find out what happened before the next hour.
 
 **At 16:00** we started receiving alerts like crazy, and again: spike on read and write ops on our cache-store. Something was really off, and since Latin America was waking up - a term I love to use since it's our highest traffic - we were scared that this bug was going to bring us down.
 
