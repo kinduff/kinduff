@@ -1,5 +1,5 @@
 ---
-title: ""Stop Writing Dead Programs" by Jack Rusher (Strange Loop 2022)"
+title: "\"Stop Writing Dead Programs\" by Jack Rusher (Strange Loop 2022)"
 author: "Strange Loop Conference"
 thumbnail: "/assets/images/videos/yt_8Ab3ArE8W3s.jpg"
 og_image: "/assets/images/videos/yt_8Ab3ArE8W3s.jpg"
