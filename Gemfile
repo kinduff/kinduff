@@ -14,7 +14,7 @@ gem "jekyll-last-modified-at", "~> 1.3"
 gem "jekyll-compose", "~> 0.12.0"
 
 gem "fastimage", "~> 2.2.5"
-gem "httparty", "~> 0.20.0"
+gem "httparty", "~> 0.21.0"
 gem "mini_magick", "~> 4.11.0"
 gem "ox", "~> 2.14.5"
 gem "jekyll_miscellaneous", "~> 1.2.0"
