@@ -1,0 +1,25 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Links | {{ site.title | xml_escape }}</title>
+  <id>{{ site.url }}</id>
+  <link href="{{ site.url }}/{{ page.path }}" rel="self" />
+  <link href="{{ site.url }}/links" />
+  <author>
+    <name>{{ site.author | xml_escape }}</name>
+  </author>
+  <rights>© 2008-2022 Alejandro AR (kinduff.com)</rights>
+  <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
+  {% assign links = site.links | reverse %}
+  <updated>{% for link in links limit:1 %}{{ link.date | date_to_xmlschema }}{% endfor %}</updated>
+  {% for link in links limit:site.feed_items %}
+    <entry>
+      <id>{{ link.link }}</id>
+      <title type="html">{{ link.title | xml_escape }}</title>
+      <link href="{{ link.link }}" />
+      <updated>{{ link.date | date_to_xmlschema }}</updated>
+    </entry>
+  {% endfor %}
+</feed>

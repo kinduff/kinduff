@@ -60,6 +60,9 @@ collections:
   videos:
     output: true
     sort_by: date
+  links:
+    output: false
+    sort_by: date
   social:
     output: true
 

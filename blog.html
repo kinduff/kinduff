@@ -28,11 +28,9 @@ title: Blog
   {% endif %}
   <div class="blog-entry">
     <p>
-      {% assign m = post.date | date: "%-m" | minus: 1 %}
-      {% assign month = site.data.spanish.months.short[m] %}
       <small>
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%d" }} {{ month }}
+        <time datetime="{{ post.date | date_to_xmlschema }}" title="{{ post.date | date: "%a %b %d %Y" }}">
+          {{ post.date | date: "%b" }}
         </time>
       </small>
       <span>

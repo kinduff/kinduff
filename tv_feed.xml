@@ -3,10 +3,10 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title | xml_escape }}</title>
+  <title>TV | {{ site.title | xml_escape }}</title>
   <id>{{ site.url }}</id>
   <link href="{{ site.url }}/{{ page.path }}" rel="self" />
-  <link href="{{ site.url }}" />
+  <link href="{{ site.url }}/tv" />
   <author>
     <name>{{ site.author | xml_escape }}</name>
   </author>

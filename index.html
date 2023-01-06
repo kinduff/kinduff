@@ -67,6 +67,27 @@ layout: default
   <p>
     You can watch the rest of the <a href="/tv/">videos here</a>.
   </p>
+
+  <h2>
+    Latest links
+  </h2>
+
+  {% assign links = site.links | reverse %}
+  {% for link in links limit: 5 %}
+    <p>
+      <b
+        ><a
+          href="{{ link.link }}"
+          target="blank"
+          >🔗 {{ link.title }}</a
+        ></b
+      >
+    </p>
+  {% endfor %}
+
+  <p>
+    You can see <a href="/links/">the rest of the link here</a>.
+  </p>
 </div>
 
 {% include hello.html %}
