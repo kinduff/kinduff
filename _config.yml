@@ -93,3 +93,5 @@ jekyll_last_fm:
   user:
   api_key:
   limit:
+
+excerpt_separator: ''
