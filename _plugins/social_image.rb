@@ -22,8 +22,10 @@ module Jekyll
   end
 end
 
-class Jekyll::Document
-  def html?
-    false
+module Jekyll
+  class Document
+    def html?
+      false
+    end
   end
 end

@@ -12,9 +12,6 @@ AllCops:
     - tmp/**/*
   NewCops: disable
 
-Gemspec/DateAssignment:
-  Enabled: true
-
 Layout/BeginEndAlignment:
   Enabled: true
 Layout/EmptyComment:

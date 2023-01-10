@@ -31,6 +31,7 @@ exclude:
   - README.md
   - LICENSE
   - Dockerfile
+  - .jekyll-cache
 
 # Plugins
 plugins:
@@ -40,6 +41,7 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 # Collections
 feed_items: 10
@@ -95,3 +97,4 @@ jekyll_last_fm:
   limit:
 
 excerpt_separator: ''
+incremental: true

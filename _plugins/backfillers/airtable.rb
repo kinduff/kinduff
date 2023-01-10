@@ -1,10 +1,12 @@
-require 'airrecord'
+# frozen_string_literal: true
 
-Airrecord.api_key = ENV['AIRTABLE_API_KEY']
+require "airrecord"
+
+Airrecord.api_key = ENV["AIRTABLE_API_KEY"]
 
 class Saved < Airrecord::Table
-  self.base_key = ENV['AIRTABLE_BASE_KEY']
-  self.table_name = 'YouTube Saved'
+  self.base_key = ENV["AIRTABLE_BASE_KEY"]
+  self.table_name = "YouTube Saved"
 end
 
 module Jekyll
@@ -13,7 +15,7 @@ module Jekyll
 
     BASE_FOLDER = "_videos"
 
-    def generate(site)
+    def generate(_site)
       return
 
       Saved.all.each do |video|
@@ -24,11 +26,11 @@ module Jekyll
         image_path = "assets/images/videos/yt_#{video["ID"]}.jpg"
 
         data = {
-          'title' => video["Title"].strip,
-          'author' => video["Owner"].strip,
-          'thumbnail' => "/#{image_path}",
-          'og_image' => "/#{image_path}",
-          'date' => DateTime.parse(video["Created"]).strftime('%Y-%m-%d %H:%M:%S %z'),
+          "title"     => video["Title"].strip,
+          "author"    => video["Owner"].strip,
+          "thumbnail" => "/#{image_path}",
+          "og_image"  => "/#{image_path}",
+          "date"      => DateTime.parse(video["Created"]).strftime("%Y-%m-%d %H:%M:%S %z"),
         }
 
         yaml = YAML.dump(data)
