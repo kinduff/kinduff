@@ -74,12 +74,14 @@ layout: default
 
   {% assign links = site.links | reverse %}
   {% for link in links limit: 5 %}
+    {% assign description = link.description %}
     <div>
       <p>
-        <b><a href="{{ link.link }}">
-          <img src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico" width="15px" loading="lazy" style="vertical-align: middle;" />
-          {{ link.title }}</a></b>:
-          {{ link.description }}
+        <b>
+          <a href="{{ link.link }}">
+            <img src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico" width="15px" loading="lazy" style="vertical-align: middle;" />
+            {{ link.title }}</a></b>{% if description and description != "" %}:{% endif %}
+            {{ description }}
       </p>
     </div>
   {% endfor %}

@@ -21,12 +21,14 @@ description: >-
   <h3>{{ group.name | capitalize }}</h3>
   {% assign links = group.items | reverse %}
   {% for link in links %}
+    {% assign description = link.description %}
     <div>
       <p>
-        <b><a href="{{ link.link }}">
-          <img src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico" width="15px" loading="lazy" style="vertical-align: middle;" />
-          {{ link.title }}</a></b>:
-          {{ link.description }}
+        <b>
+          <a href="{{ link.link }}">
+            <img src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico" width="15px" loading="lazy" style="vertical-align: middle;" />
+            {{ link.title }}</a></b>{% if description and description != "" %}:{% endif %}
+            {{ description }}
       </p>
     </div>
   {% endfor %}

@@ -16,7 +16,7 @@ layout: null
   <updated>{% for link in links limit:1 %}{{ link.date | date_to_xmlschema }}{% endfor %}</updated>
   {% for link in links limit:site.feed_items %}
     <entry>
-      <id><![CDATA[{{ link.link }}]]></id>
+      <id>{{ link.link | base64_encode }}></id>
       <title type="html">{{ link.title | xml_escape }}</title>
       <updated>{{ link.date | date_to_xmlschema }}</updated>
       <content type="html"><![CDATA[{{ link.description }} {{ link.link }}]]></content>
