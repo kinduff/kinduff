@@ -17,7 +17,7 @@ layout: null
   {% for video in videos limit:site.feed_items %}
     <entry>
       <id>{{ site.url }}{{ video.url }}</id>
-      <title type="html">{{ video.title | xml_escape }}</title>
+      <title type="html">{{ video.title | xml_escape }} - {{ video.author }}</title>
       <link href="{{ site.url }}{{ video.url }}" />
       <updated>{{ video.date | date_to_xmlschema }}</updated>
       <content type="html"><![CDATA[{{ video.content }}]]></content>

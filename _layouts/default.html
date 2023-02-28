@@ -40,9 +40,19 @@
       <meta http-equiv="refresh" content="0;url={{ page.external_url }}" />
     {% endif %}
     <script async src="https://cdn.splitbee.io/sb.js"></script>
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
   </head>
   <body>
     <div class="wrap">
+      <input type="text" id="search-input" placeholder="Search blog posts..">
+      <ul id="results-container"></ul>
+      <script>
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/search.json'
+        })
+      </script>
       {% include_cached navigation.html %}
 
       {{ content }}

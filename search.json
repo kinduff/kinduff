@@ -1,0 +1,31 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"       : "{{ post.title | escape }}",
+      "url"         : "{{ site.baseurl }}{{ post.url }}",
+      "date"        : "{{ post.date }}",
+      "description" : {{ post.description | jsonify }},
+      "content"     : {{ post.content | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for link in site.links %}
+    {
+      "title"       : "{{ link.title | escape }}",
+      "url"         : "{{ link.link }}",
+      "date"        : "{{ link.date }}",
+      "description" : {{ link.description | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for video in site.videos %}
+    {
+      "title"       : "{{ video.title | escape }} - {{ video.author }}",
+      "url"         : "{{ video.url }}",
+      "date"        : "{{ video.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
