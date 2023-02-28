@@ -1,7 +1,5 @@
 # Hola, soy Alejandro <img src="https://user-images.githubusercontent.com/1270156/94347868-40c8c480-0038-11eb-9a7c-9d3dfb608e33.gif" height="43px">
 
-_Software Engineer at [@dmstk](https://github.com/dmstk)_
-
 <a href="https://kinduff.com"><img src="https://img.shields.io/badge/%E2%9A%A1%20kinduff.com-F2F2F2.svg?&style=flat" /></a> <a href="https://twitter.com/kinduff"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/kinduff?style=social"></a> <a href="https://github.com/kinduff"><img alt="GitHub followers" src="https://img.shields.io/github/followers/kinduff?style=social"></a> <a href="https://linkedin.com/in/kinduff"><img alt="LinkedIn" src="https://img.shields.io/badge/kinduff-%230077B5.svg?&style=flat&logo=linkedin&logoColor=white"></a> <img alt="Visitor count" src="https://visitor-badge.laobi.icu/badge?page_id=kinduff">
 
 **Languages**
