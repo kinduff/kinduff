@@ -2,7 +2,7 @@
 title: The Cotorreo
 date: 2023-03-02
 description: >-
-  Here's a simple idea for remote teams feeling disconnected. A great way to start the day on a positive note
+  Here's a simple idea for remote teams feeling disconnected. A great way to start the day on a positive note.
 ---
 
 > Cotorreo (*koh-toh-reh-oh*): Mexican Spanish, colloquial term that refers to a lively and playful conversation among friends.
