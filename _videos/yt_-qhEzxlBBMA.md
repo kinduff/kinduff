@@ -1,5 +1,5 @@
 ---
-title: "I made a song entirely from artists singing "yeah""
+title: "I made a song entirely from artists singing \"yeah\""
 author: "There I Ruined It"
 thumbnail: "/assets/images/videos/yt_-qhEzxlBBMA.jpg"
 og_image: "/assets/images/videos/yt_-qhEzxlBBMA.jpg"
