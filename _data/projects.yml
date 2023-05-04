@@ -1,3 +1,7 @@
+- title: Adjective Adjective Animal
+  emoji: 🐘
+  url: https://github.com/kinduff/adjective_adjective_animal
+  description: Ruby gem that generates a random (seed support) animal name with two adjectives in front of it.
 - title: Dog API
   emoji: 🐶
   url: https://dogapi.dog
