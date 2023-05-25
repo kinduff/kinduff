@@ -14,6 +14,7 @@ gem "jekyll-sass-converter", "~> 2.0"
 gem "jekyll-seo-tag", :github => "kinduff/jekyll-seo-tag", :branch => "feat/image_option"
 gem "jekyll-sitemap", "~> 1.4.0"
 gem "jekyll_version_plugin", "~> 2.0"
+gem "jekyll-inline-svg", "~> 1.1"
 
 gem "airrecord", "~> 1.0"
 gem "fastimage", "~> 2.2.5"
