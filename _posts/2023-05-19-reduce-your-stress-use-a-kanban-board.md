@@ -8,7 +8,7 @@ description: >-
 Congratulations on your new job! However, you may soon realize that there is a lack of organization within the company, which is affecting your performance. Besides addressing the management skills of your team, supervisor, or relevant stakeholders, it's important to minimize your stress. Here's a trick I've been using for several years and the advice I usually give in such situations.
 
 > **TL;DR**: To improve organization and minimize stress at work, set expectations and provide visibility for yourself and your coworkers by creating a four-column kanban board that reflects the current state of your work.
-> [Use this Trello template to get started](https://https://trello.com/b/GFg20Yai/my-work-board).
+> [Use this Trello template to get started](https://trello.com/b/GFg20Yai/my-work-board).
 
 ## Table of Contents
 
@@ -102,7 +102,7 @@ Now let's see how the kanban board and its columns align with the questions you 
 
 Make sure to share the board with your team, lead, or other stakeholders. This is essential for fostering collaboration and transparency, which are our main goals. Grant your team read and write access so they can contribute by adding comments, tasks, and offering help when needed.
 
-[Use this Trello template to get started](https://https://trello.com/b/GFg20Yai/my-work-board).
+[Use this Trello template to get started](https://trello.com/b/GFg20Yai/my-work-board).
   
 ## Conclusion
 
