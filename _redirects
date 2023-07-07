@@ -15,3 +15,5 @@
 /blog/2016-08-14-googleflog-the-parody-that-turned-great/ /2016/08/14/googleflog-the-parody-that-turned-great/ 301
 /blog/2016-09-14-automatic-version-switch-for-nvm/ /2016/09/14/automatic-version-switch-for-nvm/ 301
 /blog/2019-04-23-el-fizz-buzz-esta-muerto-larga-vida-al-fizz-buzz/ /2019/04/23/el-fizz-buzz-esta-muerto-larga-vida-al-fizz-buzz/ 301
+/.well-known/host-meta* https://fed.brid.gy/.well-known/host-meta:splat 302
+/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger 302
