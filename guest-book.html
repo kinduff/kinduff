@@ -7,11 +7,7 @@ title: Guestbook
   Guestbook
 </h1>
 
-<form
-  action="{{ site.env.GUEST_BOOK_FORM_URL }}"
-  name="guest-book"
-  method="POST"
->
+<form action="https://n8n.lasagna.pizza/webhook/999ac29d-ed05-4032-a837-3aee7794d36b" method="POST">
   <p>
     <label for="name">Your name (or nickname)</label>
     <input type="text" name="name" id="name"></label>
@@ -30,10 +26,10 @@ title: Guestbook
 <hr />
 {% assign entries = site.guestbook_entries | reverse %}
 {% for entry in entries %}
-  <p>
-    <b
-      >{{ entry.name }}</b
-    >: {{ entry.content | remove: '<p>' | remove: '</p>' }}
-  </p>
-  {% unless forloop.last %}<hr />{% endunless %}
+<p>
+  <b>{{ entry.name }}</b>: {{ entry.content | remove: '
+<p>' | remove: '</p>' }}
+</p>
+{% unless forloop.last %}
+<hr />{% endunless %}
 {% endfor %}
