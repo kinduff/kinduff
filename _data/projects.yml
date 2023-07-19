@@ -1,3 +1,7 @@
+- title: Ansible Docker n8n Role
+  emoji: ♾️
+  url: https://github.com/kinduff/ansible-docker-n8n
+  description: Ansible role which installs n8n to run as a Docker container wrapped in a systemd service.
 - title: Adjective Adjective Animal
   emoji: 🐘
   url: https://github.com/kinduff/adjective_adjective_animal
