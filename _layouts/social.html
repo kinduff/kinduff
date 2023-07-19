@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex">
@@ -58,13 +59,13 @@
       justify-content: start;
     }
 
-    .main > div {
+    .main>div {
       width: 90%;
     }
 
     .site-title {
       color: #b72d2d;
-      font-size: 2.5vw;
+      font-size: 2rem;
       font-weight: 700;
       text-align: left;
     }
@@ -72,7 +73,7 @@
     h1 {
       font-family: 'DM Sans', sans-serif;
       font-weight: 700;
-      font-size: 6vw;
+      font-size: 8rem;
       line-height: 1.15;
       display: inline;
     }
@@ -80,19 +81,20 @@
     .description {
       width: 90%;
       margin-top: 25px;
-      font-size: 2vw;
+      font-size: 4rem;
       line-height: 1.5;
       font-weight: 400;
     }
 
     .data {
-      font-size: 2.3vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 3rem;
       font-weight: 400;
     }
 
-    .data i {
-      vertical-align: middle;
-    }
+    .data div {}
   </style>
 </head>
 
@@ -119,13 +121,14 @@
     <div class="bottom">
       <p class="data">
         {% assign words = page.content | number_of_words %}
-        <i class="lni lni-book"></i> {{ words }}
-        <i class="lni lni-timer"></i> {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins
-      {% endif %}
-        <i class="lni lni-eye"></i> <span id="hitcount"></span>
         {% assign resource = page.url | remove: '/social' %}
         {% assign webmentions = site.webmentions | where: 'target', resource %}
-        <i class="lni lni-comments"></i> {{ webmentions.size }}
+
+        <span><i class="lni lni-book"></i> {{ words }} words</span>
+        <span><i class="lni lni-timer"></i> {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins {%
+            endif %}</span>
+            <span><i class="lni lni-eye"></i> <span id="hitcount"></span> views</span>
+            <span><i class="lni lni-comments"></i> {{ webmentions.size }} mentions</span>
       </p>
     </div>
   </div>
