@@ -1,3 +1,6 @@
+- title: Ansible Docker Linkding Role
+  emoji: 🔗
+  url: https://github.com/kinduff/ansible-linkding-n8n
 - title: Ansible Docker n8n Role
   emoji: ♾️
   url: https://github.com/kinduff/ansible-docker-n8n
