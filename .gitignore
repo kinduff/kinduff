@@ -3,3 +3,4 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 _data/places.yml
+.DS_Store
