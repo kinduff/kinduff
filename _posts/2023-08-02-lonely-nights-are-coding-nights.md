@@ -3,6 +3,7 @@ title: Lonely nights are coding nights
 date: 2023-08-02
 description: >-
   An ode to lonely nights and coding nights.
+hide_coffee: true
 ---
 
 In that balance where all feels just right, when the PC is kind, and posture's in sight,

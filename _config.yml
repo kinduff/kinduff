@@ -13,6 +13,7 @@ defaults:
       type: posts
     values:
       is_post: true
+      hide_coffee: false
       layout: post
       author:
         name: Alejandro AR
