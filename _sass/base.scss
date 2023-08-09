@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   color: var(--font-color);
   background-color: var(--bg-color);
   line-height: 1.8em;
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Merriweather", serif;
   color: var(--header-color);
   line-height: 1.25;
   position: relative;
