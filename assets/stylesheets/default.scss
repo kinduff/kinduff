@@ -59,6 +59,7 @@ ul.logos {
     }
 
     small {
+      font-family: "Cousine", monospace;
       color: var(--dark-gray-color);
       padding-right: 10px;
     }
@@ -69,7 +70,7 @@ ul.logos {
 
     a {
       background-color: transparent;
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 }
@@ -125,20 +126,23 @@ ul.logos {
 }
 
 .post-metadata {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.9rem;
-  margin-top: 0;
+  margin: 0.1rem 0 2rem;
 }
 
 .post-title {
   margin-bottom: 0;
 }
 
+.support {
+  margin: 3rem 0;
+  text-align: center;
+}
+
 .footer {
   text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.9rem;
   color: #5c5c5c;
 }
@@ -157,9 +161,8 @@ ul.logos {
 }
 
 .wm-main-title, .wm-title {
-  font-family: "DM Sans", sans-serif;
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .wm-main-title {

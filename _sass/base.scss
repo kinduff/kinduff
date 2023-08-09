@@ -20,11 +20,11 @@ html {
 }
 
 body {
-  font-family: "Cousine", sans-serif;
+  font-family: "Inter", serif;
   color: var(--font-color);
   background-color: var(--bg-color);
   line-height: 1.8em;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
   min-height: 100%;
 }
@@ -32,7 +32,7 @@ body {
 .wrap {
   padding: 1rem;
   max-width: 100%;
-  width: 800px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: var(--header-color);
   line-height: 1.25;
   position: relative;
@@ -121,7 +121,11 @@ mark {
   }
 }
 
-a{
+b {
+  font-weight: 600;
+}
+
+a {
   background-color: var(--link-bg-color);
   color: var(--link-color);
   text-decoration: underline var(--link-underline-color);
@@ -158,13 +162,13 @@ video {
 header {
   font-size: 1rem;
   margin: 0 0 -1rem;
-  padding: 0.5rem 0 1rem;
+  padding: 0.5rem 0 2rem;
 
   @media (min-width: 38em) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0 1rem;
+    padding: 1rem 0 2rem;
   }
 
   nav {
@@ -211,11 +215,11 @@ header {
 
     &.site-title {
       color: var(--site-title-color);
-      font-weight: 700;
+      font-weight: 600;
     }
 
     &.active {
-      font-weight: 700;
+      font-weight: 600;
     }
 
     &.nav-link {

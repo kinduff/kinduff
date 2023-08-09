@@ -1,43 +1,25 @@
-/* cousine-regular - latin */
+/* merriweather-regular - latin */
 @font-face {
-  font-family: 'Cousine';
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('/assets/fonts/cousine-v22-latin-regular.woff2') format('woff2'),
-       url('/assets/fonts/cousine-v22-latin-regular.woff') format('woff');
-  font-display: swap;
+  src: url('/assets/fonts/merriweather-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/* cousine-700 - latin */
+/* inter-regular - latin */
 @font-face {
-  font-family: 'Cousine';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('/assets/fonts/cousine-v22-latin-700.woff2') format('woff2'),
-       url('/assets/fonts/cousine-v22-latin-700.woff') format('woff');
-  font-display: swap;
-}
-
-/* dm-sans-regular - latin */
-@font-face {
-  font-family: 'DM Sans';
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('/assets/fonts/dm-sans-v10-latin-regular.woff2') format('woff2'),
-       url('/assets/fonts/dm-sans-v10-latin-regular.woff') format('woff');
-  font-display: swap;
+  src: url('/assets/fonts/inter-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* dm-sans-700 - latin */
+/* inter-600 - latin */
 @font-face {
-  font-family: 'DM Sans';
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('/assets/fonts/dm-sans-v10-latin-700.woff2') format('woff2'),
-       url('/assets/fonts/dm-sans-v10-latin-700.woff') format('woff');
-  font-display: swap;
+  font-weight: 600;
+  src: url('/assets/fonts/inter-v12-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

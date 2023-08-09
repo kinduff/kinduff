@@ -1,10 +1,7 @@
 <header>
   <div class="nav-bar">
-    <a
-      href="/"
-      class="site-title"
-    >
-      kinduff
+    <a href="/" class="site-title">
+      ~/kinduff
     </a>
     <label class="nav-icon" for="nav-btn"></label>
   </div>
@@ -19,7 +16,7 @@
   </nav>
 </header>
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     var currentPage = location.pathname.split("/")[1];
     var link = document.querySelector(`nav a[href$="/${currentPage}/"]`);
     if (link) link.classList.add('active');

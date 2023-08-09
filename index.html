@@ -7,25 +7,27 @@ layout: default
   <h1 id="hello">Hola 👋</h1>
 
   <div class="avatar">
-    <img src="/assets/images/hotlink-ok/avatar.jpg" width="150" height="150" alt="Una representación de Alejandro dibujada por una IA" class="u-photo u-logo">
+    <img src="/assets/images/hotlink-ok/avatar.jpg" width="150" height="150"
+      alt="Una representación de Alejandro dibujada por una IA" class="u-photo u-logo">
   </div>
 
   <p>
-    I'm <a href="https://kinduff.com" class="p-name u-url p-given-name" rel="me">Alejandro AR</a> (a.k.a. <mark class="p-nickname">kinduff</mark>).
+    I'm <a href="https://kinduff.com" class="p-name u-url p-given-name" rel="me">Alejandro AR</a> (a.k.a. <mark
+      class="p-nickname">kinduff</mark>).
   </p>
 
   <p class="p-note">
     I really like writing code, playing games, reading and watching movies and TV shows.
     I love discovering new technologies, learning how to use them and sharing my knowledge.
-    If I'm not drinking coffee in front of the computer, you can find me in a park reading.
   </p>
 
   <p>
-    This is my house in triple double u. This house is alive, so you will be able to find content whenever you visit.
+    This is my house on the web. This house is alive, so you will be able to find content whenever you visit.
   </p>
 
   <p>
-    I recommend you add it to your bookmarks, take a look at the <a href="/blog">blog</a> and my <a href="/projects">projects</a>.
+    I recommend you add it to your bookmarks, take a look at the <a href="/blog">blog</a> and my <a
+      href="/projects">projects</a>.
     You can also subscribe via <a href="/feed.xml">RSS</a>.
   </p>
 
@@ -54,13 +56,14 @@ layout: default
   <div class="video-list">
     {% assign videos = site.videos | reverse %}
     {% for video in videos limit: 3 %}
-      <div class="video-entry">
-        <a href="{{ video.url }}">
-          <img src="{{ video.thumbnail }}" width="{{ video.thumbnail | image_size: 'w' }}" height="{{ video.thumbnail | image_size: 'h' }}" alt="{{ video.title }}" loading="lazy" />
-          <h3>{{ video.title }}</h3>
-          <p>{{ video.author }}</p>
-        </a>
-      </div>
+    <div class="video-entry">
+      <a href="{{ video.url }}">
+        <img src="{{ video.thumbnail }}" width="{{ video.thumbnail | image_size: 'w' }}"
+          height="{{ video.thumbnail | image_size: 'h' }}" alt="{{ video.title }}" loading="lazy" />
+        <h3>{{ video.title }}</h3>
+        <p>{{ video.author }}</p>
+      </a>
+    </div>
     {% endfor %}
   </div>
 
@@ -74,16 +77,18 @@ layout: default
 
   {% assign links = site.links | reverse %}
   {% for link in links limit: 5 %}
-    {% assign description = link.description %}
-    <div>
-      <p>
-        <b>
-          <a href="{{ link.link }}">
-            <img src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico" width="15px" loading="lazy" style="vertical-align: middle;" />
-            {{ link.title }}</a></b>{% if description and description != "" %}:{% endif %}
-            {{ description }}
-      </p>
-    </div>
+  {% assign description = link.description %}
+  <div>
+    <p>
+      <b>
+        <a href="{{ link.link }}">
+          <img
+            src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico"
+            width="15px" loading="lazy" style="vertical-align: middle;" />
+          {{ link.title }}</a></b>{% if description and description != "" %}:{% endif %}
+      {{ description }}
+    </p>
+  </div>
   {% endfor %}
 
   <p>
