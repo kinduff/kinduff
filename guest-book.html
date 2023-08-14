@@ -27,8 +27,7 @@ title: Guestbook
 {% assign entries = site.guestbook_entries | reverse %}
 {% for entry in entries %}
 <p>
-  <b>{{ entry.name }}</b>: {{ entry.content | remove: '
-<p>' | remove: '</p>' }}
+  <b>{{ entry.name }}</b>: {{ entry.content | strip_html }} <small>({{ entry.date | date_to_string }})</small>
 </p>
 {% unless forloop.last %}
 <hr />{% endunless %}
