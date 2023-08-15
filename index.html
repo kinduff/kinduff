@@ -84,7 +84,8 @@ layout: default
         <a href="{{ link.link }}">
           <img
             src="https://icons.duckduckgo.com/ip3/{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }}.ico"
-            width="15px" loading="lazy" style="vertical-align: middle;" />
+            alt="{{ link.link | remove:'http://' | remove:'https://' | split:'/' | first }} favicon" width="15px"
+            loading="lazy" style="vertical-align: middle;" />
           {{ link.title }}</a></b>{% if description and description != "" %}:{% endif %}
       {{ description }}
     </p>
