@@ -15,3 +15,21 @@
   --gray-color: #DDDDDD;
   --dark-gray-color: #999999;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --site-title-color: #F48C8C;
+    --font-color: #f4ecdf;
+    --bg-color: #0e0e0b;
+    --header-color: #f4ecdf;
+    --header-h1-bg-color: #41628d;
+    --header-h2-bg-color: #553871;
+    --header-h3-bg-color: #896200;
+    --header-h4-bg-color: #58713e;
+    --mark-bg-color: #3f3e28;
+    --link-footnote-bg-color: #FF7373;
+    --link-bg-color: #142c2c;
+    --link-underline-color: #5E7B7B;
+    --gray-color: #686868;
+  }
+}

@@ -111,6 +111,7 @@ h4::after {
 
 mark {
   background-color: var(--mark-bg-color);
+  color: var(--font-color);
 
   &.red {
     background-color: #fbcdcd;
@@ -257,7 +258,7 @@ hr {
 blockquote {
   margin: 0;
   padding: 1rem;
-  border: 1px dotted var(--font-color);
+  border: 1px dotted var(--gray-color);
 
   p {
     margin: 0;
