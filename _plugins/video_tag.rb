@@ -18,21 +18,21 @@
 module Jekyll
   class VideoTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
-      @videos = markup.scan(%r!((https?://|/)\S+\.(webm|ogv|mp4)\S*)!i).map(&:first)
+      @videos = markup.scan(%r{((https?://|/)\S+\.(webm|ogv|mp4)\S*)}i).map(&:first)
       @videos.compact!
-      poster = markup.scan(%r!((https?://|/)\S+\.(png|gif|jpe?g)\S*)!i).map(&:first)
+      poster = markup.scan(%r{((https?://|/)\S+\.(png|gif|jpe?g)\S*)}i).map(&:first)
       poster.compact!
       @poster = poster.first
-      @sizes  = markup.scan(%r!\s(\d\S+)!i).map(&:first)
+      @sizes = markup.scan(%r{\s(\d\S+)}i).map(&:first)
       @sizes.compact!
       super
     end
 
     def render(_context)
       types = {
-        ".mp4"  => "type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"'",
-        ".ogv"  => "type='video/ogg; codecs=theora, vorbis'",
-        ".webm" => "type='video/webm; codecs=vp8, vorbis'",
+        ".mp4" => "type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"'",
+        ".ogv" => "type='video/ogg; codecs=theora, vorbis'",
+        ".webm" => "type='video/webm; codecs=vp8, vorbis'"
       }
       if @videos.size.positive?
         video = ["<video #{sizes} preload='metadata' controls #{poster}>"]

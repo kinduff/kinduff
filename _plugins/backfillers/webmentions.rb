@@ -17,21 +17,21 @@ module Jekyll
 
         url = "https://webmention.io/api/mentions.jf2?per-page=99999&sort-by=published&target=https://kinduff.com#{doc.url}"
         response = HTTParty.get(url, {
-          :headers => { "Content-Type" => "application/json" },
+          headers: {"Content-Type" => "application/json"}
         })
 
         next if response.parsed_response["children"].nil?
 
         response.parsed_response["children"].each do |child|
           webmention = {
-            "source"       => child["wm-source"],
-            "target"       => child["wm-target"].gsub("https://kinduff.com", ""),
-            "author"       => child["author"],
-            "source_url"   => child["url"],
-            "property"     => child["wm-property"],
-            "published"    => child["published"],
+            "source" => child["wm-source"],
+            "target" => child["wm-target"].gsub("https://kinduff.com", ""),
+            "author" => child["author"],
+            "source_url" => child["url"],
+            "property" => child["wm-property"],
+            "published" => child["published"],
             "published_at" => child["published"],
-            "received_at"  => child["wm-received"],
+            "received_at" => child["wm-received"]
           }
           yaml = YAML.dump(webmention)
           folder_name = Jekyll::Utils.slugify(webmention["target"])
@@ -43,9 +43,7 @@ module Jekyll
           yaml << content.strip if content
 
           FileUtils.mkdir_p(path)
-          File.open("#{path}/#{filename}.md", "w") do |f|
-            f.write yaml
-          end
+          File.write("#{path}/#{filename}.md", yaml)
         end
       end
     end

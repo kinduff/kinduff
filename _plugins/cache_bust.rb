@@ -38,7 +38,7 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(:file_name => file_name, :directory => "assets/stylesheets").digest!
+      CacheDigester.new(file_name: file_name, directory: "assets/stylesheets").digest!
     end
   end
 end

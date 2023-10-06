@@ -5,13 +5,13 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 ruby "3.2.2"
 
-gem "jekyll", :github => "jekyll/jekyll"
+gem "jekyll", github: "jekyll/jekyll"
 gem "jekyll-compose", "~> 0.12.0"
 gem "jekyll-environment-variables", "~> 1.0.1"
 gem "jekyll-include-cache", "~> 0.2.1"
 gem "jekyll-last-modified-at", "~> 1.3"
 gem "jekyll-sass-converter", "~> 2.0"
-gem "jekyll-seo-tag", :github => "kinduff/jekyll-seo-tag", :branch => "feat/image_option"
+gem "jekyll-seo-tag", github: "kinduff/jekyll-seo-tag", branch: "feat/image_option"
 gem "jekyll-sitemap", "~> 1.4.0"
 gem "jekyll_version_plugin", "~> 2.0"
 gem "jekyll-inline-svg", "~> 1.1"
@@ -24,5 +24,4 @@ gem "liquid-c", "~> 4.0"
 gem "mini_magick", "~> 4.11.0"
 gem "ox", "~> 2.14.5"
 
-gem "rubocop", "~> 1.18"
-gem "rubocop-performance", "~> 1.13"
+gem "standard", "~> 1.31"

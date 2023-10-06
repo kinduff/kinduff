@@ -13,7 +13,7 @@ module Jekyll
     private
 
     def create_page(site, collection, doc)
-      Document.new(doc.path, :site => site, :collection => collection).tap do |new_doc|
+      Document.new(doc.path, site: site, collection: collection).tap do |new_doc|
         new_doc.read
         new_doc.data["layout"] = "social"
         new_doc.data["permalink"] = "#{doc.url}/social/"

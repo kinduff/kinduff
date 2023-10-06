@@ -20,11 +20,11 @@ class LastFm < Jekyll::Generator
     site.data["last_fm"] = []
     last_fm_json["recenttracks"]["track"].each do |track|
       site.data["last_fm"] << {
-        "title"  => track["name"],
-        "url"    => track["url"],
+        "title" => track["name"],
+        "url" => track["url"],
         "artist" => track["artist"]["#text"],
-        "album"  => track["album"]["#text"],
-        "image"  => track["image"][0]["#text"],
+        "album" => track["album"]["#text"],
+        "image" => track["image"][0]["#text"]
       }
     end
   end

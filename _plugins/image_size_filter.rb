@@ -5,7 +5,7 @@ require "fastimage"
 # source https://stackoverflow.com/a/64452457/992000
 module ImageSizeFilter
   def image_size(source, dimension = nil)
-    size = FastImage.size("./#{source["path"] || source}", :raise_on_failure => true)
+    size = FastImage.size("./#{source["path"] || source}", raise_on_failure: true)
 
     return size[0] if dimension == "w"
     return size[1] if dimension == "h"

@@ -17,7 +17,7 @@ module Jekyll
         super
         @site = site
         @base = base
-        @dir  = dir
+        @dir = dir
         @name = name
         @dst_dir = preset.delete("destination")
         @src_dir = preset.delete("source")
