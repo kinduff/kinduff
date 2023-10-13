@@ -14,7 +14,7 @@ layout: null
   <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
   {% assign videos = site.videos | reverse %}
   <updated>{% for video in videos limit:1 %}{{ video.date | date_to_xmlschema }}{% endfor %}</updated>
-  {% for video in videos limit:site.feed_items %}
+  {% for video in videos %}
     <entry>
       <id>{{ site.url }}{{ video.url }}</id>
       <title type="html">{{ video.title | xml_escape }}</title>
