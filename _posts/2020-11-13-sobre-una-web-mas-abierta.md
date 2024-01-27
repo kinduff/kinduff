@@ -22,7 +22,3 @@ Me pregunto si en algún futuro todas las aplicaciones web podrían ser de códi
 Una mezcla de open-source con closed-source: ==mixed-source==. Como ya lo hacen varias compañías, en donde hacen open-source parte de su código.
 
 Cada día hay mas personas capaces de colaborar, mejorar, o arreglar, y no tengo dudas de que esto, mientras mas común se vuelva, ==más beneficio traerá a los usuarios y al ecosistema de la web==.
-
----
-
-Agradezco a [Jeroen van Meerendonk](https://twitter.com/jeroen_wtf) y a [Gabriel Suchowolski](https://twitter.com/microbians) por inspirarme para escribir este post.

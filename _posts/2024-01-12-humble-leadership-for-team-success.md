@@ -36,7 +36,3 @@ If this text resonates with you, I advise slowing down, taking a step back, and 
 Ego-driven management kills teams and even entire companies. Embrace your ignorance, question everything, understand the reasons and results, and ask yourself why things exist as they do. Without processes or meetings, something may be lost—even if it seems insignificant, it can come back to haunt you in the long run.
 
 If you think there's nothing to improve upon or that you've mastered management, my advice remains the same: take a step back and strive for improvement.
-
----
-
-Thanks to Jeroen van Meerendonk and J.Q. for proof-reading this article.
