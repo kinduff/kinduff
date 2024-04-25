@@ -13,7 +13,7 @@ Esta premisa me puso a pensar: ¿Qué hace que el software envejezca? Hasta dond
 
 ![](/assets/images/posts/biodegradabear.jpg)
 
-Quitando las restricciones de nuestro ambiente,s eguridad y el uso de la misma, me gustaría preguntarte:
+Quitando las restricciones de nuestro ambiente, seguridad y el uso de la misma, me gustaría preguntarte:
 
 - ¿Por qué el software tiene que estar en constante actualización?
 - ¿Qué ventaja representa tener commits recientes? Actividad nueva sin otorgar valor.
