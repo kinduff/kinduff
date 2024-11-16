@@ -18,6 +18,7 @@ layout: null
     <entry>
       <id>{{ link.link | base64_encode }}></id>
       <title type="html">{{ link.title | xml_escape }}</title>
+      <link href="{{ link.link }}" />
       <updated>{{ link.date | date_to_xmlschema }}</updated>
       <content type="html"><![CDATA[{{ link.description }} {{ link.link }}]]></content>
     </entry>
