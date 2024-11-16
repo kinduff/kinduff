@@ -10,17 +10,23 @@ layout: null
   <author>
     <name>{{ site.author | xml_escape }}</name>
   </author>
-  <rights>© 2008-2022 Alejandro AR (kinduff.com)</rights>
+  <rights>© 2008-2024 Alejandro AR (kinduff.com)</rights>
   <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
-  {% assign links = site.links | reverse %}
-  <updated>{% for link in links limit:1 %}{{ link.date | date_to_xmlschema }}{% endfor %}</updated>
-  {% for link in links %}
+  {% assign filtered_links = site.links | where: "tag", "specific_tag" | reverse %}
+  <updated>{% for link in filtered_links limit:1 %}{{ link.date | date_to_xmlschema }}{% endfor %}</updated>
+  {% for link in filtered_links %}
     <entry>
-      <id>{{ link.link | base64_encode }}></id>
+      <id>{{ link.link | base64_encode }}</id>
       <title type="html"><![CDATA[{{ link.title | xml_escape }}]]></title>
       <link href="{{ link.link }}" />
+      <category term="{{ link.category | xml_escape }}"></category>
       <updated>{{ link.date | date_to_xmlschema }}</updated>
-      <content type="html"><![CDATA[{{ link.description }} {{ link.link }}]]></content>
+      <content type="html"><![CDATA[<p>{{ link.description | xml_escape }}</p><a href="{{ link.link }}">Read more...</a>]]></content>
+      {% if link.contributor %}
+      <contributor>
+        <name>{{ link.contributor | xml_escape }}</name>
+      </contributor>
+      {% endif %}
     </entry>
   {% endfor %}
 </feed>

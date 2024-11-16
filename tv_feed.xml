@@ -10,7 +10,7 @@ layout: null
   <author>
     <name>{{ site.author | xml_escape }}</name>
   </author>
-  <rights>© 2008-2022 Alejandro AR (kinduff.com)</rights>
+  <rights>© 2008-2024 Alejandro AR (kinduff.com)</rights>
   <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
   {% assign videos = site.videos | reverse %}
   <updated>{% for video in videos limit:1 %}{{ video.date | date_to_xmlschema }}{% endfor %}</updated>
