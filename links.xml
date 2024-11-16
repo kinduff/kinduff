@@ -12,9 +12,9 @@ layout: null
   </author>
   <rights>© 2008-2024 Alejandro AR (kinduff.com)</rights>
   <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
-  {% assign filtered_links = site.links | where: "tag", "specific_tag" | reverse %}
-  <updated>{% for link in filtered_links limit:1 %}{{ link.date | date_to_xmlschema }}{% endfor %}</updated>
-  {% for link in filtered_links %}
+  {% assign links = site.links | reverse %}
+  <updated>{% for link in links limit:1 %}{{ link.date | date_to_xmlschema }}{% endfor %}</updated>
+  {% for link in links %}
     <entry>
       <id>{{ link.link | base64_encode }}</id>
       <title type="html"><![CDATA[{{ link.title | xml_escape }}]]></title>
