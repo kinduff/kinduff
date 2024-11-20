@@ -1,6 +1,6 @@
 ---
 title: Power to the power users
-date: 2024-01-27 12:38 -0600
+date: 2024-11-19 12:38 -0600
 description: |
   How the creative uses of data structures by power users are transforming and inspiring new features in my product
 ---

@@ -3,13 +3,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-ruby "3.2.2"
-
 gem "jekyll", github: "jekyll/jekyll"
 gem "jekyll-compose", "~> 0.12.0"
 gem "jekyll-environment-variables", "~> 1.0.1"
 gem "jekyll-include-cache", "~> 0.2.1"
-gem "jekyll-last-modified-at", "~> 1.3"
+gem "jekyll-last-modified-at"
 gem "jekyll-sass-converter", "~> 2.0"
 gem "jekyll-seo-tag", github: "kinduff/jekyll-seo-tag", branch: "feat/image_option"
 gem "jekyll-sitemap", "~> 1.4.0"
