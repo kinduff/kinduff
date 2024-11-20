@@ -30,3 +30,18 @@ Although I don't have many users right now, I feel like I'm building something a
 This is crucial, as we are often not considered in the products that we use. Even if there is community involvement — a trend I've seen many companies adopt — there’s often too much noise to reach clear decisions.
 
 While I'm aware that maintaining direct contact and influence with all clients may become challenging as the product grows, I'm also optimistic that I will find a way to make the user always feel considered and heard.
+
+## An Up-to-Date Example
+
+I published the link to this post on my [Bluesky account](https://bsky.app/profile/did:plc:jmy2qsr3sq3l6m3i4levwxuq/post/3lbdy5lntjc2x) and subsequently discovered another interesting post in my feed.
+
+![A Bluesky post illustrating how to use the report feature to send messages through the application](/assets/images/posts/blueskypoweruser.jpg)
+_[Source at bsky.app](https://bsky.app/profile/deadpoolian.bsky.social/post/3lb65cduwm224)_
+
+This Bluesky post walks through a method for implementing bookmarks in Bluesky - a feature that, at the time of writing, is not officially supported.
+
+The account, which acts as a moderator, creates a list for a user based on the reports received. This list compiles the posts that the user has "bookmarked" in one location.
+
+This innovation happened because the fastest way for a user to send a post to another user is, surprisingly, by reporting it to their account, rather than mentioning them in a reply (which can be considered spam) or copying the link and sending it via direct message.
+
+This is a very good example of what to watch for from a power user.
