@@ -23,6 +23,7 @@ defaults:
       type: comments
     values:
       layout: comments
+      sitemap: false
   - scope:
       path:
       type: videos
