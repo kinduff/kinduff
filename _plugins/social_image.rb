@@ -17,6 +17,7 @@ module Jekyll
         new_doc.read
         new_doc.data["layout"] = "social"
         new_doc.data["permalink"] = "#{doc.url}/social/"
+        new_doc.data["sitemap"] = false
       end
     end
   end
