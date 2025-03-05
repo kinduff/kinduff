@@ -29,10 +29,6 @@ defaults:
       type: videos
     values:
       layout: video
-  - scope:
-      path: "*/**/social/"
-    values:
-      sitemap: false
 exclude:
   - README.md
   - LICENSE
