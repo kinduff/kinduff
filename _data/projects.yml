@@ -1,3 +1,11 @@
+- title: paste
+  emoji: 🗒
+  url: https://paste.lasagna.pizza
+  description: simple markdown store, like pastebin but it renders as markdown.
+- title: Lethal Company Save Editor
+  emoji: ☢️
+  url: https://lethal.lasagna.pizza
+  description: Unauthorized Lethal Company online save editor and community.
 - title: Ansible Docker FreshRSS Role
   emoji: 🛠️
   url: https://github.com/kinduff/ansible-docker-freshrss
