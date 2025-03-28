@@ -1,3 +1,7 @@
+- title: Cloud IP Ranges
+  emoji: ☁️
+  url: https://cloud-ip-ranges.com
+  description: A place to download standardised CIDRs from major cloud providers
 - title: paste
   emoji: 🗒
   url: https://paste.lasagna.pizza
