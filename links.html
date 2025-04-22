@@ -19,7 +19,7 @@ description: Every time I find an interesting link, I save it to a special list 
 <input type="text" id="search" placeholder="Search for links..">
 
 <div style="overflow: auto;">
-  <table id="table">
+  <table id="table" class="sortable">
     <thead>
       <tr>
         <th>Link</th>
@@ -43,13 +43,14 @@ description: Every time I find an interesting link, I save it to a special list 
           {{ link.description }}
         </td>
         <td class="category">{{ link.category | capitalize }}</td>
-        <td style="white-space: nowrap;">{{ link.date | date: "%b %d %Y" }}</td>
+        <td style="white-space: nowrap;" data-sort="{{ link.date | date: "%s" }}">{{ link.date | date: "%b %d %Y" }}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
-
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.js"></script>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
 const searchInput = document.querySelector('#search');
@@ -89,7 +90,16 @@ searchInput.addEventListener('input', (e) => {
   }
 
   try {
-    const results = idx.search(`${query}~1 *${query}*`);
+    const terms = query.trim().split(/\s+/);
+    let lunrQuery = '';
+
+    terms.forEach(term => {
+      if (term.length > 0) {
+        lunrQuery += `${term}~1 ${term}* `;
+      }
+    });
+
+    const results = idx.search(lunrQuery.trim());
     const matchedIds = new Set(results.map(r => r.ref));
 
     dataRows.forEach((row, i) => {
