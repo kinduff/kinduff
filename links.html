@@ -89,7 +89,7 @@ searchInput.addEventListener('input', (e) => {
   }
 
   try {
-    const results = idx.search(query);
+    const results = idx.search(`${query}~1 *${query}*`);
     const matchedIds = new Set(results.map(r => r.ref));
 
     dataRows.forEach((row, i) => {
