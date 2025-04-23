@@ -24,7 +24,7 @@ description: >-
       <a href="{{ video.url }}">
         <img src="{{ video.thumbnail }}" alt="{{ video.title }}" loading="lazy" />
         <h3>{{ video.title }}</h3>
-        <p>{{ video.author }}</p>
+        <p>{{ video.author }}<br />Added {{ video.date | date: "%b %d %Y" }}</p>
       </a>
     </div>
   {% endfor %}
