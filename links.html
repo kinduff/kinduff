@@ -81,6 +81,10 @@ function initLunr() {
 
 initLunr();
 
+searchInput.addEventListener('focus', (e) => {
+  umami.track('search focused');
+});
+
 searchInput.addEventListener('input', (e) => {
   const query = e.target.value.trim();
 
@@ -91,6 +95,7 @@ searchInput.addEventListener('input', (e) => {
 
   try {
     const terms = query.trim().split(/\s+/);
+
     let lunrQuery = '';
 
     terms.forEach(term => {
