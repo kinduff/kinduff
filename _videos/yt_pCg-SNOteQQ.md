@@ -6,4 +6,4 @@ og_image: "/assets/images/videos/yt_pCg-SNOteQQ.jpg"
 date: "2024-01-29 03:00:09 +0000"
 ---
 
-{% youtube pCg-SNOteQQ %}
+{% youtube_tag pCg-SNOteQQ %}

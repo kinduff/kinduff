@@ -6,4 +6,4 @@ og_image: "/assets/images/videos/yt_JcJSW7Rprio.jpg"
 date: "2023-02-20 10:30:57 +0000"
 ---
 
-{% youtube JcJSW7Rprio %}
+{% youtube_tag JcJSW7Rprio %}

@@ -6,4 +6,4 @@ og_image: "/assets/images/videos/yt_lpc1lEJ-SRc.jpg"
 date: "2023-01-05 14:00:32 +0000"
 ---
 
-{% youtube lpc1lEJ-SRc %}
+{% youtube_tag lpc1lEJ-SRc %}

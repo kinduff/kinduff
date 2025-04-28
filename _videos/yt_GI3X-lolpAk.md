@@ -6,4 +6,4 @@ og_image: "/assets/images/videos/yt_GI3X-lolpAk.jpg"
 date: '2022-02-13 15:00:35 +0000'
 ---
 
-{% youtube GI3X-lolpAk %}
+{% youtube_tag GI3X-lolpAk %}

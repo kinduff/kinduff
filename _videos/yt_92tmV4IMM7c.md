@@ -6,4 +6,4 @@ og_image: "/assets/images/videos/yt_92tmV4IMM7c.jpg"
 date: "2023-06-29 20:30:15 +0000"
 ---
 
-{% youtube 92tmV4IMM7c %}
+{% youtube_tag 92tmV4IMM7c %}

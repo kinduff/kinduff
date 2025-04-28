@@ -6,4 +6,4 @@ og_image: "/assets/images/videos/yt_c6hnQ1RKhbo.jpg"
 date: "2022-07-14 10:30:59 +0000"
 ---
 
-{% youtube c6hnQ1RKhbo %}
+{% youtube_tag c6hnQ1RKhbo %}

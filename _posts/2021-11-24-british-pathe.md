@@ -16,48 +16,48 @@ Te dejo por aquí mis vídeos favoritos, sin un orden en particular. Espero que 
 
 ## Globe Making: How the World is Made (1955)
 
-{% youtube 4RWcWSN4HhI %}
+{% youtube_tag 4RWcWSN4HhI %}
 
 ## The Art of Gold Beating (1959)
 
-{% youtube 2Lak64SAaIY %}
+{% youtube_tag 2Lak64SAaIY %}
 
 ## Royal Mint (1956)
 
-{% youtube 4VcV3cjHUI8 %}
+{% youtube_tag 4VcV3cjHUI8 %}
 
 ## 'London Rock' Making Candy Factory (1957)
 
-{% youtube ye-xudhKfYg %}
+{% youtube_tag ye-xudhKfYg %}
 
 ## Rose Petal Cigarettes (1959)
 
-{% youtube PrldWmzUoNE %}
+{% youtube_tag PrldWmzUoNE %}
 
 ## New Gadgets Are Housewives' Choice (1959)
 
-{% youtube y6MymrOBq4M %}
+{% youtube_tag y6MymrOBq4M %}
 
 ## False Beards (1962)
 
-{% youtube DRsFFB0VN-o %}
+{% youtube_tag DRsFFB0VN-o %}
 
 ## Telescope Makers (1960)
 
-{% youtube ri1J0DldEkk %}
+{% youtube_tag ri1J0DldEkk %}
 
 ## Cycling Family (1961)
 
-{% youtube 9M5hM-e_sjQ %}
+{% youtube_tag 9M5hM-e_sjQ %}
 
 ## Donkey Bike (1966)
 
-{% youtube v76DaBrqfR0 %}
+{% youtube_tag v76DaBrqfR0 %}
 
 ## Instant Garage (1962)
 
-{% youtube Q2ZK0a1GyGM %}
+{% youtube_tag Q2ZK0a1GyGM %}
 
 ## Thief Catching Net (1969)
 
-{% youtube Oxi-kjfQ5dA %}
+{% youtube_tag Oxi-kjfQ5dA %}
