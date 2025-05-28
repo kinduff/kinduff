@@ -3,7 +3,6 @@ title: The Double It and Pass It On License
 date: 2023-08-14
 description: >-
   The Double It and Pass It On License (DIPOL), Version 1.0
-hide_coffee: true
 ---
 
 ```
