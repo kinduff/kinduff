@@ -10,7 +10,7 @@ layout: null
   <author>
     <name>{{ site.author | xml_escape }}</name>
   </author>
-  <rights>© 2008-2024 Alejandro AR (kinduff.com)</rights>
+  <rights>© 2008-2025 Alejandro AR (kinduff.com)</rights>
   <subtitle>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</subtitle>
   <updated>{% for comment in site.comment limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</updated>
   {% for comment in site.comments %}
