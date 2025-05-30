@@ -1,5 +1,5 @@
 ---
-  layout: default
+layout: default
 title: Links
 description: Every time I find an interesting link, I save it to a special list and share it here.
 ---
@@ -12,8 +12,8 @@ description: Every time I find an interesting link, I save it to a special list 
 </h1>
 
 <p>
-  Every time I find an interesting link, I save it to a special list and share
-  it here.
+  Every time I find an interesting link, I save it to a special list and share it here.
+  There are {{ site.links | size }} links in total across {{ site.links | map: 'category' | uniq | size }} categories.
 </p>
 
 <input type="text" id="search" placeholder="Search for links..">
@@ -49,6 +49,7 @@ description: Every time I find an interesting link, I save it to a special list 
     </tbody>
   </table>
 </div>
+
 <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.js"></script>
 <script src="https://unpkg.com/lunr/lunr.js"></script>

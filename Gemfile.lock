@@ -79,8 +79,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-environment-variables (1.0.1)
       jekyll (>= 3.0, < 5.x)
-    jekyll-include-cache (0.2.1)
-      jekyll (>= 3.7, < 5.0)
     jekyll-inline-svg (1.1.5)
       jekyll (>= 3.3, < 5.0)
       svg_optimizer (~> 0.3.0)
@@ -212,7 +210,6 @@ DEPENDENCIES
   jekyll!
   jekyll-compose (~> 0.12.0)
   jekyll-environment-variables (~> 1.0.1)
-  jekyll-include-cache (~> 0.2.1)
   jekyll-inline-svg (~> 1.1)
   jekyll-last-modified-at
   jekyll-sass-converter (~> 2.0)

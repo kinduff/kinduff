@@ -43,7 +43,6 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-include-cache
   - jekyll-inline-svg
 
 # Collections
