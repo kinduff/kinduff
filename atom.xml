@@ -15,6 +15,7 @@ layout: null
   </author>
   <rights>© 2008-2025 Alejandro AR (kinduff.com)</rights>
   {% if site.description %}<subtitle>{{ site.description | xml_escape }}</subtitle>{% endif %}
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
 
   {% for post in site.posts limit:20 %}
     <entry>
