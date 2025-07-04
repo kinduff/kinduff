@@ -38,7 +38,7 @@ layout: null
       {% endif %}
 
       <content type="html">
-        <![CDATA[{{ post.content }}]]>
+        <![CDATA[{{ post.content | replace: 'src="/', 'src="https://kinduff.com/' }}]]>
       </content>
     </entry>
   {% endfor %}
