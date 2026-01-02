@@ -103,3 +103,8 @@ incremental: true
 
 svg:
   optimize: true
+
+plain_text_generator:
+  enabled: true
+  include_collections: ["posts"]
+  output_dir: ""
