@@ -15,7 +15,7 @@ gem "jekyll-inline-svg", "~> 1.1"
 
 gem "airrecord", "~> 1.0"
 gem "fastimage", "~> 2.2.5"
-gem "httparty", "~> 0.21.0"
+gem "httparty", "~> 0.24.0"
 gem "jekyll_miscellaneous", "~> 1.4.0"
 gem "liquid-c", "~> 4.0"
 gem "mini_magick", "~> 4.11.0"
