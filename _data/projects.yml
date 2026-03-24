@@ -1,3 +1,7 @@
+- title: gvf
+  emoji: 💎
+  url: https://github.com/kinduff/gvf
+  description: Reads your Gemfile.lock and updates the versions in your Gemfile to match.
 - title: Gemfile RSS
   emoji: 📰
   url: https://gemfile-rss.com
