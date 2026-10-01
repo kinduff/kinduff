@@ -1,3 +1,19 @@
+- title: Atiéndalo
+  emoji: 📩
+  url: https://atiendalo.com
+  description: The point of sale that simplifies your multi-brand shop.
+- title: teresa
+  emoji: 💸
+  url: https://teresa.run
+  description: An expense tracker and bill splitter that lives in your whatsapp or telegram.
+- title: WABridges
+  emoji: 🌉
+  url: https://wabridges.com
+  description: Send and receive WhatsApp messages from your app over a REST API.
+- title: Claude HR
+  emoji: 📩
+  url: https://github.com/lasagnapizza/claude-hr
+  description: A grievance procedure for the machine.
 - title: Mood
   emoji: 🎨
   url: https://mood.lasagna.pizza
