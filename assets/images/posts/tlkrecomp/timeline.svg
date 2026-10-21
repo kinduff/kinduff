@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="100%" role="img" aria-label="Timeline, October 11 to 21: levels decoded and first recompile on the 11th; boots, black window and playable on the 12th; speedruns in sync and the repo on the 13th; practice mode and Dixie Kong on the 14th; shaders and menu on the 17th; releases for three systems on the 18th; widescreen from the 19th to the 21st">
+  <style>
+    .tl-t { fill: var(--font-color, #0e0e0b); font-size: 12px; }
+    .tl-d { fill: var(--font-color, #0e0e0b); font-size: 12px; font-weight: bold; }
+    .tl-l { stroke: var(--font-color, #0e0e0b); stroke-width: 2; }
+    .tl-k { stroke: var(--font-color, #0e0e0b); stroke-width: 1; opacity: .4; }
+    .tl-on { fill: var(--header-h3-bg-color, #F1C40F); stroke: var(--font-color, #0e0e0b); stroke-width: 1.5; }
+    .tl-rel { fill: var(--header-h4-bg-color, #D4E6B5); stroke: var(--font-color, #0e0e0b); stroke-width: 1.5; }
+  </style>
+
+  <line x1="30" y1="150" x2="670" y2="150" class="tl-l"/>
+
+  <!-- Oct 11 -->
+  <circle cx="40" cy="150" r="8" class="tl-on"/>
+  <text x="40" y="175" text-anchor="middle" class="tl-d">11</text>
+  <line x1="40" y1="140" x2="40" y2="70" class="tl-k"/>
+  <text x="34" y="30" class="tl-t">levels decoded</text>
+  <text x="34" y="46" class="tl-t">first recompile:</text>
+  <text x="34" y="62" class="tl-t">24 functions, stuck</text>
+
+  <!-- Oct 12 -->
+  <circle cx="118.8" cy="150" r="8" class="tl-on"/>
+  <text x="118.8" y="175" text-anchor="middle" class="tl-d">12</text>
+  <line x1="118.8" y1="185" x2="118.8" y2="215" class="tl-k"/>
+  <text x="112.8" y="232" class="tl-t">agents swarm</text>
+  <text x="112.8" y="248" class="tl-t">black window</text>
+  <text x="112.8" y="264" class="tl-t">first playable build</text>
+
+  <!-- Oct 13 -->
+  <circle cx="197.5" cy="150" r="8" class="tl-on"/>
+  <text x="197.5" y="175" text-anchor="middle" class="tl-d">13</text>
+  <line x1="197.5" y1="140" x2="197.5" y2="110" class="tl-k"/>
+  <text x="191.5" y="86" class="tl-t">speedruns in sync</text>
+  <text x="191.5" y="102" class="tl-t">the repo exists</text>
+
+  <!-- Oct 14 -->
+  <circle cx="276.2" cy="150" r="8" class="tl-on"/>
+  <text x="276.2" y="175" text-anchor="middle" class="tl-d">14</text>
+  <line x1="276.2" y1="185" x2="276.2" y2="275" class="tl-k"/>
+  <text x="270.2" y="288" class="tl-t">practice mode · Dixie Kong</text>
+
+  <!-- Oct 17 -->
+  <circle cx="355" cy="150" r="8" class="tl-on"/>
+  <text x="355" y="175" text-anchor="middle" class="tl-d">17</text>
+  <line x1="355" y1="140" x2="355" y2="70" class="tl-k"/>
+  <text x="349" y="46" class="tl-t">shaders, turbo,</text>
+  <text x="349" y="62" class="tl-t">settings menu</text>
+
+  <!-- Oct 18 -->
+  <circle cx="433.8" cy="150" r="9" class="tl-rel"/>
+  <text x="433.8" y="175" text-anchor="middle" class="tl-d">18</text>
+  <line x1="433.8" y1="185" x2="433.8" y2="215" class="tl-k"/>
+  <text x="427.8" y="232" class="tl-t">intro song fixed</text>
+  <text x="427.8" y="248" class="tl-t">v0.1.0: Linux,</text>
+  <text x="427.8" y="264" class="tl-t">Windows, Mac</text>
+
+  <!-- Oct 19-21 -->
+  <circle cx="512.5" cy="150" r="8" class="tl-on"/>
+  <circle cx="591.2" cy="150" r="9" class="tl-rel"/>
+  <circle cx="670" cy="150" r="9" class="tl-rel"/>
+  <text x="512.5" y="175" text-anchor="middle" class="tl-d">19</text>
+  <text x="591.2" y="175" text-anchor="middle" class="tl-d">20</text>
+  <text x="670" y="175" text-anchor="middle" class="tl-d">21</text>
+  <line x1="512.5" y1="140" x2="512.5" y2="110" class="tl-k"/>
+  <text x="506.5" y="86" class="tl-t">widescreen,</text>
+  <text x="506.5" y="102" class="tl-t">v0.3.0, v0.3.1</text>
+</svg>
