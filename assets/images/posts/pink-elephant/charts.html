@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Pink Elephant in Your Prompt charts</title>
+<style>
+/* Matches the Bonsai blog tokens used by claude-code-pulse/pulse.html.
+   Load with a hash naming the chart: charts.html#dont, #good, #options, #upgrade, #agent. */
+:root{
+  --bg:#ffffff;
+  --surface:#f5f8fa;
+  --ink:#454d5d;
+  --ink2:#5a6269;
+  --ink3:#939da8;
+  --line:#e8ebee;
+  --track:#e8ebee;
+  --tip:#204345;
+  --tipink:#f5f8fa;
+  --bar:#259ac4;
+  --hi:#eb6a39;
+}
+/* Dark mode, matching kinduff.com's dark tokens. */
+@media (prefers-color-scheme: dark){
+:root{
+  --bg:#0e0e0b;
+  --surface:#1a1a16;
+  --ink:#f4ecdf;
+  --ink2:#c9c2b6;
+  --ink3:#8f897f;
+  --line:#2e2d28;
+  --tip:#f4ecdf;
+  --tipink:#0e0e0b;
+  --track:#2e2d28;
+  --bar:#3fb2dc;
+  --hi:#f2814f;
+}
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5}
+[hidden]{display:none!important}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px 16px;display:grid;gap:14px}
+.title{font-weight:700;font-size:15px;color:var(--ink);margin:0}
+.sub{font-size:13px;color:var(--ink2);margin:2px 0 0}
+#groups{display:grid;gap:16px}
+.group{display:grid;gap:8px}
+.group h4{margin:0;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.row{display:grid;grid-template-columns:minmax(0,230px) 1fr 56px;gap:12px;align-items:center}
+.lab{font-size:14px;line-height:1.3;color:var(--ink)}
+.track{height:22px;background:var(--track);border-radius:4px;overflow:hidden;cursor:default}
+.fill{height:100%;background:var(--bar);border-radius:4px 0 0 4px}
+.row.hi .fill{background:var(--hi)}
+.row.hi .lab{font-weight:700}
+.val{font:600 14px/1 Menlo,Courier,monospace;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}
+.track:focus-visible{outline:2px solid var(--tip);outline-offset:2px}
+.note{font-size:12px;color:var(--ink2)}
+#tip{position:fixed;z-index:9;pointer-events:none;background:var(--tip);color:var(--tipink);font-size:12px;line-height:1.35;padding:6px 9px;border-radius:4px;max-width:240px}
+@media (max-width:520px){.row{grid-template-columns:1fr 56px}.lab{grid-column:1 / -1}.track{grid-column:1}}
+</style>
+</head>
+<body>
+<figure>
+  <div>
+    <p class="title" id="title"></p>
+    <p class="sub" id="sub"></p>
+  </div>
+  <div id="groups"></div>
+  <div class="note" id="note"></div>
+</figure>
+<div id="tip" hidden></div>
+<script>
+// All counts come from experiment/results/runs.jsonl via analyze.py.
+// Rows: [label, value, out of, highlight, per-model detail for the tooltip or null].
+// "Usual answer" = sliding window log, what both models pick with no existing code.
+var CHARTS = {
+  dont: {
+    title: "Shown a weak existing file, how often Claude still gave its usual answer",
+    sub: "The existing file is a fixed window counter. 60 runs per bar, Haiku and Sonnet combined.",
+    format: "pct",
+    groups: [
+      ["No existing code", [["Just the task", 53, 60, false, "Haiku 30/30, Sonnet 23/30"]]],
+      ["Weak file, plus", [
+        ["\"Write a new one from scratch\"", 53, 60, false, "Haiku 24/30, Sonnet 29/30"],
+        ["\"Write a new one\"", 45, 60, false, "Haiku 22/30, Sonnet 23/30"],
+        ["\"Don't base it on this\"", 15, 60, true, "Haiku 4/30, Sonnet 11/30"]
+      ]]
+    ],
+    note: "Hover a bar for each model's count."
+  },
+  good: {
+    title: "Shown its own usual answer as existing code, how often Claude kept it",
+    sub: "The existing file is a sliding window log, the usual answer itself. 60 runs per bar, Haiku and Sonnet combined.",
+    format: "pct",
+    groups: [
+      ["No existing code", [["Just the task", 53, 60, false, "Haiku 30/30, Sonnet 23/30"]]],
+      ["Its usual answer as existing code, plus", [
+        ["Nothing, just the task", 22, 60, false, "Haiku 17/30, Sonnet 5/30"],
+        ["\"Write a new one\"", 8, 60, false, "Haiku 8/30, Sonnet 0/30"],
+        ["\"Don't base it on this\"", 3, 60, true, "Haiku 3/30, Sonnet 0/30"]
+      ]]
+    ],
+    note: "Hover a bar for each model's count."
+  },
+  options: {
+    title: "Algorithms Claude listed when asked to consider three different ones",
+    sub: "\"Before choosing, consider three substantially different rate limiting algorithms.\" 60 runs, three picks each.",
+    format: "count",
+    groups: [
+      ["Listed", [
+        ["Sliding window log", 60, 60, false, null],
+        ["Token bucket", 60, 60, false, null],
+        ["Fixed window", 60, 60, false, null]
+      ]],
+      ["Never listed", [
+        ["Sliding window counter", 0, 60, false, null],
+        ["Leaky bucket", 0, 60, false, null],
+        ["GCRA", 0, 60, false, null]
+      ]]
+    ],
+    note: "Every run listed the same three, in both models."
+  },
+  upgrade: {
+    title: "How often Claude patched up the old fixed window instead of replacing it",
+    sub: "Runs that picked a sliding window counter, a fixed window with a correction on top. Both constrained rows had to be a drop-in replacement for the old class. 30 runs per bar.",
+    format: "count",
+    groups: [
+      ["Claude Haiku 5.5", [
+        ["Blind, no existing code", 0, 30, false, null],
+        ["Blind design, then constrained", 0, 30, false, null],
+        ["Constrained from the start", 19, 30, true, null]
+      ]],
+      ["Claude Sonnet 5.5", [
+        ["Blind, no existing code", 7, 30, false, null],
+        ["Blind design, then constrained", 7, 30, false, null],
+        ["Constrained from the start", 10, 30, false, null]
+      ]]
+    ],
+    note: "Sonnet's difference is too small to mean anything at 30 runs."
+  },
+  agent: {
+    title: "Agents with the old file sitting in the repo",
+    sub: "The weak fixed window file at limits/throttle.py, and an agent with file tools asked to add a new rate limiter. 30 runs per bar.",
+    format: "count",
+    groups: [
+      ["Opened the old file", [
+        ["Haiku", 29, 30, false, null],
+        ["Sonnet", 0, 30, false, null]
+      ]],
+      ["Gave its usual answer", [
+        ["Haiku, file in the repo", 30, 30, false, null],
+        ["Haiku, file deleted", 30, 30, false, null],
+        ["Sonnet, file in the repo", 30, 30, false, null],
+        ["Sonnet, file deleted", 30, 30, false, null]
+      ]]
+    ],
+    note: "Reading the file didn't change the answer in this setup."
+  }
+};
+
+var key = (location.hash || "#dont").slice(1);
+var chart = CHARTS[key] || CHARTS.dont;
+document.getElementById("title").textContent = chart.title;
+document.getElementById("sub").textContent = chart.sub;
+document.getElementById("note").textContent = chart.note;
+
+function esc(s) { return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+document.getElementById("groups").innerHTML = chart.groups.map(function (g) {
+  return '<div class="group"><h4>' + esc(g[0]) + '</h4>' + g[1].map(function (r) {
+    var v = r[1], max = r[2];
+    var shown = chart.format === "pct" ? Math.round(v / max * 100) + "%" : v + "/" + max;
+    var tip = r[0] + ": " + v + " of " + max + " runs" + (r[4] ? ". " + r[4] : "");
+    return '<div class="row' + (r[3] ? ' hi' : '') + '"><div class="lab">' + esc(r[0]) + '</div>' +
+      '<div class="track" tabindex="0" role="img" aria-label="' + esc(tip) + '" data-tip="' + esc(tip) + '">' +
+      '<div class="fill" style="width:' + (v / max * 100) + '%"></div></div><div class="val">' + shown + '</div></div>';
+  }).join("") + '</div>';
+}).join("");
+
+var tip = document.getElementById("tip");
+function show(x, y, text) {
+  tip.textContent = text; tip.hidden = false;
+  var tw = tip.offsetWidth, th = tip.offsetHeight;
+  tip.style.left = Math.min(window.innerWidth - tw - 6, Math.max(6, x - tw / 2)) + "px";
+  tip.style.top = Math.max(4, y - th - 10) + "px";
+}
+document.addEventListener("pointermove", function (e) {
+  var s = e.target.closest && e.target.closest(".track");
+  if (s) show(e.clientX, e.clientY, s.dataset.tip); else tip.hidden = true;
+});
+document.addEventListener("focusin", function (e) {
+  var s = e.target.closest && e.target.closest(".track");
+  if (s) { var r = s.getBoundingClientRect(); show(r.left + r.width / 2, r.top, s.dataset.tip); }
+});
+document.addEventListener("focusout", function () { tip.hidden = true; });
+
+function report() {
+  parent.postMessage({type: "bya-chart-height", chart: key, height: Math.ceil(document.body.getBoundingClientRect().height)}, "*");
+}
+window.addEventListener("load", report);
+window.addEventListener("resize", report);
+report();
+</script>
+</body>
+</html>
