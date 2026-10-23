@@ -1,3 +1,7 @@
+- title: Ollama Library API
+  emoji: 🦙
+  url: https://ollama.kinduff.com
+  description: The missing Ollama library API. Every model on ollama.com as JSON.
 - title: Bsky Poke
   emoji: 👉
   url: https://bsky-poke.kinduff.com
